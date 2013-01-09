@@ -1,0 +1,4 @@
+<xb:config xmlns:xb="http://www.bea.com/2002/09/xbean/config"
+    xmlns:sml="http://www.opengis.net/sensorML/1.0.1">
+    <xb:qname name="sml:location" javaname="SmlLocation"/>
+</xb:config>
