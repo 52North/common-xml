@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== Includes and Imports ==================== -->
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- =================== E L E M E N T S ===================-->
+  <!--UpdateSingleUserRegistration-->
+  <xs:element name="UpdateSingleUserRegistration" type="wns:UpdateSingleUserRegistrationType"/>
+  <!--UpdateSingleUserRegistrationResponse-->
+  <xs:element name="UpdateSingleUserRegistrationResponse" type="wns:UpdateSingleUserRegistrationResponseType"/>
+  <!-- ==================== T Y P E S ==================== -->
+  <!--UpdateSingleUserRegistrationType-->
+  <xs:complexType name="UpdateSingleUserRegistrationType">
+    <xs:complexContent>
+      <xs:extension base="wns:BaseOperationType">
+        <xs:sequence>
+          <xs:element name="UserID" type="wns:UserIDType"/>
+          <xs:element name="updateName" type="xs:token" minOccurs="0"/>
+          <xs:element name="addCommunicationProtocol" type="wns:CommunicationProtocolType" minOccurs="0"/>
+          <xs:element name="removeCommunicationProtocol" type="wns:CommunicationProtocolType" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--UpdateSingleUserRegistrationResponseType-->
+  <xs:complexType name="UpdateSingleUserRegistrationResponseType">
+    <xs:sequence>
+      <xs:element name="status">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="success"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

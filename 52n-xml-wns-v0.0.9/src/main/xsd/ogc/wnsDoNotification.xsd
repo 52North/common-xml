@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== Includes and Imports ==================== -->
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- =================== E L E M E N T S ===================-->
+  <!--DoNotification-->
+  <xs:element name="DoNotification" type="wns:DoNotificationType"/>
+  <!--DoNotificationResponse-->
+  <xs:element name="DoNotificationResponse" type="wns:DoNotificationResponseType"/>
+  <!-- ==================== T Y P E S ==================== -->
+  <!--DoNotificationType-->
+  <xs:complexType name="DoNotificationType">
+    <xs:complexContent>
+      <xs:extension base="wns:BaseOperationType">
+        <xs:sequence>
+          <xs:element name="UserID" type="wns:UserIDType"/>
+          <xs:element name="MaxTTLOfMessage" type="xs:duration" minOccurs="0"/>
+          <xs:element name="ShortMessage" type="xs:string"/>
+          <xs:element name="Message">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:any namespace="##any" processContents="lax"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--DoNotificationResponseType-->
+  <xs:complexType name="DoNotificationResponseType">
+    <xs:sequence>
+      <xs:element name="status">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="success"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

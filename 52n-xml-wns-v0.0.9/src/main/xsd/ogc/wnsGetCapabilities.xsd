@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Johannes Echterhoff (Westfälische Wilhelms-Universität Münster) -->
+<xs:schema xmlns:wns="http://www.opengis.net/wns/0.0" xmlns:ows="http://www.opengis.net/ows" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0" xml:lang="en">
+  <xs:annotation>
+    <xs:appinfo>wnsGetCapabilities.xsd</xs:appinfo>
+    <xs:documentation>
+      <description>This XML Schema encodes the WNS GetCapabilities operation request and response.</description>
+    </xs:documentation>
+  </xs:annotation>
+  <!-- ==================== imports ==================== -->
+  <xs:import namespace="http://www.opengis.net/ows" schemaLocation="http://schemas.opengis.net/ows/1.0.0/owsGetCapabilities.xsd"/>
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- ==================== elements ==================== -->
+  <xs:element name="GetCapabilities">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="ows:GetCapabilitiesType">
+          <xs:attribute name="service" type="ows:ServiceType" use="required" fixed="WNS"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Capabilities">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="ows:CapabilitiesBaseType">
+          <xs:sequence>
+            <xs:element ref="wns:Contents" minOccurs="0"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Contents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SupportedCommunicationProtocols" type="wns:ProtocolsType"/>
+        <xs:element name="MaxTTLOfMessages" type="xs:duration"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

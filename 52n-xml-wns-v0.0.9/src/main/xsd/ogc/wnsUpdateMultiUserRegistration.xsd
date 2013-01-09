@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== Includes and Imports ==================== -->
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- =================== E L E M E N T S ===================-->
+  <!--UpdateMultiUserRegistration-->
+  <xs:element name="UpdateMultiUserRegistration" type="wns:UpdateMultiUserRegistrationType"/>
+  <!--UpdateMultiUserRegistrationResponse-->
+  <xs:element name="UpdateMultiUserRegistrationResponse" type="wns:UpdateMultiUserRegistrationResponseType"/>
+  <!-- ==================== T Y P E S ==================== -->
+  <!--UpdateMultiUserRegistrationType-->
+  <xs:complexType name="UpdateMultiUserRegistrationType">
+    <xs:complexContent>
+      <xs:extension base="wns:BaseOperationType">
+        <xs:sequence>
+          <xs:element name="MultiUserID" type="wns:UserIDType"/>
+          <xs:element name="addUser" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="wns:UserIDType" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="removeUser" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="wns:UserIDType" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--UpdateMultiUserRegistrationResponseType-->
+  <xs:complexType name="UpdateMultiUserRegistrationResponseType">
+    <xs:sequence>
+      <xs:element name="status">
+        <xs:annotation>
+          <xs:documentation>unkown MultiUserID if the ID to update is does not exist; unknown UpdateID if one or more of the IDs to add are unknown</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="success"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

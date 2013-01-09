@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:wns="http://www.opengis.net/wns/0.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0" xml:lang="en">
+  <annotation>
+    <appinfo>wnsAll.xsd</appinfo>
+    <documentation>
+      <description>This XML Schema includes and imports, directly and indirectly, all the XML Schemas defined by the OGC Web Notification Service (WNS).</description>
+    </documentation>
+  </annotation>
+  <!-- ==================== includes ==================== -->
+  <include schemaLocation="./wnsGetCapabilities.xsd"/>
+  <include schemaLocation="./wnsDoNotification.xsd"/>
+  <include schemaLocation="./wnsGetMessage.xsd"/>
+  <include schemaLocation="./wnsRegister.xsd"/>
+  <include schemaLocation="./wnsShared.xsd"/>
+  <include schemaLocation="./wnsUnregister.xsd"/>
+  <include schemaLocation="./wnsUpdateMultiUserRegistration.xsd"/>
+  <include schemaLocation="./wnsUpdateSingleUserRegistration.xsd"/>
+</schema>

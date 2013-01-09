@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== TYPES ==================== -->
+  <!--Base Type for all operations-->
+  <xs:complexType name="BaseOperationType">
+    <xs:attribute name="service" type="xs:string" use="required" fixed="WNS"/>
+    <xs:attribute name="version" type="xs:string" use="required" fixed="1.0.0"/>
+  </xs:complexType>
+  <!--CommunicationProtocolType-->
+  <xs:complexType name="CommunicationProtocolType">
+    <xs:sequence>
+      <xs:element name="XMPP" type="xs:token" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="HTTP" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Email" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="SMS" type="xs:token" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Phone" type="xs:token" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Fax" type="xs:token" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!--UserIDType-->
+  <xs:simpleType name="UserIDType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <!--ProtocolsType-->
+  <xs:complexType name="ProtocolsType">
+    <xs:sequence>
+      <xs:element name="XMPP" type="xs:boolean"/>
+      <xs:element name="SMS" type="xs:boolean"/>
+      <xs:element name="Phone" type="xs:boolean"/>
+      <xs:element name="Fax" type="xs:boolean"/>
+      <xs:element name="Email" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

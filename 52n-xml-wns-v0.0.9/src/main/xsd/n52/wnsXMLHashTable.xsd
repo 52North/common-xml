@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by dd (Westfälische Wilhelms-Universität Münster) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.52north.org/wns/v2" targetNamespace="http://www.52north.org/wns/v2" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="XMLHashTable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Hash" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Date" type="xs:long"/>
+							<xs:element name="MessageID" type="xs:token"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== Includes and Imports ==================== -->
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- =================== E L E M E N T S ===================-->
+  <!--Register-->
+  <xs:element name="Register" type="wns:RegisterType"/>
+  <!--RegisterResponse-->
+  <xs:element name="RegisterResponse" type="wns:RegisterResponseType"/>
+  <!-- ==================== T Y P E S ==================== -->
+  <!--RegisterType-->
+  <xs:complexType name="RegisterType">
+    <xs:complexContent>
+      <xs:extension base="wns:BaseOperationType">
+        <xs:choice>
+          <xs:element name="SingleUser" type="wns:RegisterSingleUserType"/>
+          <xs:element name="MultiUser" type="wns:RegisterMultiUserType"/>
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--RegisterSingleUserType-->
+  <xs:complexType name="RegisterSingleUserType">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="CommunicationProtocol" type="wns:CommunicationProtocolType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!--RegisterMultipleUserType-->
+  <xs:complexType name="RegisterMultiUserType">
+    <xs:sequence>
+      <xs:element name="UserID" type="wns:UserIDType" minOccurs="2" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!--RegisterUserResponseType-->
+  <xs:complexType name="RegisterResponseType">
+    <xs:sequence>
+      <xs:element name="UserID" type="wns:UserIDType">
+        <xs:annotation>
+          <xs:documentation>unique user id, provided by the WNS</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

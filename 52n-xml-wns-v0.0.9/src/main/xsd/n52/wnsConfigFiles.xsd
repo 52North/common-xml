@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" xmlns="http://www.52north.org/wns/v2" xmlns:ows="http://www.opengis.net/ows" targetNamespace="http://www.52north.org/wns/v2" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.opengis.net/wns/0.0" schemaLocation="../ogc/wnsCommon.xsd"/>
+	<xs:import namespace="http://www.opengis.net/ows" schemaLocation="http://schemas.opengis.net/ows/1.0.0/owsAll.xsd"/>
+	<xs:element name="WNSUser">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SingleUser">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="User" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ID" type="xs:token"/>
+										<xs:element name="Name" type="xs:token"/>
+										<xs:element name="Channel" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Protocol">
+														<xs:simpleType>
+															<xs:restriction base="xs:token">
+																<xs:enumeration value="HTTP"/>
+																<xs:enumeration value="XMPP"/>
+																<xs:enumeration value="SMS"/>
+																<xs:enumeration value="Phone"/>
+																<xs:enumeration value="Mail"/>
+																<xs:enumeration value="Fax"/>
+																<xs:enumeration value="Email"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="Target" type="xs:token" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MultiUser">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="User" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ID" type="xs:token"/>
+										<xs:element name="AssociatedUsers">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ID" type="xs:token" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WNSConfig">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ServiceProperties">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaxTTLOfMessages" type="xs:duration"/>
+							<xs:element name="ExceptionLevel">
+								<xs:simpleType>
+									<xs:restriction base="xs:token">
+										<xs:enumeration value="PlainExceptions"/>
+										<xs:enumeration value="DetailedExceptions"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="WNSURL" type="xs:anyURI"/>
+							<xs:element name="WNSSchemaLocation" type="xs:token"/>
+							<xs:element name="OWSSchemaLocation" type="xs:token"/>
+							<xs:element name="DAOFactoryDriver" type="xs:token">
+								<xs:annotation>
+									<xs:documentation>Contains the fully qualified name of the class which implements the DAOFactory interface.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="DAOFactoryPropertiesLocation" type="xs:token">
+								<xs:annotation>
+									<xs:documentation>Path to the properties file of the DAOFactory, e.g. 'C:/Tomcat/webapps/52nWNS/WEB-INF/conf/daofactory.properties'.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="CapabilitiesBaseInformation"/>
+							<xs:element name="DataBaseProperties">
+								<xs:annotation>
+									<xs:documentation>The properties of the eXist DB to store the messages</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DBName" type="xs:token"/>
+										<xs:element name="user" type="xs:token"/>
+										<xs:element name="password" type="xs:token"/>
+										<xs:element name="URL" type="xs:token">
+											<xs:annotation>
+												<xs:documentation>Fully name, e.g. localhost:8080/exist/xmlrpc</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="checkDBDuration" type="xs:int">
+											<xs:annotation>
+												<xs:documentation>The duration the db will be checked for old messages in minutes</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="WSDLDocumentPath" type="xs:string"/>
+							<xs:element name="DebugMode" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RegisteredHandlers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EMailHandler" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Provider" type="xs:token"/>
+										<xs:element name="SMTP">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Host" type="xs:token"/>
+													<xs:element name="User" type="xs:token"/>
+													<xs:element name="Passwd" type="xs:token"/>
+													<xs:element name="Sender" type="xs:string"/>
+													<xs:element name="Authenticate" type="xs:boolean"/>
+													<xs:element name="Port" type="xs:int"/>
+													<xs:element name="EmailSubject" type="xs:string" default="WNS Notification"/>
+													<xs:element name="SSL" type="xs:boolean"/>
+													<xs:element name="TLS" type="xs:boolean"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="XMPPHandler" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="HandlerBaseType">
+											<xs:sequence>
+												<xs:element name="Port" type="xs:int"/>
+											</xs:sequence>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SMSHandler" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="HandlerBaseType"/>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PhoneHandler" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="HandlerBaseType"/>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="FaxHandler" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="HandlerBaseType"/>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ProviderType">
+		<xs:annotation>
+			<xs:documentation>Denotes the fully qualified classname of the Handler to use.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token"/>
+	</xs:simpleType>
+	<xs:complexType name="HandlerBaseType">
+		<xs:sequence>
+			<xs:element name="Provider" type="xs:token">
+				<xs:annotation>
+					<xs:documentation>Denotes the fully qualified classname of the handler to use.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="User" type="xs:token"/>
+			<xs:element name="Passwd" type="xs:token"/>
+			<xs:element name="Host" type="xs:token"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

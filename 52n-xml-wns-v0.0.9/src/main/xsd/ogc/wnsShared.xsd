@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:wns="http://www.opengis.net/wns/0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+	<xs:include schemaLocation="./wnsCommon.xsd"/>
+	<!-- ==================== ELEMENTS ==================== -->
+	<xs:element name="CommunicationMessage" type="wns:CommunicationMessageType"/>
+	<xs:element name="NotificationAbilities">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SupportedCommunicationProtocols" type="wns:SupportedCommunicationProtocolsType"/>
+				<xs:element name="SupportedCommunicationFormats">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="wns:NotificationFormat" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="NotificationFormatConstraint">
+						<xs:selector xpath="./wns:NotificationFormat"/>
+						<xs:field xpath="."/>
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NotificationFormat">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="basic"/>
+				<xs:enumeration value="Atom/GeoRSS"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="NotificationMessage" type="wns:NotificationMessageType"/>
+	<xs:element name="NotificationTarget">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NotificationChannel" type="wns:NotificationChannelType"/>
+				<xs:element ref="wns:NotificationFormat"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReplyMessage">
+		<xs:annotation>
+			<xs:documentation>Sent by the user directly to the callbackURL given in the CommunicationMessage</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CorrID" type="xs:token"/>
+				<xs:element name="Payload">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any namespace="##any" processContents="skip"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- ==================== TYPES ==================== -->
+	<xs:complexType name="CommunicationMessageType">
+		<xs:complexContent>
+			<xs:extension base="wns:WNSMessageType">
+				<xs:sequence>
+					<xs:element name="CorrID" type="xs:token"/>
+					<xs:element name="CallbackURL" type="xs:anyURI"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="NotificationChannelType">
+		<xs:complexContent>
+			<xs:extension base="wns:CommunicationProtocolType">
+				<xs:sequence>
+					<xs:element name="WNS" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="WNSID" type="xs:token"/>
+								<xs:element name="WNSURL" type="xs:anyURI"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="NotificationMessageType">
+		<xs:complexContent>
+			<xs:extension base="wns:WNSMessageType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="SupportedCommunicationProtocolsType">
+		<xs:complexContent>
+			<xs:extension base="wns:ProtocolsType">
+				<xs:sequence>
+					<xs:element name="WSAddressing" type="xs:boolean"/>
+					<xs:element name="WNS" type="xs:boolean"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="WNSMessageType">
+		<xs:sequence>
+			<xs:element name="ServiceDescription">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ServiceType" type="xs:token"/>
+						<xs:element name="ServiceTypeVersion" type="xs:token"/>
+						<xs:element name="ServiceURL" type="xs:anyURI">
+							<xs:annotation>
+								<xs:documentation>Helps the user to identify the calling service.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Payload">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:any namespace="##any" processContents="skip"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

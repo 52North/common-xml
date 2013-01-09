@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0">
+  <!-- ==================== Includes and Imports ==================== -->
+  <xs:include schemaLocation="./wnsCommon.xsd"/>
+  <!-- =================== E L E M E N T S ===================-->
+  <!--GetMessage-->
+  <xs:element name="GetMessage" type="wns:GetMessageType"/>
+  <!--GetMessageResponse-->
+  <xs:element name="GetMessageResponse" type="wns:GetMessageResponseType"/>
+  <!-- ==================== T Y P E S ==================== -->
+  <!--GetMessageType-->
+  <xs:complexType name="GetMessageType">
+    <xs:complexContent>
+      <xs:extension base="wns:BaseOperationType">
+        <xs:sequence>
+          <xs:element name="MessageID" type="xs:token">
+            <xs:annotation>
+              <xs:documentation>Provided by WNS</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--GetMessageResponseType-->
+  <xs:complexType name="GetMessageResponseType">
+    <xs:sequence>
+      <xs:element name="Message">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any namespace="##any" processContents="lax"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
