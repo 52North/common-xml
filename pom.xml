@@ -250,7 +250,7 @@
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wms-v130</artifactId>
 				<version>${project.version}</version>
-			</dependency>>
+			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wns-v009</artifactId>
