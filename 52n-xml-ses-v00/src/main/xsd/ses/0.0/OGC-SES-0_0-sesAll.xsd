@@ -51,7 +51,9 @@ xsd:import's and xsd:include's changed to local one-folder-hierarchy -->
 		includes and imports
 	============================================================== -->
   <xs:include schemaLocation="OGC-SES-0_0-sesCapabilities.xsd"/>
+  <xs:include schemaLocation="OGC-SES-0_0-sesCommon.xsd"/>
   <xs:include schemaLocation="OGC-SES-0_0-sesDescribeSensor.xsd"/>
+  <xs:include schemaLocation="OGC-SES-0_0-sesEvent.xsd"/>
   <xs:include schemaLocation="OGC-SES-0_0-sesRenewRegistration.xsd"/>
   <xs:include schemaLocation="OGC-SES-0_0-sesMessageSchema.xsd"/>
 </xs:schema>
