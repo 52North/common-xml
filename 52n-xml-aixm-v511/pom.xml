@@ -20,6 +20,9 @@
                         <sourceSchema>eurocontrol/AIXM_AbstractGML_ObjectTypes.xsd</sourceSchema>
                         <sourceSchema>eurocontrol/AIXM_DataTypes.xsd</sourceSchema>
                         <sourceSchema>eurocontrol/AIXM_Features.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/message/AIXM_BasicMessage.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/event/Event_Features.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/event/Event_DataTypes.xsd</sourceSchema>
                     </sourceSchemas>
                 </configuration>
             </plugin>
@@ -39,5 +42,10 @@
 			<artifactId>52n-xml-gml-v321</artifactId>
 		</dependency>
     </dependencies>
-    <description>Aeronautical Information Exchange 5.1 - adjusted to support metadata by reference</description>
+    <description>Aeronautical Information Exchange 5.1 - adjusted to support metadata by reference.
+    	DNOTAM Event and AIXMBasicMessage schemas included.
+    	The AIXM_AbstractGML_ObjectTypes.xsd needed to be adjusted to work around an existing
+    	bug (aixm:name <-> gml:name as children of the same type). This resulted in the gml:id
+    	not set to use=required, so handle validation with good care.
+    </description>
 </project>
