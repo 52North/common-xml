@@ -330,7 +330,7 @@
 						-->
 						<noJavac>true</noJavac>
 						<memoryInitialSize>256</memoryInitialSize>
-						<memoryMaximumSize>256</memoryMaximumSize>
+						<memoryMaximumSize>512</memoryMaximumSize>
 						<download>false</download>
 						<schemaDirectory>target/xmlbeans-xsds/META-INF/xml</schemaDirectory>
 						<xsdJars>
