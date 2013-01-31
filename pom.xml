@@ -28,8 +28,11 @@
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
 		<!-- binding dependencies -->
+		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
 		<module>52n-xml-csw-v202</module>
+		<module>52n-xml-eml-v001</module>
+		<module>52n-xml-eml-v002</module>
 		<module>52n-xml-filter-v100</module>
 		<module>52n-xml-filter-v110</module>
 		<module>52n-xml-filter-v20</module>
@@ -46,6 +49,7 @@
 		<module>52n-xml-sampling-v20</module>
 		<module>52n-xml-sensorML-v100</module>
 		<module>52n-xml-sensorML-v101</module>
+		<module>52n-xml-ses-v00</module>
 		<module>52n-xml-sld-v100</module>
 		<module>52n-xml-sld-v110</module>
 		<module>52n-xml-soap-v12</module>
