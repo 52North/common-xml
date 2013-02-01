@@ -28,7 +28,7 @@
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
 		<!-- binding dependencies -->
-		<module>52n-xml-aixm-v511</module>
+ 		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
 		<module>52n-xml-csw-v202</module>
 		<module>52n-xml-eml-v001</module>
@@ -37,7 +37,7 @@
 		<module>52n-xml-filter-v110</module>
 		<module>52n-xml-filter-v20</module>
 		<module>52n-xml-gml-v212</module>
-		<!-- <module>52n-xml-gml-v301</module> -->
+		<module>52n-xml-gml-v301</module>
 		<module>52n-xml-gml-v311</module>
 		<module>52n-xml-gml-v321</module>
 		<module>52n-xml-kml-v220</module>
@@ -61,11 +61,14 @@
 		<module>52n-xml-sweCommon-v101</module>
 		<module>52n-xml-sweCommon-v20</module>
 		<module>52n-xml-swes-v20</module>
-		<module>52n-xml-waterML-v20</module>
+ 		<module>52n-xml-waterML-v20</module>
 		<module>52n-xml-wcs-v11</module>
 		<module>52n-xml-wfs-v110</module>
 		<module>52n-xml-wms-v130</module>
 		<module>52n-xml-wns-v0.0.9</module>
+		<module>52n-xml-wsa-v10</module>
+		<module>52n-xml-wsn-v13</module>
+		<module>52n-xml-wsrf-v12</module>
 		<module>52n-xml-xlink-v110</module>
 	</modules>
 	<properties>
@@ -273,6 +276,21 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wns-v009</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wsa-v10</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wsn-v13</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wsrf-v12</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
