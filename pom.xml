@@ -38,7 +38,9 @@
 		<module>52n-xml-filter-v110</module>
 		<module>52n-xml-filter-v20</module>
 		<module>52n-xml-gml-v212</module>
-		<module>52n-xml-gml-v301</module>
+		<!-- 
+		<module>52n-xml-gml-v301</module> 
+		-->
 		<module>52n-xml-gml-v311</module>
 		<module>52n-xml-gml-v321</module>
 		<module>52n-xml-kml-v220</module>
