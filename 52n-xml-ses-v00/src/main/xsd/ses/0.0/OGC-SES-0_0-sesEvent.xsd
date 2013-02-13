@@ -40,9 +40,9 @@ times remain with copyright holders.
 
 CHANGES TO ORIGINAL FILE (derived from http://schemas.opengeospatial.net):
 xsd:import's and xsd:include's changed to local one-folder-hierarchy -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ses="http://www.opengis.net/ses/0.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:eml="http://www.opengis.net/eml/0.0.2" targetNamespace="http://www.opengis.net/ses/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ses="http://www.opengis.net/ses/0.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:eml="http://www.opengis.net/eml/0.0.1" targetNamespace="http://www.opengis.net/ses/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en">
   <xs:import namespace="http://www.opengis.net/gml" schemaLocation="OGC-GML-3_1_1-gml.xsd"/>
-  <xs:import namespace="http://www.opengis.net/eml/0.0.2" schemaLocation="OGC-EML-0_0_2-eml.xsd"/>
+  <xs:import namespace="http://www.opengis.net/eml/0.0.1" schemaLocation="OGC-EML-0_0_1-eml.xsd"/>
   <xs:annotation>
     <xs:appinfo>sesEvent.xsd</xs:appinfo>
     <xs:documentation>
