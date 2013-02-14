@@ -300,7 +300,7 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-xlink-v110</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->
             <dependency>
