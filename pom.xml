@@ -76,7 +76,7 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<xpath.version>2.6.0</xpath.version>
+		<xbeans.version>2.6.0</xbeans.version>
 	</properties>
 	
     <dependencyManagement>
@@ -306,12 +306,12 @@
             <dependency>
                 <groupId>org.apache.xmlbeans</groupId>
                 <artifactId>xmlbeans</artifactId>
-                <version>${xpath.version}</version>
+                <version>${xbeans.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.xmlbeans</groupId>
                 <artifactId>xmlbeans-xpath</artifactId>
-                <version>${xpath.version}</version>
+                <version>${xbeans.version}</version>
             </dependency>
 			<dependency>
 			   <groupId>commons-codec</groupId>
