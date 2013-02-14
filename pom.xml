@@ -308,11 +308,6 @@
                 <artifactId>xmlbeans</artifactId>
                 <version>${xbeans.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.apache.xmlbeans</groupId>
-                <artifactId>xmlbeans-xpath</artifactId>
-                <version>${xbeans.version}</version>
-            </dependency>
 			<dependency>
 			   <groupId>commons-codec</groupId>
 			   <artifactId>commons-codec</artifactId>
