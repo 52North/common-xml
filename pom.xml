@@ -67,6 +67,7 @@
  		<module>52n-xml-waterML-v20</module>
 		<module>52n-xml-wcs-v11</module>
 		<module>52n-xml-wfs-v110</module>
+		<module>52n-xml-wfs-v200</module>
 		<module>52n-xml-wms-v130</module>
 		<module>52n-xml-wns-v0.0.9</module>
 		<module>52n-xml-wsa-v10</module>
@@ -76,7 +77,7 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<xbeans.version>2.6.0</xbeans.version>
+		<xbeans.version>2.5.0</xbeans.version>
 	</properties>
 	
     <dependencyManagement>
@@ -270,6 +271,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wfs-v110</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wfs-v200</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
