@@ -8,7 +8,7 @@
     <groupId>org.n52.sensorweb</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-common-xml</artifactId>
-    <version>1.1.4-SNAPSHOT</version>
+    <version>1.1.4</version>
 	<packaging>pom</packaging>
 	<name>52North XML Schema Bindings</name>
 	<description>
@@ -17,9 +17,9 @@
 	</description>
 	
 	<scm>
-        <connection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/trunk/</connection>
-        <developerConnection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/trunk/</developerConnection>
-        <url>https://svn.52north.org/cgi-bin/viewvc.cgi/main/OX-Framework/52n-common-xml/trunk/?root=sensorweb</url>
+        <connection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/tags/52n-common-xml-1.1.4</connection>
+        <developerConnection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/tags/52n-common-xml-1.1.4</developerConnection>
+        <url>https://svn.52north.org/cgi-bin/viewvc.cgi/main/OX-Framework/52n-common-xml/tags/52n-common-xml-1.1.4?root=sensorweb</url>
     </scm>
 	
 	<modules>
