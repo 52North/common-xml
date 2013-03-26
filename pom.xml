@@ -70,6 +70,7 @@
 		<module>52n-xml-wfs-v20</module>
 		<module>52n-xml-wms-v130</module>
 		<module>52n-xml-wns-v0.0.9</module>
+		<module>52n-xml-wps-v100</module>
 		<module>52n-xml-wsa-v10</module>
 		<module>52n-xml-wsn-v13</module>
 		<module>52n-xml-wsrf-v12</module>
@@ -286,6 +287,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wns-v009</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wps-v100</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
