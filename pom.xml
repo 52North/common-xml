@@ -17,9 +17,9 @@
 	</description>
 	
 	<scm>
-        <connection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/trunk/</connection>
-        <developerConnection>scm:svn:https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/trunk/</developerConnection>
-        <url>https://svn.52north.org/cgi-bin/viewvc.cgi/main/OX-Framework/52n-common-xml/trunk/?root=sensorweb</url>
+        <connection>scm:git:git://github.com/52North/common-xml.git</connection>
+        <developerConnection>scm:git:https://github.com/52North/common-xml.git</developerConnection>
+        <url>https://github.com/52North/common-xml</url>
     </scm>
 	
 	<modules>
