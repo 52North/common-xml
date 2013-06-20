@@ -402,7 +402,6 @@
 								cases release fails on perform -->
 							<preparationGoals>clean</preparationGoals>
 							<autoVersionSubmodules>true</autoVersionSubmodules>
-							<tagBase>https://svn.52north.org/svn/swe/main/OX-Framework/52n-common-xml/tags/</tagBase>
 							<goals>deploy</goals>
 							<!-- for xmlbeans we do not need to deploy sources and javadoc -->
 							<useReleaseProfile>false</useReleaseProfile>
