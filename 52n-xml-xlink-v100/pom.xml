@@ -7,9 +7,9 @@
 		<version>1.1.6-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>52n-xml-xlink-v110</artifactId>
+	<artifactId>52n-xml-xlink-v100</artifactId>
 	<packaging>jar</packaging>
-	<name>W3C xlink schema (spec. v1.1.0)</name>
+	<name>W3C xlink schema (spec. v1.0.0)</name>
 	<build>
 		<plugins>
 			<plugin>
@@ -17,7 +17,7 @@
 				<artifactId>xmlbeans-maven-plugin</artifactId>
 				<configuration>
 					<sourceSchemas>
-						<sourceSchema>xlink/1.1/xlink.xsd</sourceSchema>
+						<sourceSchema>xlink/1.0/xlinks.xsd</sourceSchema>
 					</sourceSchemas>
 					<xsdJars>
 						<xsdJar>org.n52.sensorweb:52n-w3c-schema</xsdJar>
