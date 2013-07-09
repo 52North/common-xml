@@ -30,22 +30,22 @@
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-ogc-schema</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-gml-v321</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-ows-v110</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-sweCommon-v100</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-sweCommon-v101</artifactId>
