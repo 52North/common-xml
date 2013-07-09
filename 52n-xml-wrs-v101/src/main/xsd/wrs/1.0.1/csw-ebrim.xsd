@@ -26,7 +26,7 @@
 	<xsd:import namespace="http://www.opengis.net/cat/csw/2.0.2"
 		schemaLocation="http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" />
 	<xsd:import namespace="http://www.w3.org/1999/xlink"
-		schemaLocation="http://schemas.opengis.net/xlink/1.0.0/xlinks.xsd" />
+		schemaLocation="http://www.w3.org/1999/xlink.xsd" />
 	<xsd:import namespace="http://www.opengis.net/ogc"
 		schemaLocation="http://schemas.opengis.net/filter/1.1.0/filter.xsd" />
 
