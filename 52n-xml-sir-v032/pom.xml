@@ -8,8 +8,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-xml-sir-v032</artifactId>
 	<packaging>jar</packaging>
-	<name>OGC DP SIR schema (spec. v0.3.2)</name>
-	<description>Sensor Instance Registry Discussion Paper 10-171 Schemas</description>
+	<name>OGC SIR schema 0.3.2 (OGC Discussion Paper 10-171)</name>
 
 	<build>
 		<plugins>

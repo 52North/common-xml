@@ -8,7 +8,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-xml-wrs-v101</artifactId>
 	<packaging>jar</packaging>
-	<name>CSW-ebRIM schema (spec. v1.0.1)</name>
+	<name>OGC CSW-ebRIM schema (spec. v1.0.1)</name>
 	<description>CSW-ebRIM Registry Service: ebRIM profile of CSW schema</description>
 
 	<build>

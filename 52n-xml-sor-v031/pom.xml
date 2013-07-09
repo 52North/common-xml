@@ -8,8 +8,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-xml-sor-v031</artifactId>
 	<packaging>jar</packaging>
-	<name>OGC DP SOR schema (spec. v0.3.1)</name>
-	<description>Sensor Observable Registry Discussion Paper 09-112r1 Schemas</description>
+	<name>OGC SOR schema 0.3.1 (OGC Discussion Paper 09-112r1)</name>
 
 	<build>
 		<plugins>
