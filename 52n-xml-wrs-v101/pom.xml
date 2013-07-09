@@ -17,6 +17,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xmlbeans-maven-plugin</artifactId>
 				<configuration>
+					<schemaDirectory>src/main/xsd</schemaDirectory>
 					<sourceSchemas>
 						<sourceSchema>wrs/1.0.1/csw-ebrim.xsd</sourceSchema>
 					</sourceSchemas>
