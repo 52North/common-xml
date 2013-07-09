@@ -16,6 +16,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xmlbeans-maven-plugin</artifactId>
 				<configuration>
+					<schemaDirectory>src/main/xsd</schemaDirectory>
 					<sourceSchemas>
 						<sourceSchema>sir/0.3.2/sirAll.xsd</sourceSchema>
 					</sourceSchemas>
