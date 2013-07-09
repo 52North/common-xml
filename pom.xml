@@ -81,7 +81,6 @@
 		<module>52n-xml-wsa-v10</module>
 		<module>52n-xml-wsn-v13</module>
 		<module>52n-xml-wsrf-v12</module>
-		<module>52n-xml-xlink-v100</module>
 		<module>52n-xml-xlink-v110</module>
 	</modules>
 	<properties>
