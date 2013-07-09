@@ -17,11 +17,9 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xmlbeans-maven-plugin</artifactId>
 				<configuration>
-					<schemaDirectory>src/main/xsd</schemaDirectory>
 					<sourceSchemas>
-						<sourceSchema>wrs/1.0.1/csw-ebrim.xsd</sourceSchema>
+						<sourceSchema>csw/2.0.2/profiles/ebrim/1.0/csw-ebrim.xsd</sourceSchema>
 					</sourceSchemas>
-					<!-- <download>true</download> -->
 				</configuration>
 			</plugin>
 		</plugins>
@@ -36,10 +34,10 @@
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-ogc-schema</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.n52.sensorweb</groupId>
-			<artifactId>52n-oasis-schema</artifactId>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.n52.sensorweb</groupId> -->
+		<!-- <artifactId>52n-oasis-schema</artifactId> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-rim-v300</artifactId>
@@ -51,6 +49,10 @@
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-xlink-v110</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-xml-filter-v110</artifactId>
 		</dependency>
 	</dependencies>
 
