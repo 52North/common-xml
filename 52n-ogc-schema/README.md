@@ -6,3 +6,12 @@ represent a snapshot of the official schema repository. Open the timestamp file 
 ## XMLBeans Bindings
 The XML schemas provided by this module are packaged as `.jar` archive and can be used as dependency 
 while compiling Java XML bindings with [Apache XMLBeans](http://xmlbeans.apache.org/ "Apache XMLBeans").
+Once XML bindings have been compiled the schema dependency is not needed anymore.
+
+## License
+A license note can be found under `src/main/resources/copyright.html`.
+
+As noted before this module contains a snapshot of the official OGC XML schemas which can be accessed 
+under http://schemas.opengis.net. Please consider the [schema copyright notices](http://www.opengeospatial.org/ogc/document) 
+and the [OGC Copyright Notice and Disclaimers](http://www.opengeospatial.org/ogc/legal). If there are any 
+questions left there is also a [copyright FAQ](http://www.opengeospatial.org/ogc/legalfaq).
