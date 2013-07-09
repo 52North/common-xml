@@ -3,6 +3,8 @@ common-xml
 
 A set of commonly used OGC schemas compiled to XMLBeans bindings and provided as Maven dependencies by 52°North.
 
+[![Build Status](https://travis-ci.org/nuest/common-xml.png)](https://travis-ci.org/nuest/common-xml)
+
 Repository
 ----------
 
