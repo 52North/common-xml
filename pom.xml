@@ -1,34 +1,35 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-    	<groupId>org.n52</groupId>
-	    <artifactId>52-North</artifactId>
-	    <version>5.6.3</version>
-    </parent>
-    <groupId>org.n52.sensorweb</groupId>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.n52</groupId>
+		<artifactId>52-North</artifactId>
+		<version>5.6.3</version>
+	</parent>
+	<groupId>org.n52.sensorweb</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-common-xml</artifactId>
-    <version>1.1.6-SNAPSHOT</version>
+	<version>1.1.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>52North XML Schema Bindings</name>
 	<description>
 		The 52n XML Bindings comprise the OGC schema models and 
 		all 52n schema models needed across the 52n SWE framework.
 	</description>
-	
+
 	<scm>
-        <connection>scm:git:git://github.com/52North/common-xml.git</connection>
-        <developerConnection>scm:git:ssh://github.com/52North/common-xml.git</developerConnection>
-        <url>https://github.com/52North/common-xml</url>
-    </scm>
-	
+		<connection>scm:git:git://github.com/52North/common-xml.git</connection>
+		<developerConnection>scm:git:ssh://github.com/52North/common-xml.git</developerConnection>
+		<url>https://github.com/52North/common-xml</url>
+	</scm>
+
 	<modules>
 		<!-- schema dependencies -->
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
 		<!-- binding dependencies -->
- 		<module>52n-xml-aixm-v511</module>
+		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
 		<module>52n-xml-csw-v202</module>
 		<module>52n-xml-em-v020</module>
@@ -38,8 +39,8 @@
 		<module>52n-xml-filter-v110</module>
 		<module>52n-xml-filter-v20</module>
 		<module>52n-xml-gml-v212</module>
-		<!-- 
-		<module>52n-xml-gml-v301</module> 
+		<!--
+			<module>52n-xml-gml-v301</module>
 		-->
 		<module>52n-xml-gml-v311</module>
 		<module>52n-xml-gml-v321</module>
@@ -49,6 +50,7 @@
 		<module>52n-xml-om-v20</module>
 		<module>52n-xml-ows-v100</module>
 		<module>52n-xml-ows-v110</module>
+		<module>52n-xml-rim-v300</module>
 		<module>52n-xml-sampling-v100</module>
 		<module>52n-xml-sampling-v20</module>
 		<module>52n-xml-sensorML-v100</module>
@@ -56,7 +58,9 @@
 		<module>52n-xml-ses-v00</module>
 		<module>52n-xml-sld-v100</module>
 		<module>52n-xml-sld-v110</module>
+		<module>52n-xml-sir-v032</module>
 		<module>52n-xml-soap-v12</module>
+		<module>52n-xml-sor-v031</module>
 		<module>52n-xml-sos-v100</module>
 		<module>52n-xml-sos-v20</module>
 		<module>52n-xml-sps-v100</module>
@@ -65,14 +69,15 @@
 		<module>52n-xml-sweCommon-v101</module>
 		<module>52n-xml-sweCommon-v20</module>
 		<module>52n-xml-swes-v20</module>
- 		<module>52n-xml-waterML-v20</module>
- 		<module>52n-xml-waterML-dr-v20</module>
+		<module>52n-xml-waterML-v20</module>
+		<module>52n-xml-waterML-dr-v20</module>
 		<module>52n-xml-wcs-v11</module>
 		<module>52n-xml-wfs-v110</module>
 		<module>52n-xml-wfs-v20</module>
 		<module>52n-xml-wms-v130</module>
 		<module>52n-xml-wns-v0.0.9</module>
 		<module>52n-xml-wps-v100</module>
+		<module>52n-xml-wrs-v101</module>
 		<module>52n-xml-wsa-v10</module>
 		<module>52n-xml-wsn-v13</module>
 		<module>52n-xml-wsrf-v12</module>
@@ -82,9 +87,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<xbeans.version>2.6.0</xbeans.version>
 	</properties>
-	
-    <dependencyManagement>
-        <dependencies>
+
+	<dependencyManagement>
+		<dependencies>
 			<!-- ### MODULE DEPENDENCIES ### -->
 			<!-- schema dependencies -->
 			<dependency>
@@ -188,6 +193,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-rim-v300</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-sampling-v100</artifactId>
 				<version>${project.version}</version>
 			</dependency>
@@ -213,6 +223,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-sir-v032</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-sld-v100</artifactId>
 				<version>${project.version}</version>
 			</dependency>
@@ -224,6 +239,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-soap-v12</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-sor-v031</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -308,6 +328,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-wrs-v101</artifactId>
+				<version>1.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wsa-v10</artifactId>
 				<version>${project.version}</version>
 			</dependency>
@@ -323,41 +348,46 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-xlink-v100</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-xlink-v110</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->
-            <dependency>
-                <groupId>org.apache.xmlbeans</groupId>
-                <artifactId>xmlbeans</artifactId>
-                <version>${xbeans.version}</version>
-            </dependency>
 			<dependency>
-			   <groupId>commons-codec</groupId>
-			   <artifactId>commons-codec</artifactId>
-			   <version>1.5</version>
+				<groupId>org.apache.xmlbeans</groupId>
+				<artifactId>xmlbeans</artifactId>
+				<version>${xbeans.version}</version>
 			</dependency>
-        </dependencies>
-    </dependencyManagement>
-    <build>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.5</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
 		<pluginManagement>
 			<plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
 					<version>2.4</version>
-                    <inherited>true</inherited>
-                    <configuration>
-                        <archive>
-                        <!-- no index leads to errors, in some classloaders -->
-                            <index>false</index>
-                            <manifest>
-                                <addClasspath>true</addClasspath>
-                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                </plugin>
+					<inherited>true</inherited>
+					<configuration>
+						<archive>
+							<!-- no index leads to errors, in some classloaders -->
+							<index>false</index>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>xmlbeans-maven-plugin</artifactId>
@@ -372,7 +402,8 @@
 					</executions>
 					<configuration>
 						<!--
-						xmlbeans plugin only used to generate the classes not for compiling or jar generation.
+							xmlbeans plugin only used to generate the classes not for compiling 
+							or jar generation.
 						-->
 						<noJavac>true</noJavac>
 						<memoryInitialSize>256</memoryInitialSize>
@@ -387,8 +418,8 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
-    <profiles>
+
+	<profiles>
 		<profile>
 			<id>release</id>
 			<!-- a profile wich shall be activated if a release is performed -->
@@ -398,7 +429,7 @@
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-release-plugin</artifactId>
 						<configuration>
-							<!-- no build in release:prepare (takes to long time), so in bad 
+							<!-- no build in release:prepare (takes to long time), so in bad
 								cases release fails on perform -->
 							<preparationGoals>clean</preparationGoals>
 							<autoVersionSubmodules>true</autoVersionSubmodules>
@@ -413,8 +444,8 @@
 				<maven.javadoc.skip>true</maven.javadoc.skip>
 			</properties>
 		</profile>
-    </profiles>
-	
+	</profiles>
+
 	<repositories>
 		<repository>
 			<id>n52-releases</id>
