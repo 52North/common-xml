@@ -8,6 +8,13 @@
     <artifactId>52n-oasis-schema</artifactId>
     <packaging>jar</packaging>
 	<name>OASIS XML schemas</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>

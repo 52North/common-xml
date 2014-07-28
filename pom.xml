@@ -22,12 +22,21 @@
 		<developerConnection>scm:git:ssh://git@github.com/52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
+	
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
 	<modules>
 		<!-- schema dependencies -->
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
+		
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
@@ -40,6 +49,7 @@
 		<module>52n-xml-filter-v20</module>
 		<module>52n-xml-gml-v212</module>
 		<!--
+			is incompatible to other modules
 			<module>52n-xml-gml-v301</module>
 		-->
 		<module>52n-xml-gml-v311</module>
@@ -373,6 +383,35 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
+					<groupId>org.jasig.maven</groupId>
+					<artifactId>maven-notice-plugin</artifactId>
+					<version>1.0.6</version>
+					<configuration>
+						<noticeTemplate>misc/NOTICE.template</noticeTemplate>
+						<licenseMapping>
+							<param>http://52north.github.io/cdn/licenses/license-mappings.xml</param>
+						</licenseMapping>
+						<generateChildNotices>false</generateChildNotices>
+					</configuration>
+					<executions>
+						<execution>
+							<id>check-license</id>
+							<phase>initialize</phase>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>com.mycila</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>2.2</version>
+					<!-- Config in submodules -->
+				</plugin>
+				
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>2.4</version>
@@ -417,9 +456,51 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		
+		<plugins>
+			<!-- ==================================================== -->
+			<!-- =========== PLUGINS ACTIVE BY DEFAULT ============== -->
+			<!-- ==================================================== -->
+
+			
+		</plugins>
 	</build>
 
 	<profiles>
+		<profile>
+			<id>create-license-list</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>license-maven-plugin</artifactId>
+						<version>1.6</version>
+						<configuration>
+							<fileTemplate>misc/license-as-csv.ftl</fileTemplate>
+							<useMissingFile>true</useMissingFile>
+							<licenseMerges>
+								<licenseMerge>The Apache Software License, Version 2.0|Apache 2|Apache License, Version 2.0|Apache Public License 2.0</licenseMerge>
+								<licenseMerge>Apache Software Licenses|Apache Software License|Apache License</licenseMerge>
+								<licenseMerge>GNU General Public License, v2.0|GNU GENERAL PUBLIC LICENSE Version 2, June 1991|GNU General Public License, Version 2.0</licenseMerge>
+								<licenseMerge>Common Development and Distribution License (CDDL), version 1.0| Common Development and Distribution License (CDDL) v1.0</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License, version 2.1|LGPL 2.1</licenseMerge>
+								<licenseMerge>Mozilla Public License version 1.1|MPL 1.1</licenseMerge>
+							</licenseMerges>
+						</configuration>
+						<executions>
+							<execution>
+								<id>create-license-list</id>
+								<goals>
+									<goal>aggregate-add-third-party</goal>
+								</goals>
+								<phase>generate-resources</phase>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	
 		<profile>
 			<id>release</id>
 			<!-- a profile wich shall be activated if a release is performed -->

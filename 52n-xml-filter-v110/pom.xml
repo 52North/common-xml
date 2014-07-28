@@ -9,6 +9,13 @@
   <artifactId>52n-xml-filter-v110</artifactId>
   <packaging>jar</packaging>
   <name>OGC Filter schema (spec. v1.1.0)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
   <build>
         <plugins>
             <plugin>

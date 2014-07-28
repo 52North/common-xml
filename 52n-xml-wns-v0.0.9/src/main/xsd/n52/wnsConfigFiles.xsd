@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
 <!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by Cornelia Müller (52°North GmbH) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wns="http://www.opengis.net/wns/0.0" xmlns="http://www.52north.org/wns/v2" xmlns:ows="http://www.opengis.net/ows" targetNamespace="http://www.52north.org/wns/v2" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://www.opengis.net/wns/0.0" schemaLocation="../ogc/wnsCommon.xsd"/>

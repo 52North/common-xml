@@ -1,0 +1,62 @@
+Copyright 2013 52°North Initiative for Geospatial Open Source Software GmbH
+
+Licensed under GNU General Public License, v2.0
+
+This project includes:
+  52North XML Schema Bindings under The Apache Software License, Version 2.0
+  AIXM 5.1 schemas (adjusted to support metadata by reference) under The Apache Software License, Version 2.0
+  Event Model schema version 0.2.0 under The Apache Software License, Version 2.0
+  OASIS ebXML Registry Information Model (RIM) schemas v3.0.0 under The Apache Software License, Version 2.0
+  OASIS WS-N specification schemas - including WS-BrokeredNotification (v1.3) under The Apache Software License, Version 2.0
+  OASIS WS-Resources specification schemas v1.2 under The Apache Software License, Version 2.0
+  OASIS XML schemas under The Apache Software License, Version 2.0
+  OGC Context schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC CSW schema (spec. v2.0.2) under The Apache Software License, Version 2.0
+  OGC CSW-ebRIM schema (spec. v1.0.1) under The Apache Software License, Version 2.0
+  OGC EML schema 0.0.1 (OGC Discussion Paper 08-132) under The Apache Software License, Version 2.0
+  OGC EML schema 0.0.2 (OGC Discussion Paper 08-132) under The Apache Software License, Version 2.0
+  OGC Filter schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC Filter schema (spec. v1.1.0) under The Apache Software License, Version 2.0
+  OGC Filter schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC GML Coverage schema (spec. v1.0) under The Apache Software License, Version 2.0
+  OGC GML schema (spec. v2.1.2) under The Apache Software License, Version 2.0
+  OGC GML schema (spec. v3.1.1) under The Apache Software License, Version 2.0
+  OGC GML schema (spec. v3.2.1) under The Apache Software License, Version 2.0
+  OGC Keyhole Markup Language schema (spec. v2.2.0) under The Apache Software License, Version 2.0
+  OGC O&M schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC O&M schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC OWS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC OWS schema (spec. v1.1.0) under The Apache Software License, Version 2.0
+  OGC Sampling schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC Sampling schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC SensorML schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC SensorML schema (spec. v1.0.1) under The Apache Software License, Version 2.0
+  OGC SES schema 0.3.0 (OGC Discussion Paper 08-133) under The Apache Software License, Version 2.0
+  OGC SIR schema 0.3.2 (OGC Discussion Paper 10-171) under The Apache Software License, Version 2.0
+  OGC SLD schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC SLD schema (spec. v1.1.0) under The Apache Software License, Version 2.0
+  OGC SOR schema 0.3.1 (OGC Discussion Paper 09-112r1) under The Apache Software License, Version 2.0
+  OGC SOS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC SOS schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC SPS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC SPS schema (spec. v2.0.0) under The Apache Software License, Version 2.0
+  OGC SWECommon schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC SWECommon schema (spec. v1.0.1) under The Apache Software License, Version 2.0
+  OGC SWECommon schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC SWES schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC WaterML DR schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC WaterML schema (spec. v2.0) under The Apache Software License, Version 2.0
+  OGC WCS schema (spec. v1.1) under The Apache Software License, Version 2.0
+  OGC WFS schema (spec. v1.1.0) under The Apache Software License, Version 2.0
+  OGC WFS schema (spec. v2.0.0) under The Apache Software License, Version 2.0
+  OGC WMS schema (spec. v1.3.0) under The Apache Software License, Version 2.0
+  OGC WNS schema 0.0.9 (OGC 06-095) under The Apache Software License, Version 2.0
+  OGC WPS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
+  OGC XML schemas under The Apache Software License, Version 2.0
+  StAX API under The Apache Software License, Version 2.0
+  W3C SOAP specification recommondation (v1.2 part 1) under The Apache Software License, Version 2.0
+  W3C WS-Addressing specification schemas (v1.0) under The Apache Software License, Version 2.0
+  W3C xlink schema (spec. v1.1.0) under The Apache Software License, Version 2.0
+  W3C XML schemas under The Apache Software License, Version 2.0
+  XmlBeans under The Apache Software License, Version 2.0
+

@@ -9,6 +9,13 @@
   <artifactId>52n-xml-wsa-v10</artifactId>
   <packaging>jar</packaging>
   <name>W3C WS-Addressing specification schemas (v1.0)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
   <build>
         <plugins>
             <plugin>

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
 <!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Marwa Mabrouk (ESRI) -->
 <schema targetNamespace="http://www.opengis.net/xls" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xls="http://www.opengis.net/xls" elementFormDefault="qualified" version="1.1.0.2">
   <!-- This version of ols/1.1 was previously versioned as '1.1.1' . -->

@@ -10,6 +10,13 @@
 	<packaging>jar</packaging>
 	<name>OGC CSW-ebRIM schema (spec. v1.0.1)</name>
 	<description>CSW-ebRIM Registry Service: ebRIM profile of CSW schema</description>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
 	<build>
 		<plugins>
@@ -34,10 +41,6 @@
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-ogc-schema</artifactId>
 		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>org.n52.sensorweb</groupId> -->
-		<!-- <artifactId>52n-oasis-schema</artifactId> -->
-		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.n52.sensorweb</groupId>
 			<artifactId>52n-xml-rim-v300</artifactId>

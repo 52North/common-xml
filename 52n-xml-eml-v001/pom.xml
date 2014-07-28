@@ -9,6 +9,13 @@
   <artifactId>52n-xml-eml-v001</artifactId>
   <packaging>jar</packaging>
   <name>OGC EML schema 0.0.1 (OGC Discussion Paper 08-132)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
   <build>
         <plugins>
             <plugin>
@@ -21,6 +28,29 @@
                     </sourceSchemas>
                 </configuration>
             </plugin>
+			
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<header>../misc/ogc-license-header.txt</header>
+					<aggregate>true</aggregate>
+					<includes>
+						<include>src/**/*.xsd</include>
+						<include>src/**/*.xml</include>
+					</includes>
+					<strictCheck>true</strictCheck>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-license</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
         </plugins>
     </build>
     <dependencies>
