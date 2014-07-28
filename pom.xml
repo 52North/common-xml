@@ -18,8 +18,8 @@
 	</description>
 
 	<scm>
-		<connection>scm:git:git://github.com/52North/common-xml.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/52North/common-xml.git</developerConnection>
+		<connection>scm:git:git@github.com:52North/common-xml.git</connection>
+		<developerConnection>scm:git:git@github.com:52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
 	
