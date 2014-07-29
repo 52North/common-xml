@@ -1,11 +1,3 @@
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
 <GetOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/oseo/1.0" xsi:schemaLocation="http://www.opengis.net/oseo/1.0 http://schemas.opengis.net/oseo/1.0/oseo.xsd" service="OS" version="1.0.0">
 	<collectionId>http://www.opengis.net/def/EOP/ESA/0/TEST.DLR.TSX.SUBSCRIPTION</collectionId>
 </GetOptions>

@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
 <!-- gmd based instance document -->
 <!--  Info   :  This Instance document was created by translating the Spacebel sample with the Spacebel xsl and then manually corrected to be valid against ISO19139.-->
 <!--             Uwe Voges, con terra GmbH, 15.06.2007 -->

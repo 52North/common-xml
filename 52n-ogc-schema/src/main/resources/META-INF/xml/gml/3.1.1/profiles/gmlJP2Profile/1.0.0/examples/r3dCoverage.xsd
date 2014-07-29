@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
 <xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:r3d="http://www.spotimage.com/Ref3D" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.spotimage.com/Ref3D" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0.2">
     <!-- This version of gmlJP2Profile/1.0.0 profile of gml/3.1.1 was previously versioned as '1.0 2010-01-28' . -->
     <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/profiles/gmlJP2Profile/1.0.0/gmlJP2Profile.xsd"/>

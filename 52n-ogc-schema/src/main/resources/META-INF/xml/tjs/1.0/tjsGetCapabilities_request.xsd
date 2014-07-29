@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Peter Schut (Agriculture Canada) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:tjs="http://www.opengis.net/tjs/1.0" targetNamespace="http://www.opengis.net/tjs/1.0" elementFormDefault="qualified"  xml:lang="en" version="1.0.1">
+	<annotation>
+		<appinfo>$Id: tjsGetCapabilities_request.xsd 2010-12-23 $</appinfo>
+		<documentation>
+			<description>This XML Schema specifies the content of the TJS GetCapabilities request.</description>
+			<copyright>
+				TJS is an OGC Standard.
+				Copyright (c) 2010 Open Geospatial Consortium. 
+				To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
+			</copyright>
+		</documentation>
+	</annotation>
+	<!-- ========= includes and imports ================================ -->
 	<import namespace="http://www.opengis.net/ows/1.1" schemaLocation="http://schemas.opengis.net/ows/1.1.0/owsAll.xsd"/>
 	<!-- ========= top level element =================================== -->
 	<element name="GetCapabilities">

@@ -1,13 +1,5 @@
 <?xml version="1.0" ?>
 <!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
-<!--
 The following unconstrained request fetches all
 the instances of an enumerated set of feature
 types. Notice that the feature types are not

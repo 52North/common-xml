@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wml2="http://www.opengis.net/waterml/2.0"
-  xmlns:om="http://www.opengis.net/om/2.0" targetNamespace="http://www.opengis.net/waterml/2.0" elementFormDefault="qualified"
-  attributeFormDefault="unqualified" version="2.0.0">
+  xmlns:om="http://www.opengis.net/om/2.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.opengis.net/waterml/2.0" elementFormDefault="qualified"
+  attributeFormDefault="unqualified" version="2.0.2">
 
   <annotation>
     <documentation>Specialized observation procedures for OGC WaterML2.0
     
     OGC WaterML 2.0 is an OGC Standard.
-    Copyright (c) 2012 Open Geospatial Consortium.
+    Copyright (c) 2012,2014 Open Geospatial Consortium.
     To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
     </documentation>
   </annotation>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
+  <import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd"/>
   <include schemaLocation="waterml2.xsd"/>
   <element name="ObservationProcess" substitutionGroup="gml:AbstractFeature" type="wml2:ObservationProcessType">
     <annotation>
@@ -56,9 +49,9 @@
               <documentation>If the process involves temporal aggregation of a result set, the time duration over which data has been aggregated should be expressed here. E.g. hourly, daily aggregates.</documentation>
             </annotation>
           </element>
-          <element maxOccurs="1" minOccurs="0" name="verticalDatum" type="gml:ReferenceType">
+          <element maxOccurs="1" minOccurs="0" name="verticalDatum" type="gml:VerticalDatumPropertyType">
             <annotation>
-              <documentation>Specifies the datum that is used as the zero point for level measurements. This can be process-specific as opposed the
+              <documentation>Specifies the datum that is used as the zero point for level measurements. This can be process-specific as opposed to the
                 gauge at the actual monitoring point.</documentation>
             </annotation>
           </element>
@@ -75,13 +68,17 @@
           <element maxOccurs="unbounded" minOccurs="0" name="input" type="gml:ReferenceType">
             <annotation>
               <documentation>A list of the inputs used in the process. This may be a list of references to the data sets used (e.g. model input
-                series) or a input array to an algorithm.</documentation>
+                series) or an input array to an algorithm.</documentation>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="parameter" type="om:NamedValuePropertyType">
             <annotation>
-              <documentation>A defintion of the type of process used in the observation. This may be a Sensor, ManualMethod, Algorithm or Simulation
-                (including models).</documentation>
+              <documentation>A soft-typed parameter to allow arbitrary properties to be added to the description. This property uses the name-value type from ISO19156.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="operator" type="gmd:CI_ResponsibleParty_PropertyType">
+            <annotation>
+              <documentation>Describes the party responsible for performing the process. E.g. the person performing the method or operating the sensor.</documentation>
             </annotation>
           </element>
         </sequence>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema fpi="http://schemas.opengis.net/waterml/2.0/xml_rules.sch" see="http://www.opengis.net/spec/waterml/2.0/req/xsd-xml-rules"
+<schema fpi="http://schemas.opengis.net/waterml/2.0/xml-rules.sch" see="http://www.opengis.net/spec/waterml/2.0/req/xsd-xml-rules"
   xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <!--
         This schematron schema checks the XML encoding requirements of OGC WaterML2.0, as specified
         in the requirements class: http://www.opengis.net/spec/waterml/2.0/req/xsd-xml-rules
         
         OGC WaterML 2.0 is an OGC Standard.
-        Copyright (c) 2012 Open Geospatial Consortium.
+        Copyright (c) 2012,2014 Open Geospatial Consortium.
         To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
     
-        version="2.0.0". 
+        version="2.0.2"
     -->
 
   <title>OGC WaterML2.0 XML encoding tests</title>

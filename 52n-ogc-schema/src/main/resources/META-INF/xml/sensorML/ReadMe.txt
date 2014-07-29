@@ -2,11 +2,7 @@ OGC(r) SensorML schema - ReadMe.txt
 ===================================
 
 OpenGIS Sensor Model Language (SensorML) Encoding Standard
-
-The SensorML schema were approved as Version 1.0.0 by the OGC membership
-on 23 June 2007.  They are defined in the OGC SensorML document 07-000.
-Corrigendum 1 (OGC 07-122r2) made changes to these and were released as
-sensorML 1.0.1.
+-----------------------------------------------------------------------
 
 More information on the OGC SensorML standard may be found at
  http://www.opengeospatial.org/standards/sensorml
@@ -14,6 +10,12 @@ More information on the OGC SensorML standard may be found at
 The most current schema are available at http://schemas.opengis.net/ .
 
 -----------------------------------------------------------------------
+
+2014-02-17
+  * v2.0.0: Post SensorML 2.0.0 schema as sensorML/2.0 from OGC 12-000.
+  * v2.0.0: Updated xsd:schema:@version attribute to 2.0.0 (06-135r7 s#13.4).
+  * v2.0.0: Examples with explanations found at: 
+      http://www.sensorml.com/sensorML-2.0/examples/index.html
 
 2012-07-21  Kevin Stegemoller
   * v1.0.0 - v1.0.1: Per 11-025, all leaf documents of a namespace shall retroactively
@@ -48,12 +50,14 @@ The most current schema are available at http://schemas.opengis.net/ .
   * sensorML/1.0.0 (OGC 07-000) references ic/2.0 and sweCommon/1.0.0
   * see ChangeLog.txt for additional details
 
+Note: check each OGC numbered document for detailed changes.
+
 -----------------------------------------------------------------------
 
 Policies, Procedures, Terms, and Conditions of OGC(r) are available
   http://www.opengeospatial.org/ogc/legal/ .
 
-Copyright (c) 2012 Open Geospatial Consortium.
+Copyright (c) 2014 Open Geospatial Consortium.
 
 -----------------------------------------------------------------------
 

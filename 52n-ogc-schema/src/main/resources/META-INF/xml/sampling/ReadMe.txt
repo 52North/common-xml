@@ -12,6 +12,14 @@ The most current schema are available at http://schemas.opengis.net/ .
 
 -----------------------------------------------------------------------
 
+2014-05-15  Simon Cox
+  * v2.0: Correct cardinality for 'sampledFeature' property to unbounded per OGC 13-092.
+  * v2.0: Increment xsd:schema/@version attribute to 2.0.2 (06-135r7 s#13.4).
+
+2014-05-15  Simon Cox
+  * v2.0: Fix cardinality for 'sampledFeature' property per OGC 13-092.
+  * v2.0: Increment xsd:schema/@version attribute to 2.0.1 (06-135r7 s#13.4).
+
 2012-07-21  Kevin Stegemoller
   * v1.0: Per 11-025, all leaf documents of a namespace shall retroactively
     and explicitly require/add an <include/> of the all-components schema.
@@ -46,7 +54,7 @@ The most current schema are available at http://schemas.opengis.net/ .
 Policies, Procedures, Terms, and Conditions of OGC(r) are available
   http://www.opengeospatial.org/ogc/legal/ .
 
-Copyright (c) 2012 Open Geospatial Consortium.
+Copyright (c) 2012-2014 Open Geospatial Consortium.
 
 -----------------------------------------------------------------------
 

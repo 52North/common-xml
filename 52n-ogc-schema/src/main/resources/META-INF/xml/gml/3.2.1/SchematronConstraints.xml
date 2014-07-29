@@ -1,11 +1,3 @@
-<!--
-
-    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
-    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
-    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
-    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
--->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
 	<sch:title>Schematron constraints for GML / ISO 19136</sch:title>
 	<sch:ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
