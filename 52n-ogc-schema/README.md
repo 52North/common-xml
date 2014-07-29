@@ -9,7 +9,7 @@ while compiling Java XML bindings with [Apache XMLBeans](http://xmlbeans.apache.
 Once XML bindings have been compiled the schema dependency is not needed anymore.
 
 ## License
-A license note can be found under `src/main/resources/copyright.html`.
+A license header has been added to each `xsd` and `xml` file to include the license when packaging `xsd` file in the compiled artifact.
 
 As noted before this module contains a snapshot of the official OGC XML schemas which can be accessed 
 under http://schemas.opengis.net. Please consider the [schema copyright notices](http://www.opengeospatial.org/ogc/document) 
