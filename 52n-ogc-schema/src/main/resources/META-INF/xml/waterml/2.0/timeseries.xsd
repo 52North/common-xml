@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+    OGC LICENSE HEADER
 
     The official OGC XML schemas can be accessed under http://schemas.opengis.net.
     Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
 -->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
   xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:wml2="http://www.opengis.net/waterml/2.0"
   xmlns:om="http://www.opengis.net/om/2.0" targetNamespace="http://www.opengis.net/waterml/2.0"
-  elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0.0">
+  elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0.2">
   <annotation>
     <documentation>This schema describes the timeseries result structures for OGC WaterML2.0. The XML implements the interleaved coverage timeseries
       represetation described in the OGC WaterML2.0 conceptual model. This implementation only covers timeseries of measurements and categorical values
       (string with codespaces). Subsequent versions of schema may support more complex results such as multi-result (compound), vectors etc. 
       
       OGC WaterML 2.0 is an OGC Standard.
-      Copyright (c) 2012 Open Geospatial Consortium.
+      Copyright (c) 2012,2014 Open Geospatial Consortium.
       To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
     </documentation>
   </annotation>
@@ -72,7 +72,7 @@
       </element>
       <element maxOccurs="1" minOccurs="0" name="source" type="gml:ReferenceType">
         <annotation>
-          <documentation>Defines the source of the value through an indentification reference. This is used where the timeseries may be aggregated from multiple sources.his can be an internal link to om:OM_Observation/om:metadata/wml2:ObservationMetadata/gmd:identificationInfo/gmd:MD_DataIdentification</documentation>
+          <documentation>Defines the source of the value using a reference to an appropriate resource. This is used where the timeseries may be aggregated from multiple sources.his can be an internal link to om:OM_Observation/om:metadata/wml2:ObservationMetadata/gmd:identificationInfo/gmd:MD_DataIdentification</documentation>
         </annotation>
       </element>
     </sequence>

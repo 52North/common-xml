@@ -44,6 +44,11 @@ The most current schema are available at http://schemas.opengis.net/ .
      OGC 05-068r1 "Store xlinks.xsd file at a fixed location"
      OGC 05-081r2 "Change to use relative paths"
 
+2004-05-19  Jeff de La Beaujardiere
+  * v1.1.1: corrected capabilities_1_1_1.* and exception_1_1_1.* . The
+    WMS_MS_Capabilities.dtd and other WMS_* documents are the original versions
+    missing the corrections. (01-068r3)
+
  Note: check each OGC numbered document for detailed changes.
 
 -----------------------------------------------------------------------

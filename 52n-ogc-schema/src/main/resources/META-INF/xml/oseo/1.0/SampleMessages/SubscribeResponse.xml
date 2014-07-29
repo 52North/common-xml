@@ -1,10 +1,10 @@
 <!--
+    OGC LICENSE HEADER
 
     The official OGC XML schemas can be accessed under http://schemas.opengis.net.
     Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
 -->
 <wsn-b:SubscribeResponse xmlns:tns="http://www.opengis.net/swes/2.0" xmlns:wsn-b="http://docs.oasis-open.org/wsn/b-2"
 xmlns:os="http://www.opengis.net/oseo/1.0"

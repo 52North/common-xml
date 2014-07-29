@@ -5,10 +5,10 @@
         This Schematron schema checks the type of the value of the time series is a measurement. 
         
         OGC WaterML 2.0 is an OGC Standard.
-        Copyright (c) 2012 Open Geospatial Consortium.
+        Copyright (c) 2012,2014 Open Geospatial Consortium.
         To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
     
-        version="2.0.0"
+        version="2.0.2"
     -->
 
   <title>OGC WaterML2.0 category time series validation</title>
@@ -28,7 +28,7 @@
   
   <pattern id="point-type">
     <title>Test requirement: /req/xsd-categorical-timeseries-tvp/value-category</title>
-    <rule context="//wml2:point"> 
+    <rule context="//wml2:CategoricalTimeseries/wml2:point"> 
       <assert test="schema-element(wml2:CategoricalTVP)">The time series points must be of type category</assert>
     </rule>
   </pattern>

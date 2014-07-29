@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
+    OGC LICENSE HEADER
 
     The official OGC XML schemas can be accessed under http://schemas.opengis.net.
     Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
 -->
 <!-- JoinData request.-->
 <!-- Equivalent GET request (except it uses HTTP GET for the GetData request) is http://foo.bar/foo?Service=TJS&Request=JoinData&Version=1.0&Language=en-CA&FrameworkURI=http%3A%2F%2Fwww.statcan.ca%2Fprovinces%2F2001&DatasetURI=http%3A%2F%2Faafc.gc.ca%2FAgCensusByProv%2F2001&LinkageField=prov&Attributes=cattlecalves%2Ccows&LinkageIds=10%2C11%2C12%2C13%2C24%2C35%2C46-48%2C59&StylingIdentifier=SLD&StylingURL=http%3A%2F%2Ffoo.bar%2Ffoo -->

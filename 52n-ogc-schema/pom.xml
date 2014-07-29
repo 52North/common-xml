@@ -35,6 +35,9 @@
 				<artifactId>license-maven-plugin</artifactId>
 				<configuration>
 					<header>../misc/ogc-license-header.txt</header>
+					<headerDefinitions>
+						<headerDefinition>../misc/xsd-header-definition.xml</headerDefinition>
+					</headerDefinitions>
 					<aggregate>true</aggregate>
 					<includes>
 						<include>src/**/*.xsd</include>

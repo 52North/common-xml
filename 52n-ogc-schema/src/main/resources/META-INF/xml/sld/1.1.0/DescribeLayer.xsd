@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+    OGC LICENSE HEADER
 
     The official OGC XML schemas can be accessed under http://schemas.opengis.net.
     Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
 -->
 <xsd:schema targetNamespace="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:wfs="http://www.opengis.net/wfs" xmlns:se="http://www.opengis.net/se" xmlns:ows="http://www.opengis.net/ows" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.1.0.2">
 	

@@ -13,6 +13,10 @@ The most current schema are available at http://schemas.opengis.net/ .
 
 -----------------------------------------------------------------------
 
+2012-09-10  Simon Cox
+  + v3.2.1: add geosparql 1.0.1 ontology gml/3.2.1/gml_32_geometries.rdf
+            see OGC 11-052r4 at http://www.opengeospatial.org/standards/geosparql
+
 2012-07-30  Clemens Portele, Claus Nagel
   * v3.0.0 - v3.1.1: Change smil20.xsd to use http://www.w3.org/2001/xml.xsd
   and remove the modified smil/xml-mod.xsd.
@@ -95,7 +99,7 @@ Policies, Procedures, Terms, and Conditions of OGC(r) are available
 
 OGC and OpenGIS are registered trademarks of Open Geospatial Consortium.
 
-Copyright (c) 2011 Open Geospatial Consortium
+Copyright (c) 2012 Open Geospatial Consortium
 
 -----------------------------------------------------------------------
 

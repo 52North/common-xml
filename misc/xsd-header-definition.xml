@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additionalHeaders>
+    <xml_style>
+        <skipLine><![CDATA[^<\?xml.*>$]]></skipLine>
+        <firstLine><![CDATA[<!--]]></firstLine>
+        <beforeEachLine>    </beforeEachLine>
+        <endLine><![CDATA[-->]]></endLine>
+        <afterEachLine> </afterEachLine>
+        <firstLineDetectionPattern><![CDATA[(\s|\t)*<!-- OGC LICENSE HEADER.*$]]></firstLineDetectionPattern>
+        <lastLineDetectionPattern><![CDATA[.*-->(\s|\t)*$]]></lastLineDetectionPattern>
+        <allowBlankLines>false</allowBlankLines>
+        <isMultiline>true</isMultiline>
+        <padLines>false</padLines>
+    </xml_style>
+</additionalHeaders>

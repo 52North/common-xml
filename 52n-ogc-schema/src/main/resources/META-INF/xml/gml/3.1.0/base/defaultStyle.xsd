@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+    OGC LICENSE HEADER
 
     The official OGC XML schemas can be accessed under http://schemas.opengis.net.
     Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
-
 -->
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Milan Trninic (Galdos Systems Inc.) -->
+<schema targetNamespace="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:smil20="http://www.w3.org/2001/SMIL20/" elementFormDefault="qualified" version="3.1.0.2">
+	<annotation>
+		<appinfo source="urn:opengis:specification:gml:schema-defaultStyle:v3.1.0">defaultStyle.xsd</appinfo>
+		<documentation>
+			<name>defaultStyle.xsd</name>
+			<version>3.1.0</version>
+			<scope/>
+			<description>Default Style schema for GML 3.1.0</description>
+			<copyright>
+				GML is an OGC Standard.
+				Copyright (c) 2001,2002,2003,2010 Open Geospatial Consortium.
+				To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
+			</copyright>
+			<conformance>reference to ISO Specifications</conformance>
+		</documentation>
+	</annotation>
+	<!-- ==============================================================
+       includes and imports
+	============================================================== -->
 	<include schemaLocation="measures.xsd"/>
 	<import namespace="http://www.w3.org/2001/SMIL20/" schemaLocation="http://schemas.opengis.net/gml/3.1.0/smil/smil20.xsd"/>
 	<!-- ==============================================================
