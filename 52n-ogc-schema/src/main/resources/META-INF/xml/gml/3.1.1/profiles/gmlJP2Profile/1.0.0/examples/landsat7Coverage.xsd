@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
 <schema xmlns:app="http://www.opengis.net/app" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/app" elementFormDefault="qualified" version="2.06 2012-05-23">
     <!-- When packaged in jpx file the import statements will be replaced by the following
 	<import namespace="http://www.opengis.net/gml" schemaLocation="gmljp2://xml/gmlJP2Profile.xsd"/>
