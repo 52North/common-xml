@@ -572,7 +572,7 @@
 						</execution>
 					  </executions>
 					  <configuration>
-						<additionalJOption>-J-Xmx64m</additionalJOption>
+						<additionalJOption>-J-Xmx512m</additionalJOption>
 					  </configuration>
 					</plugin>
 					
