@@ -571,6 +571,9 @@
 						  </goals>
 						</execution>
 					  </executions>
+					  <configuration>
+						<additionalJOption>-J-Xmx64m</additionalJOption>
+					  </configuration>
 					</plugin>
 					
 					<plugin>
