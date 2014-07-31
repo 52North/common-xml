@@ -11,6 +11,8 @@
 		all 52n schema models needed across the 52n SWE framework.
 	</description>
 	
+	<url>https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings</url>
+	
 	<issueManagement>
 		<system>Github</system>
 		<url>http://github.com/52North/common-xml/issues</url>
@@ -26,6 +28,8 @@
 		<developerConnection>scm:git:ssh:@github.com/52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
+	
+	<projectUr
 	
 	<distributionManagement>
 	  <snapshotRepository>
@@ -543,10 +547,6 @@
 					  </executions>
 					</plugin>
 			
-					<!--
-					
-					EVEN 1024M extra memory is not enough for bigger artifacts like 52n-xml-aixm-v511
-					
 					<plugin>
 					  <groupId>org.apache.maven.plugins</groupId>
 					  <artifactId>maven-javadoc-plugin</artifactId>
@@ -561,10 +561,25 @@
 					  </executions>
 					  <configuration>
 						<additionalJOption>-J-Xmx1024m</additionalJOption>
+						<maxmemory>1g</maxmemory>
 					  </configuration>
 					</plugin>
-					-->
-								
+				
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+							  <id>sign-artifacts</id>
+							  <phase>verify</phase>
+							  <goals>
+									<goal>sign</goal>
+							  </goals>
+							</execution>
+						</executions>
+					</plugin>
+
 					<plugin>
 					  <groupId>org.sonatype.plugins</groupId>
 					  <artifactId>nexus-staging-maven-plugin</artifactId>
