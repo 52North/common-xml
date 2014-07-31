@@ -558,8 +558,8 @@
 						</execution>
 					  </executions>
 					  <configuration>
-						<additionalJOption>-J-Xmx1024m</additionalJOption>
-						<maxmemory>1g</maxmemory>
+						<additionalJOption>-J-Xmx2048m</additionalJOption>
+						<maxmemory>2g</maxmemory>
 					  </configuration>
 					</plugin>
 				
