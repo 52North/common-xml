@@ -592,7 +592,7 @@
 							  
 							    `mvn nexus-staging:drop'
 							  -->
-						 <autoReleaseAfterClose>false</autoReleaseAfterClose>
+						 <autoReleaseAfterClose>true</autoReleaseAfterClose>
 					  </configuration>
 					</plugin>
 					<plugin>
