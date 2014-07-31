@@ -543,6 +543,10 @@
 					  </executions>
 					</plugin>
 			
+					<!--
+					
+					EVEN 1024M extra memory is not enough for bigger artifacts like 52n-xml-aixm-v511
+					
 					<plugin>
 					  <groupId>org.apache.maven.plugins</groupId>
 					  <artifactId>maven-javadoc-plugin</artifactId>
@@ -559,6 +563,7 @@
 						<additionalJOption>-J-Xmx1024m</additionalJOption>
 					  </configuration>
 					</plugin>
+					-->
 								
 					<plugin>
 					  <groupId>org.sonatype.plugins</groupId>
@@ -574,6 +579,10 @@
 				</plugins>
 			</build>
 			
+			<properties>
+			    <!-- we skip javadoc as this projects has only generated content -->
+				<maven.javadoc.skip>true</maven.javadoc.skip>
+			</properties>
 		</profile>
 	</profiles>
 </project>
