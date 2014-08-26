@@ -93,6 +93,8 @@
 		<module>52n-xml-wsrf-v12</module>
 		<module>52n-xml-xlink-v110</module>
 		<module>52n-xml-gmi-v01</module>
+		<module>52n-xml-gco-v20120713</module>
+		<module>52n-xml-gmd-v20120713</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -376,6 +378,16 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-gmi-v01</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-gco-v20120713</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-gmd-v20120713</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->
