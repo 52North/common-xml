@@ -35,6 +35,7 @@
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
+		<module>52n-isotc211-schema</module>
 		
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
@@ -91,6 +92,7 @@
 		<module>52n-xml-wsn-v13</module>
 		<module>52n-xml-wsrf-v12</module>
 		<module>52n-xml-xlink-v110</module>
+		<module>52n-xml-gmi-v01</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -101,6 +103,12 @@
 		<dependencies>
 			<!-- ### MODULE DEPENDENCIES ### -->
 			<!-- schema dependencies -->
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-isotc211-schema</artifactId>
+				<version>${project.version}</version>
+				<scope>provided</scope>
+			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-oasis-schema</artifactId>
@@ -363,6 +371,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-xlink-v110</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-gmi-v01</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->

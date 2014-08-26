@@ -95,7 +95,10 @@ If you want to use multiple artifacts be sure to use a unique version:
 
 This repository contains a Maven [multi-module project](http://maven.apache.org/guides/mini/guide-multiple-modules.html). The modules can be provided into two types: official/specified schemas, unofficial/not-yet-finally-specified schemas.
 
-For the former modules, the schema files (`.xsd`) provided by the governing organisations are provided in extra modules, namely ``52n-oasis-schema`, `52n-ogc-schema` and `52n-w3c-schema`. The bean submodules refererence these submodules as depedencies to include the required schema files.
+For the former modules, the schema files (`.xsd`) provided by the governing organisations are provided in extra modules, namely ``52n-isotc211-schema``, ``52n-oasis-schema`, `52n-ogc-schema` and `52n-w3c-schema`. The bean submodules refererence these submodules as depedencies to include the required schema files.
 
 In case of the latter, the schema files are directly contained within the respective bean submodule in the directory `src/main/xsd`.
 
+## Build Single Module
+
+You can build a specific module with ``mvn clean install -am -pl <module-name>``.
