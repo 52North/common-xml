@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
 <schema
 	xmlns:gml="http://www.opengis.net/gml/3.2"
 	xmlns:gmd="http://www.isotc211.org/2005/gmd"
@@ -8,7 +16,7 @@
 	targetNamespace="http://www.opengis.net/sampling/2.0"
 	elementFormDefault="qualified"
 	attributeFormDefault="unqualified"
-	version="2.0.0">
+	version="2.0.2">
 	<annotation>
 		<documentation> samplingFeature.xsd 
 			
@@ -50,6 +58,7 @@
 			<element
 				name="sampledFeature"
 				type="gml:FeaturePropertyType"
+				maxOccurs="unbounded"
 				nillable="true"
 				block="#all">
 				<annotation>

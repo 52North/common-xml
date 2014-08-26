@@ -6,10 +6,10 @@
         with a OGC WaterML2.0 Timeseries Observation. 
 
         OGC WaterML 2.0 is an OGC Standard.
-        Copyright (c) 2012 Open Geospatial Consortium.
+        Copyright (c) 2012,2014 Open Geospatial Consortium.
         To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
 
-        version="2.0.0"        
+        version="2.0.2"
     -->
 
   <title>OGC WaterML2.0 observation validation</title>

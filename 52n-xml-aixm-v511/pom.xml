@@ -3,12 +3,19 @@
   <parent>
     <groupId>org.n52.sensorweb</groupId>
 	<artifactId>52n-common-xml</artifactId>
-    <version>1.1.6-SNAPSHOT</version>
+    <version>2.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>52n-xml-aixm-v511</artifactId>
   <packaging>jar</packaging>
   <name>AIXM 5.1 schemas (adjusted to support metadata by reference)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
   <build>
         <plugins>
             <plugin>
@@ -26,6 +33,29 @@
                     </sourceSchemas>
                 </configuration>
             </plugin>
+			
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<header>../misc/aixm-license-header.txt</header>
+					<aggregate>true</aggregate>
+					<includes>
+						<include>src/**/*.xsd</include>
+						<include>src/**/*.xml</include>
+					</includes>
+					<strictCheck>true</strictCheck>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-license</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
         </plugins>
     </build>
     <dependencies>

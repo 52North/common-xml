@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
 <!--=====================================================================
 Example Request for InsertResultTemplate operation containing the result template including identifier of the offering for which the results shall be inserted. This request also contains an observation template containing the static metadata which is the same for all results as well as information about the result structure and its encoding. The response contains the identifier of the template, if it has been accepted by the SOS.
 

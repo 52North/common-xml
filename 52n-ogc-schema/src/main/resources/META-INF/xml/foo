@@ -1,0 +1,42 @@
+Index: owc/ReadMe.txt
+===================================================================
+--- owc/ReadMe.txt	(revision 7909)
++++ owc/ReadMe.txt	(working copy)
+@@ -11,6 +11,11 @@
+ 
+ -----------------------------------------------------------------------
+ 
++2014-05-08  Pedro Goncalves and Joan Maso
++  * v1.0.0: owc.rnc : Change includes to path relative to the same directory
++  * v1.0.0: examples : Remove outdated examples: merisl2.atom, borders.atom 
++  * v1.0.0: No version number change
++
+ 2014-02-12
+   * v1.0.0: Post OWC 1.0.0 schema as owc/1.0 from OGC 12-084r2
+ 
+Index: owc/1.0/owc.rnc
+===================================================================
+--- owc/1.0/owc.rnc	(revision 7909)
++++ owc/1.0/owc.rnc	(working copy)
+@@ -6,7 +6,7 @@
+ # Copyright (c) 2014 Open Geospatial Consortium.
+ # To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
+ #
+-# Version: 1.0.0
++# Version: 1.0.0 modified 2014-05-08
+ #
+ 
+ namespace owc = "http://www.opengis.net/owc/1.0"
+@@ -73,10 +73,10 @@
+ }   
+ 
+ # Define georss:where on georss/1.1
+-include "../../owc/1.0/georss.rnc"
++include "georss.rnc"
+ 
+ # Replacing definitions on RFC4287 atom/2005
+-include "../../owc/1.0/atom_feed.rnc"{
++include "atom_feed.rnc"{
+    # Redefine the Simple Extension to exclude owc:* elements
+    simpleExtensionElement = element * - 
+        (atom:* | owc:* | dc:publisher | dc:date |  georss:where) { text }

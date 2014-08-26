@@ -1,12 +1,22 @@
-common-xml
-==========
+# common-xml
 
-A set of commonly used OGC schemas compiled to XMLBeans bindings and provided as Maven dependencies by 52°North. More information can also be found in the 52°North Wiki: https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings 
+A set of commonly used OGC schemas compiled to XMLBeans bindings and provided as Maven dependencies by 52°North. The 52°North common-xml project organizes some of these standards to be built as Java bindings to ease programming against all those standards. Once compiled standardized XML documents can be created, parsed and validated directly as Java objects.
 
-[![Build Status](https://travis-ci.org/nuest/common-xml.png)](https://travis-ci.org/nuest/common-xml)
+More information can also be found in the 52°North Wiki: https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings
 
-Repository
-----------
+## Background
+
+The [Open Geospatial Consortium](http://opengeospatial.org) (OGC) offers lots of standards for the 
+geospatial Web. Document driven services (like WMS, WCS, SOS, SPS, ...) use a standardized protocols
+for communication between a Web service and a client. The XML schemas are derived from the standards 
+and serve as one formal model of a standard.
+
+But not only the OGC offers standard documents as XML schemas. The [Organization for the Advancement 
+of Structured Information Standards](https://www.oasis-open.org/) or the [World Wide Web Consortium]
+(http://www.w3.org/) offer (recommended) standards as XML schemas.
+
+
+## Repository
 
 Add the following repositories to your `pom.xml` to get release or snapshots versions respectively.
 
@@ -42,8 +52,7 @@ Snapshots:
 [...]
 ```
 
-Add Dependencies - Examples
-----------
+## Add Dependencies - Examples
 
 You can use the dependencies as follows:
 ```
@@ -56,7 +65,7 @@ You can use the dependencies as follows:
 [...]
 ```
 
-If you want to use multiple artifacts we recommend to use a property for the version so that you use artifacts that were build and tested together:
+If you want to use multiple artifacts be sure to use a unique version:
 
 ```
 [...]
@@ -82,12 +91,11 @@ If you want to use multiple artifacts we recommend to use a property for the ver
 
 ```
 
-Project Structure
-----------
+## Project Structure
 
-This repository contains a Maven [http://maven.apache.org/guides/mini/guide-multiple-modules.html](multi-module project). The modules can be provided into two types: official/specified schemas, unofficial/not-yet-finally-specified schemas.
+This repository contains a Maven [multi-module project](http://maven.apache.org/guides/mini/guide-multiple-modules.html). The modules can be provided into two types: official/specified schemas, unofficial/not-yet-finally-specified schemas.
 
-For the former modules, the schema files (`.xsd`) provided by the governing organisations are provided in extra modules, namely ``52n-oasis-schema`, `52n-ogc-schema` and `52n-w3c-schema`. This allows, in the case of the OGC which provides schemas at http://schemas.opengis.net/, to directly mirror the online schema structures. The bean submodules refererence these submodules to include the required schema files.
+For the former modules, the schema files (`.xsd`) provided by the governing organisations are provided in extra modules, namely ``52n-oasis-schema`, `52n-ogc-schema` and `52n-w3c-schema`. The bean submodules refererence these submodules as depedencies to include the required schema files.
 
 In case of the latter, the schema files are directly contained within the respective bean submodule in the directory `src/main/xsd`.
-    
+

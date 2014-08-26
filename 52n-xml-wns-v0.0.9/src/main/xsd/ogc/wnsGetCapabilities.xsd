@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Johannes Echterhoff (Westfälische Wilhelms-Universität Münster) -->
 <xs:schema xmlns:wns="http://www.opengis.net/wns/0.0" xmlns:ows="http://www.opengis.net/ows" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/wns/0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.0" xml:lang="en">
   <xs:annotation>
