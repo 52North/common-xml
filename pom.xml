@@ -74,6 +74,7 @@
 		<module>52n-xml-sor-v031</module>
 		<module>52n-xml-sos-v100</module>
 		<module>52n-xml-sos-v20</module>
+		<module>52n-xml-sosgda-v10</module>
 		<module>52n-xml-sps-v100</module>
 		<module>52n-xml-sps-v20</module>
 		<module>52n-xml-sweCommon-v100</module>
@@ -274,6 +275,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-sos-v20</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-sosgda-v10</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
