@@ -6,6 +6,10 @@ This project includes:
   52North XML Schema Bindings under The Apache Software License, Version 2.0
   AIXM 5.1 schemas (adjusted to support metadata by reference) under The Apache Software License, Version 2.0
   Event Model schema version 0.2.0 under The Apache Software License, Version 2.0
+  Geographic COmmon (GCO) schema (version 2012-07-13) under The Apache Software License, Version 2.0
+  Geographic MetaData (GMD) schema (version 2012-07-13) under The Apache Software License, Version 2.0
+  ISO 19115-2:2009 Geographic information -- Metadata -- Part 2: Extensions for imagery and gridded data schema (v0.1) under The Apache Software License, Version 2.0
+  ISO/TC 211 XML schemas under The Apache Software License, Version 2.0
   OASIS ebXML Registry Information Model (RIM) schemas v3.0.0 under The Apache Software License, Version 2.0
   OASIS WS-N specification schemas - including WS-BrokeredNotification (v1.3) under The Apache Software License, Version 2.0
   OASIS WS-Resources specification schemas v1.2 under The Apache Software License, Version 2.0
@@ -31,11 +35,13 @@ This project includes:
   OGC Sampling schema (spec. v2.0) under The Apache Software License, Version 2.0
   OGC SensorML schema (spec. v1.0.0) under The Apache Software License, Version 2.0
   OGC SensorML schema (spec. v1.0.1) under The Apache Software License, Version 2.0
+  OGC SensorML schema (spec. v2.0.0) under The Apache Software License, Version 2.0
   OGC SES schema 0.3.0 (OGC Discussion Paper 08-133) under The Apache Software License, Version 2.0
   OGC SIR schema 0.3.2 (OGC Discussion Paper 10-171) under The Apache Software License, Version 2.0
   OGC SLD schema (spec. v1.0.0) under The Apache Software License, Version 2.0
   OGC SLD schema (spec. v1.1.0) under The Apache Software License, Version 2.0
   OGC SOR schema 0.3.1 (OGC Discussion Paper 09-112r1) under The Apache Software License, Version 2.0
+  OGC SOS GetDataAvailability schema 1.0 (OGC Best Practice 14-004r1) under The Apache Software License, Version 2.0
   OGC SOS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
   OGC SOS schema (spec. v2.0) under The Apache Software License, Version 2.0
   OGC SPS schema (spec. v1.0.0) under The Apache Software License, Version 2.0
