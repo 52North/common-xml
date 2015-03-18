@@ -1,10 +1,5 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<parent>
-		<groupId>org.n52</groupId>
-		<artifactId>52-North</artifactId>
-		<version>5.6.9</version>
-	</parent>
 	<groupId>org.n52.sensorweb</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-common-xml</artifactId>
@@ -12,16 +7,39 @@
 	<packaging>pom</packaging>
 	<name>52North XML Schema Bindings</name>
 	<description>
-		The 52n XML Bindings comprise the OGC schema models and 
+		The 52n XML Bindings comprise the OGC schema models and
 		all 52n schema models needed across the 52n SWE framework.
 	</description>
+
+	<url>https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings</url>
+
+	<issueManagement>
+		<system>Github</system>
+		<url>http://github.com/52North/common-xml/issues</url>
+	</issueManagement>
+
+	<organization>
+		<name>52north.org</name>
+		<url>http://52north.org/</url>
+	</organization>
 
 	<scm>
 		<connection>scm:git:git@github.com/52North/common-xml.git</connection>
 		<developerConnection>scm:git:ssh:@github.com/52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
-	
+
+	<distributionManagement>
+	  <snapshotRepository>
+		<id>ossrh</id>
+		<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	  </snapshotRepository>
+	  <repository>
+		<id>ossrh</id>
+		<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+	  </repository>
+	</distributionManagement>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -30,13 +48,22 @@
 		</license>
 	</licenses>
 
+	<developers>
+		<developer>
+			<name>Henning Bredel</name>
+			<email>h.bredel@52north.org</email>
+			<organization>52North GmbH</organization>
+			<organizationUrl>http://52north.org</organizationUrl>
+		</developer>
+	</developers>
+
 	<modules>
 		<!-- schema dependencies -->
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
 		<module>52n-w3c-schema</module>
 		<module>52n-isotc211-schema</module>
-		
+
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
@@ -434,14 +461,14 @@
 						</execution>
 					</executions>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>com.mycila</groupId>
 					<artifactId>license-maven-plugin</artifactId>
 					<version>2.2</version>
 					<!-- Config in submodules -->
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
@@ -472,7 +499,7 @@
 					</executions>
 					<configuration>
 						<!--
-							xmlbeans plugin only used to generate the classes not for compiling 
+							xmlbeans plugin only used to generate the classes not for compiling
 							or jar generation.
 						-->
 						<noJavac>true</noJavac>
@@ -487,13 +514,13 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
+
 		<plugins>
 			<!-- ==================================================== -->
 			<!-- =========== PLUGINS ACTIVE BY DEFAULT ============== -->
 			<!-- ==================================================== -->
 
-			
+
 		</plugins>
 	</build>
 
@@ -531,61 +558,71 @@
 				</plugins>
 			</build>
 		</profile>
-	
-		<profile>
-			<id>release</id>
-			<!-- a profile wich shall be activated if a release is performed -->
+
+        <profile>
+			<id>deploy-to-central</id>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-release-plugin</artifactId>
-						<configuration>
-							<!-- no build in release:prepare (takes to long time), so in bad
-								cases release fails on perform -->
-							<preparationGoals>clean</preparationGoals>
-							<autoVersionSubmodules>true</autoVersionSubmodules>
-							<goals>deploy</goals>
-							<!-- for xmlbeans we do not need to deploy sources and javadoc -->
-							<useReleaseProfile>false</useReleaseProfile>
-						</configuration>
+					  <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-source-plugin</artifactId>
+					  <version>2.2.1</version>
+					  <executions>
+						<execution>
+						  <id>attach-sources</id>
+						  <goals>
+							<goal>jar-no-fork</goal>
+						  </goals>
+						</execution>
+					  </executions>
 					</plugin>
-					
+
 					<plugin>
-					 <groupId>org.apache.maven.plugins</groupId>
-					 <artifactId>maven-scm-plugin</artifactId>
-						<version>1.9.1</version>
-					 <configuration>
-					  <providerImplementations>
-						  <git>jgit</git>
-					  </providerImplementations>
-					 </configuration>
-					 <dependencies>
-					  <dependency>
-						  <groupId>org.apache.maven.scm</groupId>
-						  <artifactId>maven-scm-provider-jgit</artifactId>
-							<version>1.9.1</version>
-					  </dependency>
-					 </dependencies>
-				   </plugin>
+					  <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-javadoc-plugin</artifactId>
+					  <version>2.9.1</version>
+					  <executions>
+						<execution>
+						  <id>attach-javadocs</id>
+						  <goals>
+							<goal>jar</goal>
+						  </goals>
+						</execution>
+					  </executions>
+					  <configuration>
+						<additionalJOption>-J-Xmx2048m</additionalJOption>
+						<maxmemory>2g</maxmemory>
+					  </configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+							  <id>sign-artifacts</id>
+							  <phase>verify</phase>
+							  <goals>
+									<goal>sign</goal>
+							  </goals>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+					  <groupId>org.sonatype.plugins</groupId>
+					  <artifactId>nexus-staging-maven-plugin</artifactId>
+					  <version>1.6.2</version>
+					  <extensions>true</extensions>
+					  <configuration>
+						 <serverId>ossrh</serverId>
+						 <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						 <autoReleaseAfterClose>true</autoReleaseAfterClose>
+					  </configuration>
+					</plugin>
 				</plugins>
 			</build>
-			<properties>
-				<maven.javadoc.skip>true</maven.javadoc.skip>
-			</properties>
 		</profile>
 	</profiles>
-
-	<repositories>
-		<repository>
-			<id>n52-releases</id>
-			<name>52n Releases</name>
-			<url>http://52north.org/maven/repo/releases/</url>
-		</repository>
-		<repository>
-			<id>n52-snapshots</id>
-			<name>52n Snapshots</name>
-			<url>http://52north.org/maven/repo/snapshots/</url>
-		</repository>
-	</repositories>
 </project>
