@@ -15,4 +15,5 @@
 	<rewriteURI uriStartString="http://www.opengis.net/gml/3.2" rewritePrefix="52n-ogc-schema/src/main/resources/META-INF/xml/gml/3.2.1/" />
 	<rewriteURI uriStartString="http://www.w3.org/1999/xlink" rewritePrefix="52n-common-xml/52n-w3c-schema/src/main/resources/META-INF/xml/xlink/1.1/" />    
 	<rewriteURI uriStartString="http://inspire.ec.europa.eu/schemas/" rewritePrefix="52n-common-xml/52n-inspire-schema/src/main/resources/META-INF/xml/" />
+  <rewriteURI uriStartString="http://portele.de/" rewritePrefix="52n-common-xml/52n-portele-schema/src/main/resources/META-INF/xml/" />
 </catalog>
