@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>52n-xml-gco-v20120713</artifactId>
   <packaging>jar</packaging>
-  <name>Geographic COmmon (GCO) schema (version 2012-07-13)</name>
+  <name>Geographic Common (GCO) schema (version 2012-07-13)</name>
   <description>GCO is a component of the XML Schema Implementation of Geographic Information Metadata documented in ISO/TS 19139:2007</description>
 	<licenses>
 		<license>
