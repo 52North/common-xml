@@ -104,6 +104,7 @@
 		<module>52n-xml-gco-v20120713</module>
 		<module>52n-xml-gmd-v20120713</module>
 		<module>52n-xml-gwml-v21</module>
+		<module>52n-xml-gwml-v22</module>
 		<!-- OGC Best Practice -->
 		<module>52n-xml-cv-v022</module>
 		<!-- INSPIRE -->
