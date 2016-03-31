@@ -118,7 +118,9 @@
 		<module>52n-xml-inspire-gn-v40</module>
 		<module>52n-xml-inspire-net-v40</module>
 		<module>52n-xml-inspire-omor-v30</module>
+		<module>52n-xml-inspire-ompr-v30</module>
 		<module>52n-xml-inspire-omso-v30</module>
+		<module>52n-xml-inspire-omso-v301</module>
 		<module>52n-xml-inspire-tn-v40</module>
 		<module>52n-xml-portele</module>
 	</modules>
