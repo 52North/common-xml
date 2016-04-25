@@ -61,6 +61,7 @@
 		<module>52n-xml-ows-v100</module>
 		<module>52n-xml-ows-v110</module>
 		<module>52n-xml-ows-v20</module>
+		<module>52n-xml-pubsub-v10</module>
 		<module>52n-xml-rim-v300</module>
 		<module>52n-xml-sampling-v100</module>
 		<module>52n-xml-sampling-v20</module>
