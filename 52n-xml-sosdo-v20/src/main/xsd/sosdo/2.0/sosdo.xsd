@@ -25,41 +25,33 @@
                                 <appinfo>
                                     <gml:targetElement>unknown</gml:targetElement>
                                 </appinfo>
-                                <documentation>Pointer to the observation that shall be deleted.</documentation>
+                                <documentation>Pointer(s) to the observation(s) that shall be deleted.</documentation>
                             </annotation>
                         </element>
                         <sequence>
                             <element name="procedure" type="anyURI" minOccurs="0" maxOccurs="unbounded">
                                 <annotation>
-                                    <documentation>pointer to a procedure for which time series shall be discovered
-                                    </documentation>
+                                    <documentation>Pointer(s) to a procedure for which observations shall be deleted</documentation>
                                 </annotation>
                             </element>
                             <element name="observedProperty" type="anyURI" minOccurs="0" maxOccurs="unbounded">
                                 <annotation>
-                                    <documentation>pointer to an observed property for which time series shall be
-                                        discovered
-                                    </documentation>
+                                    <documentation>Pointer(s) to an observed property for which observations shall be deleted</documentation>
                                 </annotation>
                             </element>
                             <element name="featureOfInterest" type="anyURI" minOccurs="0" maxOccurs="unbounded">
                                 <annotation>
-                                    <documentation>pointer to a feature of interest for which time series shall be
-                                        discovered
-                                    </documentation>
+                                    <documentation>Pointer(s) to a feature of interest for which observations shall be deleted</documentation>
                                 </annotation>
                             </element>
                             <element name="offering" type="anyURI" minOccurs="0" maxOccurs="unbounded">
                                 <annotation>
-                                    <documentation>pointer to an offering for which time series shall be discovered
-                                    </documentation>
+                                    <documentation>Pointer to an offering for which observations shall be deleted</documentation>
                                 </annotation>
                             </element>
                             <element name="temporalFilter" minOccurs="0" maxOccurs="unbounded">
                                 <annotation>
-                                    <documentation>specifies a filter for a time property of observations whose results
-                                        are requested
-                                    </documentation>
+                                    <documentation>Specifies a filter for a time property for which observations shall be deleted</documentation>
                                 </annotation>
                                 <complexType>
                                     <sequence>
