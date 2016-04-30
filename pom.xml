@@ -65,6 +65,7 @@
 		<module>52n-xml-ows-v100</module>
 		<module>52n-xml-ows-v110</module>
 		<module>52n-xml-ows-v20</module>
+		<module>52n-xml-pubsub-v10</module>
 		<module>52n-xml-rim-v300</module>
 		<module>52n-xml-sampling-v100</module>
 		<module>52n-xml-sampling-v20</module>
@@ -79,6 +80,8 @@
 		<module>52n-xml-sor-v031</module>
 		<module>52n-xml-sos-v100</module>
 		<module>52n-xml-sos-v20</module>
+		<module>52n-xml-sosdo-v10</module>
+		<module>52n-xml-sosdo-v20</module>
 		<module>52n-xml-sosgda-v10</module>
 		<module>52n-xml-sps-v100</module>
 		<module>52n-xml-sps-v20</module>
