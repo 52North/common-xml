@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:pubsub="http://www.opengis.net/pubsub/1.0"
+    elementFormDefault="qualified" attributeFormDefault="unqualified"
+    targetNamespace="http://www.opengis.net/pubsub/1.0" version="1.0">
+    
+    <include schemaLocation="pubsubCommon.xsd"/>
+    
+    <element name="Resume" type="pubsub:ResumeType"/>
+    <complexType name="ResumeType">
+        <sequence>
+            <element ref="pubsub:SubscriptionIdentifier" minOccurs="1" maxOccurs="1"/>
+            <element ref="pubsub:Extension" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    
+    <element name="ResumeResponse" type="pubsub:ResumeResponseType"/>
+    <complexType name="ResumeResponseType">
+        <sequence>
+            <element ref="pubsub:Extension" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+</schema>

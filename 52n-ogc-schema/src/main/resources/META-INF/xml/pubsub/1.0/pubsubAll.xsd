@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" attributeFormDefault="unqualified" 
+    targetNamespace="http://www.opengis.net/pubsub/1.0" version="1.0">
+    
+    <include schemaLocation="pubsubCommon.xsd"/>
+    <include schemaLocation="pubsubCreatePublication.xsd"/>
+    <include schemaLocation="pubsubGetCapabilities.xsd"/>
+    <include schemaLocation="pubsubGetSubscription.xsd"/>
+    <include schemaLocation="pubsubPause.xsd"/>
+    <include schemaLocation="pubsubRemovePublication.xsd"/>
+    <include schemaLocation="pubsubRenew.xsd"/>
+    <include schemaLocation="pubsubResume.xsd"/>
+    <include schemaLocation="pubsubSubscribe.xsd"/>
+    <include schemaLocation="pubsubUnsubscribe.xsd"/>
+</schema>
