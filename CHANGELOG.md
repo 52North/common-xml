@@ -1,11 +1,13 @@
-v2.1.x
-------
+# Changelog
+
+## 2.1.1-SNAPSHOT
+
 https://github.com/52North/common-xml/compare/v2.1.0...develop
 
-*
+* 
 
-v2.1.0
-------
+## 2.1.0
+
 https://github.com/52North/common-xml/compare/v2.0.0...v2.1.0
 
 * Add SOS GetDataAvailability schemas
