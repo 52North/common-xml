@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:sosdo="http://www.opengis.net/sosdo/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" targetNamespace="http://www.opengis.net/sosdo/2.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<import namespace="http://www.opengis.net/swes/2.0" schemaLocation="http://schemas.opengis.net/swes/2.0/swes.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://www.opengis.net/fes/2.0" schemaLocation="http://schemas.opengis.net/filter/2.0/filterAll.xsd"/>
+	<!-- ================================================= -->
+    <element name="DeleteObservation" type="sosdo:DeleteObservationType" />
+    <complexType name="DeleteObservationType">
+        <complexContent>
+            <extension base="swes:ExtensibleRequestType">
+                <sequence>
+                    <choice>
+                        <element name="observation" type="anyURI" minOccurs="0" maxOccurs="unbounded">
+                            <annotation>
+                                <appinfo>
+                                    <gml:targetElement>unknown</gml:targetElement>
+                                </appinfo>
+                                <documentation>Pointer(s) to the observation(s) that shall be deleted.</documentation>
+                            </annotation>
+                        </element>
+                        <sequence>
+                            <element name="procedure" type="anyURI" minOccurs="0" maxOccurs="unbounded">
+                                <annotation>
+                                    <documentation>Pointer(s) to a procedure for which observations shall be deleted</documentation>
+                                </annotation>
+                            </element>
+                            <element name="observedProperty" type="anyURI" minOccurs="0" maxOccurs="unbounded">
+                                <annotation>
+                                    <documentation>Pointer(s) to an observed property for which observations shall be deleted</documentation>
+                                </annotation>
+                            </element>
+                            <element name="featureOfInterest" type="anyURI" minOccurs="0" maxOccurs="unbounded">
+                                <annotation>
+                                    <documentation>Pointer(s) to a feature of interest for which observations shall be deleted</documentation>
+                                </annotation>
+                            </element>
+                            <element name="offering" type="anyURI" minOccurs="0" maxOccurs="unbounded">
+                                <annotation>
+                                    <documentation>Pointer to an offering for which observations shall be deleted</documentation>
+                                </annotation>
+                            </element>
+                            <element name="temporalFilter" minOccurs="0" maxOccurs="unbounded">
+                                <annotation>
+                                    <documentation>Specifies a filter for a time property for which observations shall be deleted</documentation>
+                                </annotation>
+                                <complexType>
+                                    <sequence>
+                                        <element ref="fes:temporalOps" />
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </choice>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ================================================= -->
+    <element name="DeleteObservationResponse" type="sosdo:DeleteObservationResponseType" />
+    <complexType name="DeleteObservationResponseType">
+        <complexContent>
+            <extension base="swes:ExtensibleResponseType" />
+        </complexContent>
+    </complexType>
+</schema>
