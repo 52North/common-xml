@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    INSPIRE LICENSE HEADER
+
+    The official INSPIRE XML schemas can be accessed under http://inspire.ec.europa.eu/schemas/.
+    Please consider the schema copyright notices:  http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:330:0039:0042:EN:PDF
+-->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:omor="http://inspire.ec.europa.eu/schemas/omor/3.0" xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0" xmlns:wml2="http://www.opengis.net/waterml/2.0" targetNamespace="http://inspire.ec.europa.eu/schemas/omso/3.0" elementFormDefault="qualified" version="3.0">
 	<annotation>
 		<documentation>-- Definition --

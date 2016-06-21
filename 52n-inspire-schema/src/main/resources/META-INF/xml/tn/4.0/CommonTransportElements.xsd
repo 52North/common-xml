@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0" xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" elementFormDefault="qualified" targetNamespace="http://inspire.ec.europa.eu/schemas/tn/4.0" version="4.0">
+<!--
+    INSPIRE LICENSE HEADER
+
+    The official INSPIRE XML schemas can be accessed under http://inspire.ec.europa.eu/schemas/.
+    Please consider the schema copyright notices:  http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:330:0039:0042:EN:PDF
+-->
   <annotation>
     <documentation>-- Definition --
 This package defines the types that are common for all transport networks subthemes.</documentation>

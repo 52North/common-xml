@@ -28,5 +28,32 @@
                 </includes>
             </resource>
         </resources>
+		<plugins>
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<header>../misc/inspire-license-header.txt</header>
+					<headerDefinitions>
+						<headerDefinition>../misc/xsd-header-definition.xml</headerDefinition>
+					</headerDefinitions>
+					<aggregate>true</aggregate>
+					<includes>
+						<include>src/**/*.xsd</include>
+						<include>src/**/*.xml</include>
+					</includes>
+					<strictCheck>true</strictCheck>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-license</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
     </build>
 </project>

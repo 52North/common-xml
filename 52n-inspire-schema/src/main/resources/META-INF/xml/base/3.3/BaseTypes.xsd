@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    INSPIRE LICENSE HEADER
+
+    The official INSPIRE XML schemas can be accessed under http://inspire.ec.europa.eu/schemas/.
+    Please consider the schema copyright notices:  http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:330:0039:0042:EN:PDF
+-->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" targetNamespace="http://inspire.ec.europa.eu/schemas/base/3.3" elementFormDefault="qualified" version="3.3.1">
 	<!-- Bugfix version 3.3.1
 		 - The <SpatialDataSet>, <SpatialDataSetType> and <SpatialDataSetPropertyType> elements are deprecated (in accordance with D2.7 v3.3 Recommendation 11 stating that wfs:FeatureCollection should be used instead)
