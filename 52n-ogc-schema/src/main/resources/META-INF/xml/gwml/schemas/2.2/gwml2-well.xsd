@@ -16,7 +16,7 @@
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<!--<import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd"/>-->
 	<!--<import namespace="http://www.isotc211.org/2005/gco" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd"/>-->
-	<!--<import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>-->
+	<import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
 	<!--<import namespace="http://www.opengis.net/gwml-main/2.2" schemaLocation="gwml2-main.xsd"/>-->
 	<!--<import namespace="http://xmlns.geosciml.org/GeoSciML-Basic/4.0" schemaLocation="http://schemas.geosciml.org/geosciml/4.0/geoSciMLBasic.xsd"/>-->
 	<!--<import namespace="http://www.opengis.net/gwml-wellconstruction/2.2" schemaLocation="gwml2-wellconstruction.xsd"/>-->
@@ -191,7 +191,7 @@
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
-	</complexType>
+	</complexType>-->
 	<element name="GW_GeologyLog" type="gwml2w:GW_GeologyLogType" substitutionGroup="om:OM_Observation">
 		<annotation>
 			<documentation>Specialization of the OM_Observation class to allow defining the log start end depth for coverages.
@@ -244,7 +244,7 @@ For Lithologic logs, the observedProperty will be a GeoSciML:GeologicUnit/compos
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
-	<element name="GW_Well" type="gwml2w:GW_WellType" substitutionGroup="sams:SF_SpatialSamplingFeature">
+	<!--<element name="GW_Well" type="gwml2w:GW_WellType" substitutionGroup="sams:SF_SpatialSamplingFeature">
 		<annotation>
 			<documentation>A shaft or hole sunk, dug or drilled into the Earth to observe, extract or inject water (after IGH1397).</documentation>
 		</annotation>
