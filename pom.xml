@@ -34,8 +34,11 @@
 		<!-- schema dependencies -->
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
+		<module>52n-ogc-bp-schema</module>
 		<module>52n-w3c-schema</module>
 		<module>52n-isotc211-schema</module>
+		<module>52n-inspire-schema</module>
+		<module>52n-portele-schema</module>
 		
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
@@ -54,6 +57,7 @@
 		-->
 		<module>52n-xml-gml-v311</module>
 		<module>52n-xml-gml-v321</module>
+		<module>52n-xml-gml-v33</module>
 		<module>52n-xml-gmlcov-v10</module>
 		<module>52n-xml-kml-v220</module>
 		<module>52n-xml-om-v100</module>
@@ -102,6 +106,25 @@
 		<module>52n-xml-gmi-v01</module>
 		<module>52n-xml-gco-v20120713</module>
 		<module>52n-xml-gmd-v20120713</module>
+		<module>52n-xml-gwml-v22</module>
+		<!-- OGC Best Practice -->
+		<module>52n-xml-cv-v022</module>
+		<!-- INSPIRE -->
+		<module>52n-xml-inspire-ad-v40</module>
+		<module>52n-xml-inspire-au-v40</module>
+		<module>52n-xml-inspire-base-v33</module>
+		<module>52n-xml-inspire-base2-v20</module>
+		<module>52n-xml-inspire-bu-base-v40</module>
+		<module>52n-xml-inspire-cp-v40</module>
+		<module>52n-xml-inspire-ef-v40</module>
+		<module>52n-xml-inspire-gn-v40</module>
+		<module>52n-xml-inspire-net-v40</module>
+		<module>52n-xml-inspire-omor-v30</module>
+		<module>52n-xml-inspire-ompr-v30</module>
+		<module>52n-xml-inspire-omso-v30</module>
+		<module>52n-xml-inspire-omso-v301</module>
+		<module>52n-xml-inspire-tn-v40</module>
+		<module>52n-xml-portele</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -132,10 +155,28 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-ogc-bp-schema</artifactId>
+				<version>${project.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-w3c-schema</artifactId>
 				<version>${project.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-inspire-schema</artifactId>
+		<version>${project.version}</version>
+		<scope>provided</scope>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-portele-schema</artifactId>
+		<version>${project.version}</version>
+		<scope>provided</scope>
+	  </dependency>
 			<!-- binding dependencies -->
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
@@ -412,6 +453,79 @@
 				<artifactId>52n-xml-gmd-v20120713</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<!-- OGC Best Practice -->
+			<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-cv-v022</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+		<!-- INSPIRE -->
+	<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-ad-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-au-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+		<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-base-v33</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-base2-v20</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-bu-base-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-cp-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-ef-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-gn-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-net-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-omor-v30</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-omso-v30</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-tn-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-portele</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->
 			<dependency>
 				<groupId>org.apache.xmlbeans</groupId>
