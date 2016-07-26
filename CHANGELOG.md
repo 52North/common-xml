@@ -4,7 +4,9 @@
 
 https://github.com/52North/common-xml/compare/v2.1.0...develop
 
-* 
+* Add SOS DeleteObservation schemas
+* Add PubSub Schemas
+* Add WPS and OWS v2.0
 
 ## 2.1.0
 

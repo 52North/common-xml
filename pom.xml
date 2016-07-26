@@ -12,7 +12,7 @@
 	<packaging>pom</packaging>
 	<name>52North XML Schema Bindings</name>
 	<description>
-		The 52n XML Bindings comprise the OGC schema models and 
+		The 52n XML Bindings comprise the OGC schema models and
 		all 52n schema models needed across the 52n SWE framework.
 	</description>
 
@@ -21,7 +21,7 @@
 		<developerConnection>scm:git:ssh:@github.com/52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
-	
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -39,7 +39,7 @@
 		<module>52n-isotc211-schema</module>
 		<module>52n-inspire-schema</module>
 		<module>52n-portele-schema</module>
-		
+
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
 		<module>52n-xml-context-v100</module>
@@ -520,7 +520,7 @@
 		<artifactId>52n-xml-inspire-tn-v40</artifactId>
 		<version>${project.version}</version>
 	  </dependency>
-	  
+
 	  <dependency>
 		<groupId>org.n52.sensorweb</groupId>
 		<artifactId>52n-xml-portele</artifactId>
@@ -563,14 +563,14 @@
 						</execution>
 					</executions>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>com.mycila</groupId>
 					<artifactId>license-maven-plugin</artifactId>
 					<version>2.2</version>
 					<!-- Config in submodules -->
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
@@ -601,12 +601,12 @@
 					</executions>
 					<configuration>
 						<!--
-							xmlbeans plugin only used to generate the classes not for compiling 
+							xmlbeans plugin only used to generate the classes not for compiling
 							or jar generation.
 						-->
 						<noJavac>true</noJavac>
-						<memoryInitialSize>256</memoryInitialSize>
-						<memoryMaximumSize>512</memoryMaximumSize>
+						<memoryInitialSize>512</memoryInitialSize>
+						<memoryMaximumSize>1024</memoryMaximumSize>
 						<download>false</download>
 						<schemaDirectory>target/xmlbeans-xsds/META-INF/xml</schemaDirectory>
 						<xsdJars>
@@ -616,13 +616,13 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
+
 		<plugins>
 			<!-- ==================================================== -->
 			<!-- =========== PLUGINS ACTIVE BY DEFAULT ============== -->
 			<!-- ==================================================== -->
 
-			
+
 		</plugins>
 	</build>
 
@@ -660,7 +660,7 @@
 				</plugins>
 			</build>
 		</profile>
-	
+
 		<profile>
 			<id>release</id>
 			<!-- a profile wich shall be activated if a release is performed -->
@@ -679,7 +679,7 @@
 							<useReleaseProfile>false</useReleaseProfile>
 						</configuration>
 					</plugin>
-					
+
 					<plugin>
 					 <groupId>org.apache.maven.plugins</groupId>
 					 <artifactId>maven-scm-plugin</artifactId>
