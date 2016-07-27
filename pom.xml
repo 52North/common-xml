@@ -41,7 +41,10 @@
 		<module>52n-portele-schema</module>
 
 		<!-- binding dependencies -->
-		<module>52n-xml-aixm-v511</module>
+		
+		<!-- TODO: continously breaks build with out-of-memory -->
+		<!--<module>52n-xml-aixm-v511</module>-->
+
 		<module>52n-xml-context-v100</module>
 		<module>52n-xml-csw-v202</module>
 		<module>52n-xml-em-v020</module>
