@@ -25,7 +25,7 @@
 
 	<scm>
 		<connection>https://github.com/52North/common-xml.git</connection>
-		<developerConnection>git@github.com:52North/common-xml.git</developerConnection>
+		<developerConnection>scm:git:ssh//git@github.com:52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
 	</scm>
 
