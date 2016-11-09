@@ -640,6 +640,7 @@
 					<version>2.5.3</version>
 					<configuration>
 						<tagNameFormat>v@{project.version}</tagNameFormat>
+						<preparationGoals>clean notice:check</preparationGoals>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
 					</configuration>
 				</plugin>
