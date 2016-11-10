@@ -1,0 +1,4 @@
+INSPIRE LICENSE HEADER
+
+The official INSPIRE XML schemas can be accessed under http://inspire.ec.europa.eu/schemas/. 
+Please consider the schema copyright notices:  http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:330:0039:0042:EN:PDF

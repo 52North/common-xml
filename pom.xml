@@ -1,14 +1,9 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<parent>
-		<groupId>org.n52</groupId>
-		<artifactId>52-North</artifactId>
-		<version>5.6.9</version>
-	</parent>
 	<groupId>org.n52.sensorweb</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>52n-common-xml</artifactId>
-	<version>2.1.0</version>
+	<version>2.2.0</version>
 	<packaging>pom</packaging>
 	<name>52North XML Schema Bindings</name>
 	<description>
@@ -16,12 +11,26 @@
 		all 52n schema models needed across the 52n SWE framework.
 	</description>
 
+	<url>https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings</url>
+
+	<issueManagement>
+		<system>Github</system>
+		<url>http://github.com/52North/common-xml/issues</url>
+	</issueManagement>
+
+	<organization>
+		<name>52north.org</name>
+		<url>http://52north.org/</url>
+	</organization>
+
 	<scm>
-		<connection>scm:git:git@github.com/52North/common-xml.git</connection>
-		<developerConnection>scm:git:ssh:@github.com/52North/common-xml.git</developerConnection>
+		<connection>scm:git:git@github.com:52North/common-xml.git</connection>
+		<developerConnection>scm:git:git@github.com:52North/common-xml.git</developerConnection>
 		<url>https://github.com/52North/common-xml</url>
-	</scm>
-	
+	  <tag>v2.2.0</tag>
+  </scm>
+
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -30,12 +39,26 @@
 		</license>
 	</licenses>
 
+	<developers>
+		<developer>
+			<name>Henning Bredel</name>
+			<email>h.bredel@52north.org</email>
+			<organization>52North GmbH</organization>
+			<organizationUrl>http://52north.org</organizationUrl>
+		</developer>
+	</developers>
+
 	<modules>
 		<!-- schema dependencies -->
 		<module>52n-oasis-schema</module>
 		<module>52n-ogc-schema</module>
+		<module>52n-ogc-bp-schema</module>
 		<module>52n-w3c-schema</module>
 		<module>52n-isotc211-schema</module>
+		<module>52n-inspire-schema</module>
+		<module>52n-portele-schema</module>
+
+		<!-- binding dependencies -->
 		
 		<!-- binding dependencies -->
 		<module>52n-xml-aixm-v511</module>
@@ -54,12 +77,15 @@
 		-->
 		<module>52n-xml-gml-v311</module>
 		<module>52n-xml-gml-v321</module>
+		<module>52n-xml-gml-v33</module>
 		<module>52n-xml-gmlcov-v10</module>
 		<module>52n-xml-kml-v220</module>
 		<module>52n-xml-om-v100</module>
 		<module>52n-xml-om-v20</module>
 		<module>52n-xml-ows-v100</module>
 		<module>52n-xml-ows-v110</module>
+		<module>52n-xml-ows-v20</module>
+		<module>52n-xml-pubsub-v10</module>
 		<module>52n-xml-rim-v300</module>
 		<module>52n-xml-sampling-v100</module>
 		<module>52n-xml-sampling-v20</module>
@@ -74,6 +100,8 @@
 		<module>52n-xml-sor-v031</module>
 		<module>52n-xml-sos-v100</module>
 		<module>52n-xml-sos-v20</module>
+		<module>52n-xml-sosdo-v10</module>
+		<module>52n-xml-sosdo-v20</module>
 		<module>52n-xml-sosgda-v10</module>
 		<module>52n-xml-sps-v100</module>
 		<module>52n-xml-sps-v20</module>
@@ -89,6 +117,7 @@
 		<module>52n-xml-wms-v130</module>
 		<module>52n-xml-wns-v0.0.9</module>
 		<module>52n-xml-wps-v100</module>
+		<module>52n-xml-wps-v20</module>
 		<module>52n-xml-wrs-v101</module>
 		<module>52n-xml-wsa-v10</module>
 		<module>52n-xml-wsn-v13</module>
@@ -97,6 +126,25 @@
 		<module>52n-xml-gmi-v01</module>
 		<module>52n-xml-gco-v20120713</module>
 		<module>52n-xml-gmd-v20120713</module>
+		<module>52n-xml-gwml-v22</module>
+		<!-- OGC Best Practice -->
+		<module>52n-xml-cv-v022</module>
+		<!-- INSPIRE -->
+		<module>52n-xml-inspire-ad-v40</module>
+		<module>52n-xml-inspire-au-v40</module>
+		<module>52n-xml-inspire-base-v33</module>
+		<module>52n-xml-inspire-base2-v20</module>
+		<module>52n-xml-inspire-bu-base-v40</module>
+		<module>52n-xml-inspire-cp-v40</module>
+		<module>52n-xml-inspire-ef-v40</module>
+		<module>52n-xml-inspire-gn-v40</module>
+		<module>52n-xml-inspire-net-v40</module>
+		<module>52n-xml-inspire-omor-v30</module>
+		<module>52n-xml-inspire-ompr-v30</module>
+		<module>52n-xml-inspire-omso-v30</module>
+		<module>52n-xml-inspire-omso-v301</module>
+		<module>52n-xml-inspire-tn-v40</module>
+		<module>52n-xml-portele</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -127,10 +175,28 @@
 			</dependency>
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-ogc-bp-schema</artifactId>
+				<version>${project.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-w3c-schema</artifactId>
 				<version>${project.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-inspire-schema</artifactId>
+		<version>${project.version}</version>
+		<scope>provided</scope>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-portele-schema</artifactId>
+		<version>${project.version}</version>
+		<scope>provided</scope>
+	  </dependency>
 			<!-- binding dependencies -->
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
@@ -210,6 +276,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-ows-v110</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-ows-v20</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -353,6 +424,11 @@
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.n52.wps</groupId>
+				<artifactId>52n-xml-wps-v20</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-wrs-v101</artifactId>
 				<version>1.0.1</version>
@@ -397,6 +473,79 @@
 				<artifactId>52n-xml-gmd-v20120713</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<!-- OGC Best Practice -->
+			<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-cv-v022</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+		<!-- INSPIRE -->
+	<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-ad-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-au-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+		<dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-base-v33</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-base2-v20</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-bu-base-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-cp-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-ef-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-gn-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-net-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-omor-v30</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-omso-v30</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-inspire-tn-v40</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
+
+	  <dependency>
+		<groupId>org.n52.sensorweb</groupId>
+		<artifactId>52n-xml-portele</artifactId>
+		<version>${project.version}</version>
+	  </dependency>
 			<!-- ### EXTERNAL DEPENDENCIES ### -->
 			<dependency>
 				<groupId>org.apache.xmlbeans</groupId>
@@ -476,13 +625,24 @@
 							or jar generation.
 						-->
 						<noJavac>true</noJavac>
-						<memoryInitialSize>256</memoryInitialSize>
-						<memoryMaximumSize>512</memoryMaximumSize>
+						<memoryInitialSize>512</memoryInitialSize>
+						<memoryMaximumSize>2048</memoryMaximumSize>
 						<download>false</download>
 						<schemaDirectory>target/xmlbeans-xsds/META-INF/xml</schemaDirectory>
 						<xsdJars>
 							<xsdJar>org.n52.sensorweb:52n-ogc-schema</xsdJar>
 						</xsdJars>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.3</version>
+					<configuration>
+						<tagNameFormat>v@{project.version}</tagNameFormat>
+						<preparationGoals>clean notice:check</preparationGoals>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -531,61 +691,116 @@
 				</plugins>
 			</build>
 		</profile>
-	
-		<profile>
-			<id>release</id>
-			<!-- a profile wich shall be activated if a release is performed -->
+
+	<profile>
+		<id>deploy-to-52n</id>
+		<distributionManagement>
+			<repository>
+				<id>n52-releases</id>
+				<url>dav:https://52north.org/maven/repo/releases/</url>
+			</repository>
+			<snapshotRepository>
+				<id>n52-snapshots</id>
+				<url>dav:https://52north.org/maven/repo/snapshots/</url>
+			</snapshotRepository>
+		</distributionManagement>
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<!-- no build in release:prepare (takes to long time), so in bad
+							cases release fails on perform -->
+						<preparationGoals>clean</preparationGoals>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
+						<goals>deploy</goals>
+						<!-- for xmlbeans we do not need to deploy sources and javadoc -->
+						<useReleaseProfile>false</useReleaseProfile>
+					</configuration>
+				</plugin>
+			</plugins>
+		</build>
+		<properties>
+			<maven.javadoc.skip>true</maven.javadoc.skip>
+		</properties>
+	</profile>
+
+        <profile>
+		<id>deploy-to-central</id>
+		<distributionManagement>
+		  <snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		  </snapshotRepository>
+		  <repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		  </repository>
+		</distributionManagement>
+
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-release-plugin</artifactId>
-						<configuration>
-							<!-- no build in release:prepare (takes to long time), so in bad
-								cases release fails on perform -->
-							<preparationGoals>clean</preparationGoals>
-							<autoVersionSubmodules>true</autoVersionSubmodules>
-							<goals>deploy</goals>
-							<!-- for xmlbeans we do not need to deploy sources and javadoc -->
-							<useReleaseProfile>false</useReleaseProfile>
-						</configuration>
+					  <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-source-plugin</artifactId>
+					  <version>2.2.1</version>
+					  <executions>
+						<execution>
+						  <id>attach-sources</id>
+						  <goals>
+							<goal>jar-no-fork</goal>
+						  </goals>
+						</execution>
+					  </executions>
 					</plugin>
-					
+
 					<plugin>
-					 <groupId>org.apache.maven.plugins</groupId>
-					 <artifactId>maven-scm-plugin</artifactId>
-						<version>1.9.1</version>
-					 <configuration>
-					  <providerImplementations>
-						  <git>jgit</git>
-					  </providerImplementations>
-					 </configuration>
-					 <dependencies>
-					  <dependency>
-						  <groupId>org.apache.maven.scm</groupId>
-						  <artifactId>maven-scm-provider-jgit</artifactId>
-							<version>1.9.1</version>
-					  </dependency>
-					 </dependencies>
-				   </plugin>
+					  <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-javadoc-plugin</artifactId>
+					  <version>2.9.1</version>
+					  <executions>
+						<execution>
+						  <id>attach-javadocs</id>
+						  <goals>
+							<goal>jar</goal>
+						  </goals>
+						</execution>
+					  </executions>
+					  <configuration>
+						<additionalJOption>-J-Xmx2048m</additionalJOption>
+						<maxmemory>2g</maxmemory>
+					  </configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+							  <id>sign-artifacts</id>
+							  <phase>verify</phase>
+							  <goals>
+									<goal>sign</goal>
+							  </goals>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+					  <groupId>org.sonatype.plugins</groupId>
+					  <artifactId>nexus-staging-maven-plugin</artifactId>
+					  <version>1.6.2</version>
+					  <extensions>true</extensions>
+					  <configuration>
+						 <serverId>ossrh</serverId>
+						 <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						 <autoReleaseAfterClose>true</autoReleaseAfterClose>
+					  </configuration>
+					</plugin>
 				</plugins>
 			</build>
-			<properties>
-				<maven.javadoc.skip>true</maven.javadoc.skip>
-			</properties>
 		</profile>
 	</profiles>
-
-	<repositories>
-		<repository>
-			<id>n52-releases</id>
-			<name>52n Releases</name>
-			<url>http://52north.org/maven/repo/releases/</url>
-		</repository>
-		<repository>
-			<id>n52-snapshots</id>
-			<name>52n Snapshots</name>
-			<url>http://52north.org/maven/repo/snapshots/</url>
-		</repository>
-	</repositories>
 </project>
