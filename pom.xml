@@ -79,6 +79,7 @@
 		<module>52n-xml-gml-v321</module>
 		<module>52n-xml-gml-v33</module>
 		<module>52n-xml-gmlcov-v10</module>
+		<module>52n-xml-ifoi-v10</module>
 		<module>52n-xml-kml-v220</module>
 		<module>52n-xml-om-v100</module>
 		<module>52n-xml-om-v20</module>
@@ -251,6 +252,11 @@
 			<dependency>
 				<groupId>org.n52.sensorweb</groupId>
 				<artifactId>52n-xml-gmlcov-v10</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.n52.sensorweb</groupId>
+				<artifactId>52n-xml-ifoi-v10</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
