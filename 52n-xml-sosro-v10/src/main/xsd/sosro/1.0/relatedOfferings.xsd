@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/sosro/1.0" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ro="http://www.opengis.net/sosro/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" >
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <element name="RelatedOfferings" type="ro:RelatedOfferingsType">
+        <annotation>
+            <documentation>Describes the relation between two offerings, e.g. the contained offering is the parent the offering that holds this definition</documentation>
+        </annotation>
+    </element>
+    <complexType name="RelatedOfferingsType">
+        <sequence>
+            <element name="relatedOffering" maxOccurs="unbounded">
+                <annotation>
+                    <documentation>contains a OfferingContext that holds the role and the related offering</documentation>
+                </annotation>
+                <complexType>
+                    <sequence>
+                        <element ref="ro:OfferingContext"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="RelatedOfferingsPropertyType">
+        <sequence>
+            <element ref="ro:RelatedOfferings"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </complexType>
+    <element name="OfferingContext" type="ro:OfferingContextType">
+        <annotation>
+            <documentation>holds the role and the related offering</documentation>
+        </annotation>
+    </element>
+    <complexType name="OfferingContextType">
+        <sequence>
+            <element name="role" type="gml:ReferenceType" />
+            <element name="relatedOffering" type="gml:ReferenceType" />
+        </sequence>
+    </complexType>
+    <complexType name="OfferingContextPropertyType">
+        <annotation>
+            <documentation>OfferingContext is a dataType, without identity, so may only be used inline</documentation>
+        </annotation>
+        <sequence>
+            <element ref="ro:OfferingContext"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </complexType>
+</xsd:schema>
