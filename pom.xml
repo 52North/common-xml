@@ -104,6 +104,8 @@
 		<module>52n-xml-sosdo-v10</module>
 		<module>52n-xml-sosdo-v20</module>
 		<module>52n-xml-sosgda-v10</module>
+		<module>52n-xml-sosgda-v20</module>
+		<module>52n-xml-sosro-v10</module>
 		<module>52n-xml-sps-v100</module>
 		<module>52n-xml-sps-v20</module>
 		<module>52n-xml-sweCommon-v100</module>
