@@ -548,7 +548,6 @@
 		<artifactId>52n-xml-inspire-tn-v40</artifactId>
 		<version>${project.version}</version>
 	  </dependency>
-
 	  <dependency>
 		<groupId>org.n52.sensorweb</groupId>
 		<artifactId>52n-xml-portele</artifactId>
@@ -568,6 +567,13 @@
 		</dependencies>
 	</dependencyManagement>
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>2.10</version>
+			</extension>
+		</extensions>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -660,7 +666,6 @@
 			<!-- ==================================================== -->
 			<!-- =========== PLUGINS ACTIVE BY DEFAULT ============== -->
 			<!-- ==================================================== -->
-
 			
 		</plugins>
 	</build>
@@ -732,18 +737,9 @@
 		<properties>
 			<maven.javadoc.skip>true</maven.javadoc.skip>
 		</properties>
-		<!--
-		<extensions>
-            	<extension>
-	                <groupId>org.apache.maven.wagon</groupId>
-	                <artifactId>wagon-webdav-jackrabbit</artifactId>
-	                <version>2.10</version>
-	            </extension>
-		</extensions>
-		-->
 	</profile>
 
-        <profile>
+		<profile>
 		<id>deploy-to-central</id>
 		<distributionManagement>
 		  <snapshotRepository>
