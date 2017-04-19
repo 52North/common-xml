@@ -6,9 +6,9 @@
     <version>2.2.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>52n-xml-drt-v10</artifactId>
+  <artifactId>52n-xml-drt-v100</artifactId>
   <packaging>jar</packaging>
-  <name>OGC DeleteResultTemplate schema 1.0</name>
+  <name>OGC SOS DeleteResultTemplate schema 1.0</name>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
