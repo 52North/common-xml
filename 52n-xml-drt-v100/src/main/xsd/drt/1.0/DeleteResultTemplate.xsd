@@ -27,15 +27,21 @@
 						</annotation>
 					</element>
 					<sequence maxOccurs="unbounded">
-						<element name="offering" type="anyURI" nillable="false">
-							<annotation>
-								<documentation>Offering identifier of result template to be deleted</documentation>
-							</annotation>
-						</element>
-						<element name="observedProperty" type="anyURI" nillable="false">
-							<annotation>
-								<documentation>observed property identifier of result template to be deleted</documentation>
-							</annotation>
+						<element name="tuple" nillable="false">
+							<complexType>
+								<sequence>
+									<element name="offering" type="anyURI" nillable="false">
+										<annotation>
+											<documentation>Offering identifier of result template to be deleted</documentation>
+										</annotation>
+									</element>
+									<element name="observedProperty" type="anyURI" nillable="false">
+										<annotation>
+											<documentation>observed property identifier of result template to be deleted</documentation>
+										</annotation>
+									</element>
+								</sequence>
+							</complexType>
 						</element>
 					</sequence>
 				</choice>
@@ -58,4 +64,4 @@
 		</complexContent>
 	</complexType>
 </schema>
-0Suchvorgang...
+
