@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1-SNAPSHOT
+
+ * Add SOS UpdateResultTemplate schemas
+
 ## 2.1.1-SNAPSHOT
 
 https://github.com/52North/common-xml/compare/v2.1.0...develop

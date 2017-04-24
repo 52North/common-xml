@@ -112,6 +112,7 @@
 		<module>52n-xml-sweCommon-v101</module>
 		<module>52n-xml-sweCommon-v20</module>
 		<module>52n-xml-swes-v20</module>
+                <module>52n-xml-urt-v100</module>
 		<module>52n-xml-waterML-v20</module>
 		<module>52n-xml-waterML-dr-v20</module>
 		<module>52n-xml-wcs-v11</module>
