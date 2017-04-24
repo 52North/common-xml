@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:drt="http://www.opengis.net/drt/1.0" targetNamespace="http://www.opengis.net/drt/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0.1">
+    <import namespace="http://www.opengis.net/swes/2.0" schemaLocation="http://schemas.opengis.net/swes/2.0/swes.xsd"/>
+    <!-- ================================================= -->
+    <element name="DeleteResultTemplate" type="drt:DeleteResultTemplateType" substitutionGroup="swes:ExtensibleRequest">
+        <annotation>
+            <documentation>request to delete certain result templates</documentation>
+        </annotation>
+    </element>
+    <complexType name="DeleteResultTemplateType">
+        <complexContent>
+            <extension base="swes:ExtensibleRequestType">
+                <choice>
+                    <element name="resultTemplate" type="anyURI" nillable="false" maxOccurs="unbounded">
+                        <annotation>
+                            <documentation>List of result templates to be deleted</documentation>
+                        </annotation>
+                    </element>
+                    <sequence maxOccurs="unbounded">
+                        <element name="tuple" nillable="false">
+                            <complexType>
+                                <sequence>
+                                    <element name="offering" type="anyURI" nillable="false">
+                                        <annotation>
+                                            <documentation>Offering identifier of result template to be deleted</documentation>
+                                        </annotation>
+                                    </element>
+                                    <element name="observedProperty" type="anyURI" nillable="false">
+                                        <annotation>
+                                            <documentation>observed property identifier of result template to be deleted</documentation>
+                                        </annotation>
+                                    </element>
+                                </sequence>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </choice>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ================================================= -->
+    <element name="DeleteResultTemplateResponse" type="drt:DeleteResultTemplateResponseType" substitutionGroup="swes:ExtensibleResponse">
+        <annotation>
+            <documentation>response with list of deleted result templates</documentation>
+        </annotation>
+    </element>
+    <complexType name="DeleteResultTemplateResponseType">
+        <complexContent>
+            <extension base="swes:ExtensibleResponseType">
+                <sequence>
+                    <element name="deletedTemplate" type="anyURI" maxOccurs="unbounded"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>
+
