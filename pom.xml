@@ -11,7 +11,7 @@
         all 52n schema models needed across the 52n SWE framework.
     </description>
 
-    <url>https://wiki.52north.org/bin/view/Documentation/XMLBeansBindings</url>
+    <url>https://wiki.52north.org/Documentation/XMLBeansBindings</url>
 
     <issueManagement>
         <system>Github</system>
