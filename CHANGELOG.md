@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.1-SNAPSHOT
+## 2.3.0-SNAPSHOT
 
 https://github.com/52North/common-xml/compare/v2.2.0...develop
 
