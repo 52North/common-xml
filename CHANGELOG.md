@@ -8,6 +8,7 @@ https://github.com/52North/common-xml/compare/v2.2.0...develop
 * Add GDA v2.0 schema
 * Add SOS InsertFeatureOfInterest v1.0 schema
 * Add SOS DeleteResultTemplate v1.0 schema
+* Add SOS UpdateResultTemplate schemas
 
 ## 2.2.0
 
