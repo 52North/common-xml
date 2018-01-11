@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:ifoi="http://www.opengis.net/ifoi/1.0" targetNamespace="http://www.opengis.net/ifoi/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0.1">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/swes/2.0" schemaLocation="http://schemas.opengis.net/swes/2.0/swes.xsd"/>
+	<!-- ================================================= -->
+	<element name="InsertFeatureOfInterest" type="ifoi:InsertFeatureOfInterestType" substitutionGroup="swes:ExtensibleRequest">
+		<annotation>
+			<documentation>request to insert certain features of interest of observations</documentation>
+		</annotation>
+	</element>
+	<complexType name="InsertFeatureOfInterestType">
+		<complexContent>
+			<extension base="swes:ExtensibleRequestType">
+				<sequence>
+					<element name="featureMember" type="gml:FeaturePropertyType" minOccurs="1" maxOccurs="unbounded">
+						<annotation>
+							<documentation>feature of interest that should be inserted</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="InsertFeatureOfInterestPropertyType">
+		<sequence minOccurs="0">
+			<element ref="ifoi:InsertFeatureOfInterest"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+	</complexType>
+	<!-- ================================================= -->
+	<element name="InsertFeatureOfInterestResponse" type="ifoi:InsertFeatureOfInterestResponseType" substitutionGroup="swes:ExtensibleResponse">
+		<annotation>
+			<documentation>response with features matching the request criteria</documentation>
+		</annotation>
+	</element>
+	<complexType name="InsertFeatureOfInterestResponseType">
+		<complexContent>
+			<extension base="swes:ExtensibleResponseType"/>
+		</complexContent>
+	</complexType>
+	<complexType name="InsertFeatureOfInterestResponsePropertyType">
+		<sequence minOccurs="0">
+			<element ref="ifoi:InsertFeatureOfInterestResponse"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+	</complexType>
+</schema>
