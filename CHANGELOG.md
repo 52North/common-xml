@@ -1,6 +1,13 @@
 # Changelog
 
-## 2.3.0-SNAPSHOT
+## 2.4.0-SNAPSHOT
+
+https://github.com/52North/common-xml/compare/v2.2.0...develop
+
+* Add SOS Result Filter extension v1.0 schema
+* Add SOS Spatial Filter extension v1.0 schema
+
+## 2.3.0
 
 https://github.com/52North/common-xml/compare/v2.2.0...develop
 
