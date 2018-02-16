@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:rf="http://www.opengis.net/sosrf/1.0" targetNamespace="http://www.opengis.net/sosrf/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://www.opengis.net/fes/2.0" schemaLocation="http://schemas.opengis.net/filter/2.0/filterAll.xsd"/><!-- ================================================= -->
+    <element name="ResultFilter" type="rf:ResultFilterType">
+        <annotation>
+            <documentation>extension parameter to request observation result filtering</documentation>
+        </annotation>
+    </element>
+    <complexType name="ResultFilterType">
+        <sequence>
+			<element ref="fes:comparisonOps"/>
+        </sequence>
+    </complexType>
+    <complexType name="ResultFilterPropertyType">
+        <sequence minOccurs="0">
+            <element ref="rf:ResultFilter"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </complexType>
+</schema>
