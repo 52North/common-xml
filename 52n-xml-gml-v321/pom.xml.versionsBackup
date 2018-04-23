@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.n52.sensorweb</groupId>
+	<artifactId>52n-common-xml</artifactId>
+    <version>2.5.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>52n-xml-gml-v321</artifactId>
+  <packaging>jar</packaging>
+  <name>OGC GML schema (spec. v3.2.1)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <configuration>
+                    <sourceSchemas>
+                        <sourceSchema>gml/3.2.1/gml.xsd</sourceSchema>
+                        <sourceSchema>gml/3.2.1/gmlBase.xsd</sourceSchema>
+                        <sourceSchema>gml/3.2.1/geometryBasic2d.xsd</sourceSchema>
+                        <sourceSchema>gml/3.2.1/units.xsd</sourceSchema>
+                        <sourceSchema>gml/3.2.1/basicTypes.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/dynamicFeature.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/topology.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/coverage.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/coordinateReferenceSystems.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/observation.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/temporalReferenceSystems.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/deprecatedTypes.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/feature.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/direction.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/geometryComplexes.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/valueObjects.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/grids.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/geometryAggregates.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/coordinateSystems.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/datums.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/coordinateOperations.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/temporalTopology.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/dictionary.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/temporal.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/geometryBasic0d1d.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/geometryPrimitives.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/referenceSystems.xsd</sourceSchema>
+						<sourceSchema>gml/3.2.1/measures.xsd</sourceSchema>
+						
+						<!-- ### ISO19139 SCHEMA ### -->
+						<sourceSchema>iso/19139/20070417/gmd/gmd.xsd</sourceSchema>
+						<sourceSchema>iso/19139/20070417/gco/gco.xsd</sourceSchema>
+						<sourceSchema>iso/19139/20070417/gsr/gsr.xsd</sourceSchema>
+						<sourceSchema>iso/19139/20070417/gss/gss.xsd</sourceSchema>
+						<sourceSchema>iso/19139/20070417/gts/gts.xsd</sourceSchema>
+						
+						<!-- ### OASIS SCHEMA ### -->
+						<sourceSchema>election/external/xAL.xsd</sourceSchema>
+						
+                    </sourceSchemas>
+					<xsdJars>
+						<xsdJar>org.n52.sensorweb:52n-oasis-schema</xsdJar>
+						<xsdJar>org.n52.sensorweb:52n-ogc-schema</xsdJar>
+					</xsdJars>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-ogc-schema</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-oasis-schema</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-xml-xlink-v110</artifactId>
+		</dependency>
+    </dependencies>
+</project>

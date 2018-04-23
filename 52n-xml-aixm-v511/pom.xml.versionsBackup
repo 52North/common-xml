@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.n52.sensorweb</groupId>
+	<artifactId>52n-common-xml</artifactId>
+    <version>2.5.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>52n-xml-aixm-v511</artifactId>
+  <packaging>jar</packaging>
+  <name>AIXM 5.1 schemas (adjusted to support metadata by reference)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <configuration>
+                	<schemaDirectory>src/main/xsd</schemaDirectory>
+                    <sourceSchemas>
+                        <sourceSchema>eurocontrol/AIXM_AbstractGML_ObjectTypes.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/AIXM_DataTypes.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/AIXM_Features.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/message/AIXM_BasicMessage.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/event/Event_Features.xsd</sourceSchema>
+                        <sourceSchema>eurocontrol/event/Event_DataTypes.xsd</sourceSchema>
+                    </sourceSchemas>
+                </configuration>
+            </plugin>
+			
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<header>../misc/aixm-license-header.txt</header>
+					<aggregate>true</aggregate>
+					<includes>
+						<include>src/**/*.xsd</include>
+						<include>src/**/*.xml</include>
+					</includes>
+					<strictCheck>true</strictCheck>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-license</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-ogc-schema</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-xml-gml-v321</artifactId>
+		</dependency>
+    </dependencies>
+    <description>Aeronautical Information Exchange 5.1 - adjusted to support metadata by reference.
+    	DNOTAM Event and AIXMBasicMessage schemas included.
+    	The AIXM_AbstractGML_ObjectTypes.xsd needed to be adjusted to work around an existing
+    	bug (aixm:name AND gml:name as children of the same type). This resulted in the gml:id
+    	not set to use=required, so handle validation with good care.
+    </description>
+</project>

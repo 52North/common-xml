@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.n52.sensorweb</groupId>
+	<artifactId>52n-common-xml</artifactId>
+    <version>2.5.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>52n-xml-gmi-v01</artifactId>
+  <packaging>jar</packaging>
+  <name>ISO 19115-2:2009 Geographic information -- Metadata -- Part 2: Extensions for imagery and gridded data schema (v0.1)</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <configuration>
+                    <sourceSchemas>
+						<sourceSchema>gmi/0.1/gmi/gmi.xsd</sourceSchema>
+                    </sourceSchemas>
+					<xsdJars>
+						<xsdJar>org.n52.sensorweb:52n-isotc211-schema</xsdJar>
+					</xsdJars>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-isotc211-schema</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.n52.sensorweb</groupId>
+			<artifactId>52n-xml-gml-v321</artifactId>
+		</dependency>
+    </dependencies>
+</project>
