@@ -31,7 +31,7 @@
 			<om:procedure> <!-- This can also be a simple href/title procedure without detailled data -->
 				<wml2:ObservationProcess gml:id="Ki.Proc.1">
 				  <wml2:processType xlink:href="http://www.opengis.net/def/waterml/2.0/processType/Algorithm" xlink:title="Algorithm"/>
-					<wml2:aggregationDuration>P1D</wml2:aggregationDuration> 
+					<wml2:aggregationDuration>P1D</wml2:aggregationDuration>
 				</wml2:ObservationProcess>
 			</om:procedure>
 			<om:observedProperty xlink:href="http://kiwis.kisters.de/parameters/Q" xlink:title="Discharge"/>

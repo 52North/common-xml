@@ -25,7 +25,7 @@ http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd  ht
 	<!--format of the sensor description-->
 	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</swes:procedureDescriptionFormat>
 	<!--sensor description encoded in SensorML 1.0.1; for more information take a look at the examples of the SensorML specification-->
-	<swes:procedureDescription>	
+	<swes:procedureDescription>
 		<!--- sensor description here-->
 		<sml:SensorML/>
 	</swes:procedureDescription>

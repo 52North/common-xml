@@ -15,7 +15,7 @@
     xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/samplingSpecimen/2.0 http://schemas.opengis.net/samplingSpecimen/2.0/specimen.xsd"
     xmlns:gml="http://www.opengis.net/gml/3.2"
     gml:id="abc123">
-        <!-- 
+        <!--
         This example of a SF_Specimen was generated to test if SF_Specimen could handle the requirements of SESAR
         SJDC 2011-02-24
         -->

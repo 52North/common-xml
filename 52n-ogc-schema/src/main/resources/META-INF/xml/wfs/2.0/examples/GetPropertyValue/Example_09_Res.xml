@@ -17,5 +17,5 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.opengis.net/wfs/2.0
                        http://schemas.opengis.net/wfs/2.0/wfs.xsd">
-   <wfs:member>416-890-1234</wfs:member> 
+   <wfs:member>416-890-1234</wfs:member>
 </wfs:ValueCollection>

@@ -18,7 +18,7 @@
                         http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsAll.xsd'>
     <wcs:CoverageDescription gml:id="CD0002">
         <gml:boundedBy>
-            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4979" axisLabels="Lat Long h" uomLabels="deg deg m" srsDimension="3"> 
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4979" axisLabels="Lat Long h" uomLabels="deg deg m" srsDimension="3">
                 <gml:lowerCorner>1 1 1</gml:lowerCorner>
                 <gml:upperCorner>4 4 4</gml:upperCorner>
             </gml:Envelope>

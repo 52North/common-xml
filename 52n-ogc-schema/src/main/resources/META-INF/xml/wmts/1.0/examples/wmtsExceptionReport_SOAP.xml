@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<!-- This is an example of a SOAP exception report of a server 
+<!-- This is an example of a SOAP exception report of a server
 		that has received a non supported operation request -->
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -20,7 +20,7 @@
 			</soap:Code>
 			<soap:Reason><soap:Text xml:lang="en">A server exception was encountered.</soap:Text></soap:Reason>
 			<soap:Detail>
-				<ows:ExceptionReport xmlns:ows="http://www.opengis.net/ows/1.1" 
+				<ows:ExceptionReport xmlns:ows="http://www.opengis.net/ows/1.1"
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1
 				http://schemas.opengis.net/ows/1.1.0/owsExceptionReport.xsd" version="1.0.0" xml:lang="en">
 					<ows:Exception exceptionCode="OperationNotSupported" locator="GetBob">

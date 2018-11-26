@@ -10,7 +10,7 @@
 <wml2:MeasurementTimeseries gml:id="xsd-measurement-timeseries-tvp.example"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:gml="http://www.opengis.net/gml/3.2"
-	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:wml2="http://www.opengis.net/waterml/2.0"
 	xmlns:swe="http://www.opengis.net/swe/2.0"
 	xsi:schemaLocation="http://www.opengis.net/waterml/2.0 http://schemas.opengis.net/waterml/2.0/waterml2.xsd"
@@ -28,7 +28,7 @@
 			<wml2:spacing>PT1M</wml2:spacing>
 		</wml2:MeasurementTimeseriesMetadata>
 	</wml2:metadata>
-  
+
 	<wml2:defaultPointMetadata>
 		<wml2:DefaultTVPMeasurementMetadata>
 			<wml2:uom code="ms"/>
@@ -38,13 +38,13 @@
 		  <wml2:aggregationDuration>P1M</wml2:aggregationDuration>
 		</wml2:DefaultTVPMeasurementMetadata>
 	</wml2:defaultPointMetadata>
-  
+
 	<wml2:point>
 		<wml2:MeasurementTVP>
 			<wml2:value>3.0</wml2:value>
 		</wml2:MeasurementTVP>
 	</wml2:point>
-  
+
 	<wml2:point>
 		<wml2:MeasurementTVP>
 			<wml2:value>3.2</wml2:value>
@@ -60,7 +60,7 @@
 			</wml2:metadata>
 		</wml2:MeasurementTVP>
 	</wml2:point>
-  
+
 	<wml2:point>
 		<wml2:MeasurementTVP>
 			<wml2:value xsi:nil="true"/>
@@ -71,11 +71,11 @@
 			</wml2:metadata>
 		</wml2:MeasurementTVP>
 	</wml2:point>
-  
+
 	<wml2:point>
 		<wml2:MeasurementTVP>
 			<wml2:value>3.63</wml2:value>
 		</wml2:MeasurementTVP>
 	</wml2:point>
-  
+
 </wml2:MeasurementTimeseries>

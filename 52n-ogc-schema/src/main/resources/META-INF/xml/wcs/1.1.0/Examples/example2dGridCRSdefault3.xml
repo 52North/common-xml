@@ -7,9 +7,9 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<GridCRS xmlns="http://www.opengis.net/wcs/1.1" 
-	xmlns:gml="http://www.opengis.net/gml" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<GridCRS xmlns="http://www.opengis.net/wcs/1.1"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsGridCRS.xsd"
 	gml:id="example2dGridCrs2">
 	<gml:srsName>2D Grid CRS Example 3</gml:srsName>

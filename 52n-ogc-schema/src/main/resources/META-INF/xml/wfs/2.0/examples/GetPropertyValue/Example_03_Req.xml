@@ -24,7 +24,7 @@
      <PropertyName resolve="local">abc:numberOfLanes</PropertyName>
      <fes:Filter>
         <fes:And>
-           <fes:PropertyIsEqualTo> 
+           <fes:PropertyIsEqualTo>
               <fes:ValueReference>myns:firstName</fes:ValueReference>
               <fes:Literal>Mary</fes:Literal>
            </fes:PropertyIsEqualTo>

@@ -8,13 +8,13 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <!-- This is an example of a SOAP WMTS GetFeatureInfo response -->
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope">
 	<soap:Body>
-		<FeatureInfoResponse xmlns="http://www.opengis.net/wmts/1.0" 
-			xmlns:gml="http://www.opengis.net/gml" 
+		<FeatureInfoResponse xmlns="http://www.opengis.net/wmts/1.0"
+			xmlns:gml="http://www.opengis.net/gml"
 			xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetFeatureInfo_response.xsd">
 			<AnyContent>
 					<GridPoint_etopo2>

@@ -11,7 +11,7 @@
 In this example, all the properties of feature type
 myns:InWaterA_1M are fetched for an enumerated list
 of feature instances. The fes:ResourceId element is
-used to identify each feature to be fetched. 
+used to identify each feature to be fetched.
 -->
 <GetFeature
    version="2.0.0"

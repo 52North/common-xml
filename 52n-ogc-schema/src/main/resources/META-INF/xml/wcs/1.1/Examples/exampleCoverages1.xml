@@ -7,10 +7,10 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<Coverages xmlns="http://www.opengis.net/wcs/1.1" 
-	xmlns:ows="http://www.opengis.net/ows/1.1" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<Coverages xmlns="http://www.opengis.net/wcs/1.1"
+	xmlns:ows="http://www.opengis.net/ows/1.1"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsAll.xsd http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">
 	<Coverage>
 		<ows:Title>TBD</ows:Title>

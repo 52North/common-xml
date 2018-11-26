@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<!-- 
+<!--
 CORRECTIONS referenced 2012-07-13 #01
 AUTHOR: XML Maintenance group - Nicolas Lesage
 PURPOSE: Use of absolute path in xsi:schemaLocation
@@ -27,8 +27,8 @@ has been replaced by:
 
 CORRECTIONS referenced by 2008-09-11 #NN
 AUTHOR : IGN (France) contact: nicolas.lesage@ign.fr
-PURPOSE : Correction of 3 typographical errors 
-DESCRIPTION : 
+PURPOSE : Correction of 3 typographical errors
+DESCRIPTION :
 #01: 'unknwon' replaced by 'unknown'
 #02: 'MD_MaintenanceFrequencyCode_quartely' replaced by 'MD_MaintenanceFrequencyCode_quarterly'
 #03: 'quartely' replaced by 'quarterly'

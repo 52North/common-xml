@@ -7,10 +7,10 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<cv:CV_DiscreteCoverage gml:id="dc1" 
-xmlns:cv="http://www.opengis.net/cv/0.2/gml32" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
+<cv:CV_DiscreteCoverage gml:id="dc1"
+xmlns:cv="http://www.opengis.net/cv/0.2/gml32"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xlink="http://www.w3.org/1999/xlink"
 xmlns:gml="http://www.opengis.net/gml/3.2"
 xmlns:gmd="http://www.isotc211.org/2005/gmd"
 xsi:schemaLocation="http://www.opengis.net/cv/0.2/gml32 ../cv.xsd">

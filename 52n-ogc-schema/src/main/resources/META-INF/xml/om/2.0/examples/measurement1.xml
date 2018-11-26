@@ -40,7 +40,7 @@
 	<om:featureOfInterest
 		xlink:href="http://wfs.example.org?request=getFeature&amp;featureid=fruit37f "/>
 	<!-- a notional WFS call identifying the object regarding which the observation was made -->
-	<om:result 
+	<om:result
 		xsi:type="gml:MeasureType"
 		uom="kg">0.28</om:result>
 	<!-- The XML Schema type of the result is indicated using the value of the xsi:type attribute -->

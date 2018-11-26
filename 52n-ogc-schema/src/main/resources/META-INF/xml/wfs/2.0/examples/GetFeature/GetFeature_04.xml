@@ -11,7 +11,7 @@
 This example is similar to the previous example except
 in this case only some of the properties of an enumerated
 set of features are fetched. The wfs:PropertyName element
-is used to list the properties to be retrieved. 
+is used to list the properties to be retrieved.
 -->
 <GetFeature
    version="2.0.0"

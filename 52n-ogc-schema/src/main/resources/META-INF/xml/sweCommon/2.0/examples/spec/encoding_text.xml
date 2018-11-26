@@ -18,11 +18,11 @@
 	25.39,11.51,310
 	<!-- -->
 	<swe:TextEncoding tokenSeparator="||" blockSeparator="@&#10;"/>
-	25.41||text with spaces||text with 
+	25.41||text with spaces||text with
 	carriage return||{special_chars}@
-	25.42||text with spaces||text with 
+	25.42||text with spaces||text with
 	carriage return||{special_chars}@
-	25.43||text with spaces||text with 
+	25.43||text with spaces||text with
 	carriage return||{special_chars}@
 	<!-- -->
 </test>

@@ -11,7 +11,7 @@
      as defined in the GML 3.2.1 Application Schema for Coverages.
      Last updated 2012-Jul-10
 -->
-<gmlcov:RectifiedGridCoverage 
+<gmlcov:RectifiedGridCoverage
     xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:swe="http://www.opengis.net/swe/2.0"
@@ -22,10 +22,10 @@
     xsi:schemaLocation="http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd"
     gml:id="C0002">
     <gml:boundedBy>
-        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2"> 
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2">
             <gml:lowerCorner>9.9 9.9</gml:lowerCorner>
             <gml:upperCorner>14.9 12.9</gml:upperCorner>
-        </gml:Envelope>        
+        </gml:Envelope>
     </gml:boundedBy>
     <gml:domainSet>
         <gml:RectifiedGrid gml:id="rg0001_C0002" dimension="2">
@@ -49,7 +49,7 @@
         <gml:DataBlock>
             <gml:rangeParameters/>
             <gml:tupleList>
-                 248 248 248 248 248 248 248 248 29 78 248 248 248 248 248 248 248 29 78 78 248 248 248 248 248 248 29 78 29 8 
+                 248 248 248 248 248 248 248 248 29 78 248 248 248 248 248 248 248 29 78 78 248 248 248 248 248 248 29 78 29 8
             </gml:tupleList>
         </gml:DataBlock>
     </gml:rangeSet>

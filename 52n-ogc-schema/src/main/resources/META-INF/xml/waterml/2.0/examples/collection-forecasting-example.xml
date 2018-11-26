@@ -18,26 +18,26 @@
   gml:id="deterministic_forecast_TAPM4_20100506T00Z">
 
   <gml:description>A handcrafted example of a Hydrologic Forecast timeseries
-    
-    The data describes a forecast timeseries available for one forecast point 
+
+    The data describes a forecast timeseries available for one forecast point
     from a run conducted for T0=2010-05-06T00:00Z (analysisTime)
     with state selection "2010-05-03T12:00Z" (initTime)
     out 10 days cut off at 12Z, executed at "2010-05-06T05.00Z, finished at "2010-05-06T05:01Z" (resultTime)
-    
+
     OandM phenomenonTime=period stating begin timestamp and end timestamp of forecast timeseries
     --> phenomenonTime.begin="2010-05-03T12:00Z" + phenomenonTime.end="2010-05-16T12:00Z"
     OandM resultTime=time when forecast became available (i.e. when run is finished)
     --> resultTime="2010-05-06T05:00Z"
     OandM validTime=period for which forecast is intended to be used
-    
+
     validityTime=T+x timestamp, accounted for in the MeasurementTVP of WaterML2
-    
+
     analysisTime=T0
     -->parameter.name="analysisTime" parameter.value="2010-05-06T00:00Z" (T0 timestamp)
     initTime=start run (timestamp of first selected state)
     -->parameter.name="initTime" parameter.value="2010-05-03T12:00Z" (timestamp first selected state)
     datumTime=last observed time
-    ->parameter.name="datumTime" parameter.value="2010-05-06T00:00Z" 
+    ->parameter.name="datumTime" parameter.value="2010-05-06T00:00Z"
   </gml:description>
   <wml2:metadata>
     <wml2:DocumentMetadata gml:id="doc_d">

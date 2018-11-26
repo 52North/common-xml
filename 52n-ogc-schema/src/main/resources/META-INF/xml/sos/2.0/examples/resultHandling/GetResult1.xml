@@ -30,11 +30,11 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 		<sos:GetResult service="SOS" version="2.0.0">
 
 	<!--identifier of an observed property-->
-	<sos:offering>http://www.my_namespace.org/water_gage_1_observations</sos:offering>	
-	
+	<sos:offering>http://www.my_namespace.org/water_gage_1_observations</sos:offering>
+
 	<!--identifier of an observed property-->
 	<sos:observedProperty>http://sweet.jpl.nasa.gov/2.0/hydroSurface.owl#WaterHeight</sos:observedProperty>
-	
+
 	<!--optional temporal filter restricting the results which shall be returned-->
 	<sos:temporalFilter>
 		<fes:After>

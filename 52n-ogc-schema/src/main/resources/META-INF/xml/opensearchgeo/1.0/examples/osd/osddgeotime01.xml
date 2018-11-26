@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<OpenSearchDescription 
+<OpenSearchDescription
 xmlns:time="http://a9.com/-/opensearch/extensions/time/1.0/" xmlns:geo="http://a9.com/-/opensearch/extensions/geo/1.0/" xmlns="http://a9.com/-/spec/opensearch/1.1/">
 	<ShortName>Supersite</ShortName>
 	<LongName>GEO Geohazards Supersite Natural Laboratories</LongName>
@@ -34,8 +34,8 @@ Terradue Srl. Copyright 2008-11, All Rights Reserved
 	<InputEncoding>UTF-8</InputEncoding>
 	<Url type="application/rdf+xml" indexOffset="0" pageOffset="0"
 			template="http://eo-virtual-archive4.esa.int/search/rdf/?count={count?}&amp;startIndex={startIndex?}&amp;q={searchTerms?}&amp;bbox={geo:box?}&amp;start={time:start?}&amp;stop={time:end?}"/>
-	<Url type="text/html" indexOffset="0" pageOffset="0" 
+	<Url type="text/html" indexOffset="0" pageOffset="0"
 			template="http://eo-virtual-archive4.esa.int/search/html/?count={count?}&amp;startIndex={startIndex?}&amp;q={searchTerms?}&amp;bbox={geo:box?}&amp;start={time:start?}&amp;stop={time:end?}"/>
-	<Url type="application/atom+xml" indexOffset="0" pageOffset="0" 
+	<Url type="application/atom+xml" indexOffset="0" pageOffset="0"
 			template="http://eo-virtual-archive4.esa.int/search/atom/?count={count?}&amp;startIndex={startIndex?}&amp;q={searchTerms?}&amp;bbox={geo:box?}&amp;start={time:start?}&amp;stop={time:end?}"/>
 </OpenSearchDescription>

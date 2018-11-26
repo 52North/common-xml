@@ -46,7 +46,7 @@
 						<ns:sceneType>FloatingScene</ns:sceneType>
 						<ns:sceneStartStopTime>
 							<ns:min>2010-01-01T11:55:00.00Z</ns:min>
-							<ns:max>2010-01-01T12:00:00.00Z</ns:max> 
+							<ns:max>2010-01-01T12:00:00.00Z</ns:max>
 						</ns:sceneStartStopTime>
 					</values>
 				</ParameterData>

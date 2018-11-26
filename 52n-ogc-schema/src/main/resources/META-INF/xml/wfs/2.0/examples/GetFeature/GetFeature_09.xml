@@ -8,13 +8,13 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <!--
-The mailAddress property is a complex property. 
+The mailAddress property is a complex property.
 The following example fetches the last name of
 all the people who live on the 10000 block of
 "Main St." in the town of "SomeTown" who are
 female and make over $35,000 in salary. Note
 the use of XPath expressions in the predicate
-to reference complex properties. 
+to reference complex properties.
 -->
 <GetFeature
    version="2.0.0"

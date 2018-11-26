@@ -24,7 +24,7 @@
 			<tsml:time>2011-11-16T00:00:00+11:00</tsml:time>
 			<tsml:value>
 				<swe:Category>
-					<swe:description>Fairly uniform precipitation composed exclusively of very small water droplets (less than 0.5 mm in diameter) 
+					<swe:description>Fairly uniform precipitation composed exclusively of very small water droplets (less than 0.5 mm in diameter)
           very close to one another</swe:description>
 					<swe:codeSpace xlink:href="http://www.bom.gov.au/info/wwords/" xlink:title="BoM weather words"/>
 					<swe:value>Drizzle</swe:value>
@@ -37,7 +37,7 @@
 			<tsml:time>2011-11-17T00:00:00+11:00</tsml:time>
 			<tsml:value>
 				<swe:Category>
-					<swe:description>Usually begin and end suddenly. Relatively short-lived, but may last half an hour. 
+					<swe:description>Usually begin and end suddenly. Relatively short-lived, but may last half an hour.
             Fall from cumulus clouds, often separated by blue sky. Showers may fall in patches rather than across
             the whole forecast area. Range in intensity from light to very heavy</swe:description>
 					<swe:codeSpace xlink:href="http://www.bom.gov.au/info/wwords/" xlink:title="BoM weather words"/>

@@ -25,11 +25,11 @@
   <wml2:relatedParty>
     <gmd:CI_ResponsibleParty>
       <gmd:organisationName>
-        <gco:CharacterString>Department of Primary Industries, Parks, 
+        <gco:CharacterString>Department of Primary Industries, Parks,
           Water and Environment (DPIPWE)</gco:CharacterString>
       </gmd:organisationName>
       <gmd:role>
-        <gmd:CI_RoleCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_RoleCode" 
+        <gmd:CI_RoleCode codeList="http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_RoleCode"
           codeListValue="CI_RoleCode_owner">Owner</gmd:CI_RoleCode>
       </gmd:role>
     </gmd:CI_ResponsibleParty>
@@ -39,16 +39,16 @@
   <gml:VerticalDatum gml:id="local_vert_datum">
     <gml:identifier codeSpace="http://my.org/monitoring_points">deddington_local_gauge</gml:identifier>
     <gml:scope>not known</gml:scope>
-    <!-- The local datum is 102.3m above the Australian Height Datum (EPSG 5712) --> 
+    <!-- The local datum is 102.3m above the Australian Height Datum (EPSG 5712) -->
     <gml:anchorDefinition  codeSpace="urn:ogc:def:crs:EPSG::5712">102.3</gml:anchorDefinition>
   </gml:VerticalDatum>
 </wml2:verticalDatum>
-  
+
   <wml2:timeZone>
     <wml2:TimeZone>
       <wml2:zoneOffset>+11:00</wml2:zoneOffset>
       <wml2:zoneAbbreviation>AEDT</wml2:zoneAbbreviation>
     </wml2:TimeZone>
   </wml2:timeZone>
-  
+
 </wml2:MonitoringPoint>

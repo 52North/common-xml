@@ -7,7 +7,7 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <wsn-b:Notify xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:wsn-b="http://docs.oasis-open.org/wsn/b-2"
-xmlns:wsa="http://www.w3.org/2005/08/addressing"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:wsa="http://www.w3.org/2005/08/addressing"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:os="http://www.opengis.net/oseo/1.0"
 xsi:schemaLocation="http://docs.oasis-open.org/wsn/b-2 http://docs.oasis-open.org/wsn/b-2.xsd">
 <wsn-b:NotificationMessage>

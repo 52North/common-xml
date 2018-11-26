@@ -8,7 +8,7 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <!-- Execute operation request assuming use of default formats.-->
-<!-- Equivalent GET request (without the BufferZoneWidth) is 
+<!-- Equivalent GET request (without the BufferZoneWidth) is
 		http://foo.bar/foo?
 			Service=WPS&
 			Version=1.0.0&

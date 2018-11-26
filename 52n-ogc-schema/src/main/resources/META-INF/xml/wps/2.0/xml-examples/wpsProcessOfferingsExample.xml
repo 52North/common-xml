@@ -13,9 +13,9 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
-	
+
 	<wps:ProcessOffering jobControlOptions="sync-execute async-execute dismiss" outputTransmission="value reference">
-		<wps:Process> 			
+		<wps:Process>
 			<ows:Title>Planar Buffer operation for Simple Features</ows:Title>
 			<ows:Abstract>Create a buffer around Simple Feature geometries. Accepts any valid simple features input in GML or GeoJson and computes their joint buffer geometry.</ows:Abstract>
 			<ows:Identifier>http://my.wps.server/processes/proximity/Planar-Buffer</ows:Identifier>
@@ -64,5 +64,5 @@
 			</wps:Output>
 		</wps:Process>
 	</wps:ProcessOffering>
-	
+
 </wps:ProcessOfferings>
