@@ -64,5 +64,9 @@
       <groupId>org.n52.sensorweb</groupId>
       <artifactId>52n-xml-wsn-v13</artifactId>
     </dependency>
+    <dependency>
+      <groupId>stax</groupId>
+      <artifactId>stax-api</artifactId>
+    </dependency>
   </dependencies>
 </project>
