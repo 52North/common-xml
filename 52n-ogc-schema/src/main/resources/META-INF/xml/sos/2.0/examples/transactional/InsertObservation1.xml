@@ -57,7 +57,7 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 			<om:featureOfInterest xlink:href="http://wfs.example.org?request=getFeature&amp;featureid=river1"/>
 			<om:result xsi:type="gml:MeasureType" uom="urn:ogc:def:uom:OGC:m">0.28</om:result>
 		</om:OM_Observation>
-		
+
 	</sos:observation>
 
 </sos:InsertObservation>

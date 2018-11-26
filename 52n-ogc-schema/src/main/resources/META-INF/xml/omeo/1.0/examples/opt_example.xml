@@ -52,9 +52,9 @@
 					<eop:orbitNumber>12</eop:orbitNumber>
 					<eop:lastOrbitNumber>12</eop:lastOrbitNumber>
 					<eop:orbitDirection>ASCENDING</eop:orbitDirection>
-					<eop:illuminationAzimuthAngle uom="deg">10</eop:illuminationAzimuthAngle> 
+					<eop:illuminationAzimuthAngle uom="deg">10</eop:illuminationAzimuthAngle>
 					<eop:acrossTrackIncidenceAngle uom="deg">-14.0</eop:acrossTrackIncidenceAngle>
-					<eop:alongTrackIncidenceAngle uom="deg">-13.9</eop:alongTrackIncidenceAngle>										
+					<eop:alongTrackIncidenceAngle uom="deg">-13.9</eop:alongTrackIncidenceAngle>
 					<eop:pitch uom="deg">0</eop:pitch>
 					<eop:roll uom="deg">0</eop:roll>
 					<eop:yaw uom="deg">0</eop:yaw>
@@ -95,7 +95,7 @@
 					<eop:fileName>
 						<ows:ServiceReference xmlns="http://www.opengis.net/ows/2.0" xlink:href="http://www.mybrowse.com/et"><ows:RequestMessage></ows:RequestMessage></ows:ServiceReference>
 					</eop:fileName>
-					
+
 					<!--<eop:fileName href="http://eop.cnes.fr/catalog/DS_PHR1A_20010822110247_TLS_PX_E123N45_0101_01234.jpg"/eop:fileName>-->
 				</eop:BrowseInformation>
 			</eop:browse>

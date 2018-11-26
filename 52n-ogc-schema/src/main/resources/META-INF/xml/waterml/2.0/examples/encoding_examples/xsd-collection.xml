@@ -28,7 +28,7 @@
       <wml2:profile xlink:href="http://www.opengis.net/spec/waterml/2.0/conf/xsd-observation-process"/>
     </wml2:DocumentMetadata>
   </wml2:metadata>
-  
+
   <wml2:temporalExtent>
     <gml:TimePeriod gml:id="time-period.1">
       <gml:beginPosition>2011-11-21T12:30:00+10:00</gml:beginPosition>

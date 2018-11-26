@@ -13,10 +13,10 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd"
-	
+
 	service="WPS"
 	version="2.0.0">
-	
+
 	<ows:ServiceIdentification>
 		<ows:Title>MyWebProcessingService</ows:Title>
 		<ows:Abstract>A Demo Service offering typical GIS distance transform processes</ows:Abstract>
@@ -48,7 +48,7 @@
 		<ows:Operation name="GetCapabilities">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Get 
+					<ows:Get
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -56,9 +56,9 @@
 		<ows:Operation name="DescribeProcess">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Get 
+					<ows:Get
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
-					<ows:Post 
+					<ows:Post
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -66,7 +66,7 @@
 		<ows:Operation name="Execute">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Post 
+					<ows:Post
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -74,9 +74,9 @@
 		<ows:Operation name="GetStatus">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Get 
+					<ows:Get
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
-					<ows:Post 
+					<ows:Post
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -84,9 +84,9 @@
 		<ows:Operation name="GetResult">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Get 
+					<ows:Get
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
-					<ows:Post 
+					<ows:Post
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -94,9 +94,9 @@
 		<ows:Operation name="Dismiss">
 			<ows:DCP>
 				<ows:HTTP>
-					<ows:Get 
+					<ows:Get
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
-					<ows:Post 
+					<ows:Post
 					xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
 				</ows:HTTP>
 			</ows:DCP>
@@ -113,5 +113,5 @@
 			<ows:Identifier>http://my.site/distance-transform/cost-distance</ows:Identifier>
 		</wps:ProcessSummary>
 	</wps:Contents>
-	
+
 </wps:Capabilities>

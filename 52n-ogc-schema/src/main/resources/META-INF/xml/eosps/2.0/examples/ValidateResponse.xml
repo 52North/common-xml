@@ -22,7 +22,7 @@
       <sps:requestStatus>Accepted</sps:requestStatus>
       <sps:statusMessage>3 segments validated successfully</sps:statusMessage>
       <sps:taskStatus>InExecution</sps:taskStatus>
-      <sps:updateTime>2010-02-03T13:00:56Z</sps:updateTime>      
+      <sps:updateTime>2010-02-03T13:00:56Z</sps:updateTime>
     </sps:StatusReport>
   </result>
 </ValidateResponse>

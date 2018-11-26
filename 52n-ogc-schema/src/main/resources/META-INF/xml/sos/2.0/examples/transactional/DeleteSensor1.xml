@@ -22,10 +22,10 @@ http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd" xm
 	</soap12:Header>
 	<soap12:Body>
 		<swes:DeleteSensor service="SOS" version="2.0.0">
-	
+
 	<!--identifier of the sensor which shall be deleted-->
 	<swes:procedure>http://www.example.org/register/process/Water_Gage_2</swes:procedure>
-	
+
 </swes:DeleteSensor>
 	</soap12:Body>
 </soap12:Envelope>

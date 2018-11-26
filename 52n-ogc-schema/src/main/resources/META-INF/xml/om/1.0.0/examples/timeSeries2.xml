@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<om:Observation gml:id="timeSeries2" xmlns:cv="http://www.opengis.net/cv/0.2.1" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:om="http://www.opengis.net/om/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" 
+<om:Observation gml:id="timeSeries2" xmlns:cv="http://www.opengis.net/cv/0.2.1" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:om="http://www.opengis.net/om/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml"
 xsi:schemaLocation="http://www.opengis.net/om/1.0 ../om.xsd http://www.opengis.net/cv/0.2.1 http://bp.schemas.opengis.net/06-188r1/cv/0.2.1/cv.xsd">
 	<gml:description>Observation test instance - time series where domain objects are explicit time periods</gml:description>
 	<gml:name>Time series 2</gml:name>

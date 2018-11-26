@@ -28,7 +28,7 @@
 					</swe:Count>
 				</swe:field>
 			</swe:DataRecord>
-		</option> 
+		</option>
 		<productDeliveryOptions>
 			<mediaDelivery>
 				<packageMedium>DVD</packageMedium>
@@ -51,7 +51,7 @@
 					</swe:Category>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!--sceneStartStopTime Parameter with FloatingPassLength restriction -->
 			<sceneSelectionParameter>
 				<swe:DataRecord>
@@ -96,8 +96,8 @@
 									<Step>0.02</Step>
 								</FloatingPassLenght>
 							</swe:values>
-						</swe:DataArray>	
-				</sceneRestriction> 
+						</swe:DataArray>
+				</sceneRestriction>
 			</sceneSelectionParameter>
 		</sceneSelectionOption>
 	</orderOptions>

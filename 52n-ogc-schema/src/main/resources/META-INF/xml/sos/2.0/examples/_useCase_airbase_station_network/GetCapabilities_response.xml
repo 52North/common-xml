@@ -15,9 +15,9 @@
 		<wsa:RelatesTo>http://my.client.com/uid/msg-0010</wsa:RelatesTo>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<sos:Capabilities version="2.0.0">
-	
+
 			<ows:ServiceIdentification>
 				<ows:Title>My SOS</ows:Title>
 				<ows:Abstract>SOS serving air quality data measured at airbase stations</ows:Abstract>

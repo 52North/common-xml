@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<GetFeature 
+<GetFeature
    version="2.0.0"
    service="WFS"
    handle="Query01"

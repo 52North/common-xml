@@ -16,8 +16,8 @@
 	<ows:ServiceIdentification>
 		<ows:Title>con terra GmbH Catalogue Server</ows:Title>
 		<ows:Abstract>
-        terraCatalog 2.1 - Web based Catalogue Service 
-        (CS-W 2.0.0/AP ISO19115/19 0.9.3 (DE-Profil 1.0.1)) for service, datasets and applications      
+        terraCatalog 2.1 - Web based Catalogue Service
+        (CS-W 2.0.0/AP ISO19115/19 0.9.3 (DE-Profil 1.0.1)) for service, datasets and applications
         </ows:Abstract>
 		<ows:Keywords>
 			<ows:Keyword>CS-W</ows:Keyword>

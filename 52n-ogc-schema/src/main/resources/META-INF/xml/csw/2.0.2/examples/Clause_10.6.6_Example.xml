@@ -8,8 +8,8 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <DescribeRecord
-   service="CSW" 
-   version="2.0.2" 
+   service="CSW"
+   version="2.0.2"
    outputFormat="application/xml"
    schemaLanguage="http://www.w3.org/2001/XMLSchema"
    xmlns="http://www.opengis.net/cat/csw/2.0.2"

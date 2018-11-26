@@ -7,9 +7,9 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<TransactionResponse xmlns="http://www.opengis.net/wcs/1.1/wcst" 
-	xmlns:ows="http://www.opengis.net/ows/1.1" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<TransactionResponse xmlns="http://www.opengis.net/wcs/1.1/wcst"
+	xmlns:ows="http://www.opengis.net/ows/1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wcs/1.1/wcst http://schemas.opengis.net/wcst/1.1/wcstTransaction.xsd">
 	<RequestId>RequestTBD</RequestId>
 	<ows:Identifier>CoverageTBD</ows:Identifier>

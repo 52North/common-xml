@@ -17,7 +17,7 @@
     xmlns:swe="http://www.opengis.net/swe/2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd"
     gml:id="C0001">
     <gml:boundedBy>
@@ -50,7 +50,7 @@
         <gml:DataBlock>
             <gml:rangeParameters/>
             <gml:tupleList>
-                119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 0,174,78 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 34,32,29 70,187,8 
+                119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 0,174,78 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 119,208,248 34,32,29 0,174,78 34,32,29 70,187,8
             </gml:tupleList>
         </gml:DataBlock>
     </gml:rangeSet>
@@ -109,7 +109,7 @@
                         </swe:AllowedValues>
                     </swe:constraint>
                 </swe:Quantity>
-            </swe:field>    
+            </swe:field>
         </swe:DataRecord>
     </gmlcov:rangeType>
 </gmlcov:GridCoverage>

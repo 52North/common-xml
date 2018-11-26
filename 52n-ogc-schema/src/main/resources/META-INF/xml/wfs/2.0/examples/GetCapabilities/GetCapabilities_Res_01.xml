@@ -326,7 +326,7 @@
       <FeatureType xmlns:bo="http://www.BlueOx.org/BlueOx">
          <Name>bo:Lakes</Name>
          <Title>The Great Northern Lakes</Title>
-         <Abstract>Lake boundaries for all lakes in the 
+         <Abstract>Lake boundaries for all lakes in the
                Great Northern Forest.</Abstract>
          <ows:Keywords>
             <ows:Keyword>lakes</ows:Keyword>
@@ -357,7 +357,7 @@
          </ExtendedDescription>
       </FeatureType>
    </FeatureTypeList>
-   <fes:Filter_Capabilities> 
+   <fes:Filter_Capabilities>
       <fes:Conformance>
          <fes:Constraint name="ImplementsQuery">
             <ows:NoValues/>

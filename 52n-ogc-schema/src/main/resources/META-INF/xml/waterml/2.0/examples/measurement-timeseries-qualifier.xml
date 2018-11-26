@@ -10,7 +10,7 @@
 <wml2:Collection xmlns:wml2="http://www.opengis.net/waterml/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sa="http://www.opengis.net/sampling/2.0"
   xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sf="http://www.opengis.net/sampling/2.0"
-  xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xsi:schemaLocation="http://www.opengis.net/waterml/2.0 
+  xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xsi:schemaLocation="http://www.opengis.net/waterml/2.0
   http://schemas.opengis.net/waterml/2.0/waterml2.xsd"
   gml:id="observation_example_use_case">
 
@@ -35,7 +35,7 @@
       </gml:dictionaryEntry>
     </gml:Dictionary>
   </wml2:localDictionary>
-  
+
   <wml2:samplingFeatureMember>
     <wml2:MonitoringPoint gml:id="monitoring_point_llewellyn_continuous">
       <gml:description>Nile river at Deddington, South Esk catchment, Tasmania</gml:description>

@@ -26,7 +26,7 @@
 	</om:phenomenonTime>
 	<om:resultTime
 		xlink:href="#ot2t"/>
-	<om:procedure 
+	<om:procedure
 		xlink:title="Abby Bachrach-Cox"
 		xlink:role="http://www.example.org/party/role/field_worker"
 		xlink:href="http://www.example.org/party/individual/abc123"/>
@@ -36,5 +36,5 @@
 		xlink:href="http://wfs.example.org?request=getFeature&amp;featureid=fruit37f "/>
 	<om:result
 		xsi:type="gml:ReferenceType"
-		xlink:title="Banana"/> 
+		xlink:title="Banana"/>
 </om:OM_Observation>

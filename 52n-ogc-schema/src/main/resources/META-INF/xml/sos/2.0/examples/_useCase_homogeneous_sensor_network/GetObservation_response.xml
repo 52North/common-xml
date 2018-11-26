@@ -16,7 +16,7 @@ http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns:xsi="http://www.w3.org/2001/XM
 		<wsa:RelatesTo>http://my.client.com/uid/msg-0010</wsa:RelatesTo>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<sos:GetObservationResponse xmlns="http://www.opengis.net/sos/2.0">
 			<!-- 1. measurements of procedure 'http://myServer.org/sensors/AQ_0001'-->
 			<observationData>

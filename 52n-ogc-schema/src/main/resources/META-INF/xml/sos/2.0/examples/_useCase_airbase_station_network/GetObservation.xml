@@ -18,7 +18,7 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 		<wsa:MessageID>http://my.client.com/uid/msg-0010</wsa:MessageID>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<GetObservation service="SOS" version="2.0.0">
 			<observedProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[NH3]</observedProperty>
 			<observedProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[CO]</observedProperty>

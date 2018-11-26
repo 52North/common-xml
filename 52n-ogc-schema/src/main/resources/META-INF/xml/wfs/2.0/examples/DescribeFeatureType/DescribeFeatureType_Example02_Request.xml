@@ -8,7 +8,7 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <DescribeFeatureType
-   service="WFS" 
+   service="WFS"
    version="2.0.0"
    outputFormat="text/xml; subtype=gml/3.2"
    xmlns="http://www.opengis.net/wfs/2.0"

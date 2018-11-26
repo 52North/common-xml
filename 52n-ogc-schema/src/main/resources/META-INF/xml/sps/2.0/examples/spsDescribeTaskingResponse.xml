@@ -96,14 +96,14 @@ possible values using         <swe:TextEncoding tokenSeparator="," blockSeparato
 2010-08-20T12:37:00+02:00,2010-08-20T14:30:00+02:00,Y,pointToLookAt,51.902112,8.192728,0,Y,3.5
 
 3) Update1 [positioningChoice=relativePositioning, relativeHorizontalPan=-10 deg, no relativeVerticalPan, no focalLength]:
-Y,relativePositioning,Y,-10,N,N 
+Y,relativePositioning,Y,-10,N,N
 
 4) Update2 [no positioningChoice, focalLength=5mm]:
 N,Y,5
 
 relevant components for update request:
 
-<swe:DataRecord>     
+<swe:DataRecord>
       <swe:field name="positioningChoice">
         <swe:DataChoice optional="true">
           <swe:item name="pointToLookAt">

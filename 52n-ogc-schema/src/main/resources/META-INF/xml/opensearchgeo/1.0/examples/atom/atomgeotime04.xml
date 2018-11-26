@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<feed xmlns="http://www.w3.org/2005/Atom" 
+<feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:geo="http://a9.com/-/opensearch/extensions/geo/1.0/"
       xmlns:georss="http://www.georss.org/georss"
       xmlns:time="http://a9.com/-/opensearch/extensions/time/1.0/"

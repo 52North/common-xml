@@ -9,7 +9,7 @@
 -->
 <LockFeature
    version="2.0.0"
-   service="WFS" 
+   service="WFS"
    expiry="4"
    lockAction="SOME"
    xmlns="http://www.opengis.net/wfs/2.0"

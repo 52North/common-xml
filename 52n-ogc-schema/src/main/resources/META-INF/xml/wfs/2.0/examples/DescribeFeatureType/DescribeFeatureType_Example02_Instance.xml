@@ -29,31 +29,31 @@
       <myns:Person  gml:id="p4456">
          <gml:identifier
          codeSpace="http://www.canadaSIN.com">424679374</gml:identifier>
-         <myns:lastName>Smith</myns:lastName> 
-         <myns:firstName>Fred</myns:firstName> 
-         <myns:age>35</myns:age> 
-         <myns:sex>male</myns:sex> 
-         <myns:spouse xlink:href="#p4467"/> 
+         <myns:lastName>Smith</myns:lastName>
+         <myns:firstName>Fred</myns:firstName>
+         <myns:age>35</myns:age>
+         <myns:sex>male</myns:sex>
+         <myns:spouse xlink:href="#p4467"/>
          <myns:location xlink:href="#pt102" />
          <myns:mailAddress xlink:href="#a201"/>
-         <myns:phone>416-123-4567</myns:phone> 
-         <myns:phone>416-890-1234</myns:phone> 
+         <myns:phone>416-123-4567</myns:phone>
+         <myns:phone>416-890-1234</myns:phone>
          <myns:livesIn xlink:href="#h32"/>
       </myns:Person>
    </wfs:member>
 
    <wfs:member>
       <myns:Person  gml:id="p4467">
-         <gml:identifier 
+         <gml:identifier
          codeSpace="http://www.canadaSIN.com">424679360</gml:identifier>
-         <myns:lastName>Smith</myns:lastName> 
-         <myns:firstName>Mary</myns:firstName> 
-         <myns:age>18</myns:age> 
-         <myns:sex>female</myns:sex> 
-         <myns:spouse xlink:href="#p4456"/> 
+         <myns:lastName>Smith</myns:lastName>
+         <myns:firstName>Mary</myns:firstName>
+         <myns:age>18</myns:age>
+         <myns:sex>female</myns:sex>
+         <myns:spouse xlink:href="#p4456"/>
          <myns:location xlink:href="#pt101" />
-         <myns:mailAddress xlink:href="#a201"/> 
-         <myns:phone>416-123-4567</myns:phone> 
+         <myns:mailAddress xlink:href="#a201"/>
+         <myns:phone>416-123-4567</myns:phone>
          <myns:phone>416-890-4532</myns:phone>
          <myns:livesIn xlink:href="#h32"/>
          <myns:isDriving xlink:href="#r1432"/>

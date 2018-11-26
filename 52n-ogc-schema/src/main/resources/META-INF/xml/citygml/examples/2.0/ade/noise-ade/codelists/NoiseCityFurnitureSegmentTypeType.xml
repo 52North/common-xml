@@ -7,27 +7,27 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<!-- 
-  External Code List enumerating the values for the attribute 
-  NoiseCityFurnitureSegmentTypeType, used in the scheme for the 
+<!--
+  External Code List enumerating the values for the attribute
+  NoiseCityFurnitureSegmentTypeType, used in the scheme for the
   noise mapping ADE.
   City GML Version No. 2.0, February 2012.
   Compiled by Angela Czerwinski, translation by Gerhard Gröger.
- 
+
   The dictionary concept of GML 3 is used to represent the values in this file.
   For each of the attributes listed above, the list of all possible values is
-  given below. The values are represented by a specific code, given by the 
-  name qualified by a codeSpace. In case of the noise mapping ADE, the 
-  codeSpace is="urn:d_nrw_sig3d/ade/noise_de". The corresponding attribute 
+  given below. The values are represented by a specific code, given by the
+  name qualified by a codeSpace. In case of the noise mapping ADE, the
+  codeSpace is="urn:d_nrw_sig3d/ade/noise_de". The corresponding attribute
   is given by the corresponding name of the definitionMember without codeSpace.
   This is according to the approach in  the german cadastre standard ALKIS.
   The IDs cannot be used to reference attribute values, since they must be
   unique globally (thus, for example. the roof type and the building function
-  cannot have the same value 3002) and since IDs are restricted syntactically, 
+  cannot have the same value 3002) and since IDs are restricted syntactically,
   e.g. they must start with a character.
   However, the intended use of names is to reflect the different terms of a
   specific notion in different communities, not to reference a entry or value.
-  In GML3,IDs are usually used to reference a value (IDs are mandatory in 
+  In GML3,IDs are usually used to reference a value (IDs are mandatory in
   dictionary entries). It has to be clarified finally whether to use names or
   IDs for referencing values.
 

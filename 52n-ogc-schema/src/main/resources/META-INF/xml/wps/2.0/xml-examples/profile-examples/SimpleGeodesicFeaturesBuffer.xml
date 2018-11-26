@@ -13,16 +13,16 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../../wps.xsd">
-	
+
 	<ows:Title>Simple Geodesic Features Buffer</ows:Title>
 	<ows:Identifier>http://some.host/profileregistry/generic/SimpleGeodesicFeaturesBuffer</ows:Identifier>
 	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process-profile/concept" xlink:href="http://some.host/profileregistry/concept/buffer"/>
 	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process-profile/concept" xlink:href="http://some.host/profileregistry/concept/geodesicbuffer"/>
-	
+
 	<!-- Returns a geometry that represents all points whose distance from
 		this Geometry is less than or equal to distance. Calculations are performed on the earth ellipsoid Geometry's spatial reference system. -->
 	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://some.host/profileregistry/generic/SimpleGeodesicFeaturesBuffer.html"/>
-	
+
 	<wps:Input>
 		<ows:Title>Input Geometry</ows:Title>
 		<ows:Identifier>INPUT_GEOMETRY</ows:Identifier>
@@ -39,5 +39,5 @@
 		<ows:Identifier>BUFFERED_GEOMETRY</ows:Identifier>
 		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://some.host/profileregistry/generic/SimpleGeodesicFeaturesBuffer.html#buffered_geometry"/>
 	</wps:Output>
-	
+
 </wps:GenericProcess>

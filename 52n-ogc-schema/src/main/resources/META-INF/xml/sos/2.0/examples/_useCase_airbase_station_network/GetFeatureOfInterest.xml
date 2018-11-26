@@ -20,7 +20,7 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 	<soap12:Body>
 <GetFeatureOfInterest xmlns="http://www.opengis.net/sos/2.0"
 	service="SOS" version="2.0.0">
-  
+
 	<spatialFilter>
 		<fes:Contains>
 			<fes:ValueReference>sams:shape</fes:ValueReference>
@@ -30,7 +30,7 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 			</gml:Envelope>
 		</fes:Contains>
 	</spatialFilter>
-  
+
 </GetFeatureOfInterest>
 
 </soap12:Body>

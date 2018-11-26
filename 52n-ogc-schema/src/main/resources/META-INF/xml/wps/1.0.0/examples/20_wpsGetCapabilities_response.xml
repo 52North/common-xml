@@ -87,6 +87,6 @@
 			<ows:Language>en-CA</ows:Language>
 			<ows:Language>fr-CA</ows:Language>
 		</wps:Supported>
-	</wps:Languages> 
+	</wps:Languages>
 	<wps:WSDL xlink:href="http://foo.bar/wps?WSDL"/>
 </wps:Capabilities>

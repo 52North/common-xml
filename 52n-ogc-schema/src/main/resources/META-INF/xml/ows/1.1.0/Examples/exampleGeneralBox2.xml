@@ -7,8 +7,8 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<BoundingBox xmlns="http://www.opengis.net/ows/1.1" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<BoundingBox xmlns="http://www.opengis.net/ows/1.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/ows/1.1 ../owsCommon.xsd" crs="urn:ogc:crs:EPSG:6.3:26986" dimensions="2">
 	<!-- Example. Primary editor: Arliss Whiteside. Last updated 2006-03-16 -->
 	<LowerCorner>189000 834000</LowerCorner>
