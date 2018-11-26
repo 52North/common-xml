@@ -57,9 +57,6 @@
     <module>52n-inspire-schema</module>
     <module>52n-portele-schema</module>
     <!-- binding dependencies -->
-    <!--
-    <module>52n-xml-aixm-v511</module>
-    -->
     <module>52n-xml-context-v100</module>
     <module>52n-xml-csw-v202</module>
     <module>52n-xml-drt-v100</module>
@@ -711,6 +708,12 @@
     </plugins>
   </build>
   <profiles>
+    <profile>
+      <id>with-aixm</id>
+      <modules>
+        <module>52n-xml-aixm-v511</module>
+      </modules>
+    </profile>
     <profile>
       <id>create-license-list</id>
       <build>
