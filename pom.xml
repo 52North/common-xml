@@ -154,6 +154,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <xbeans.version>2.6.0</xbeans.version>
+    <!-- disable spotbugs -->
+    <spotbugs.skip>true</spotbugs.skip>
+    <!-- disable checkstyle -->
+    <checkstyle.skip>true</checkstyle.skip>
   </properties>
   <dependencyManagement>
     <dependencies>
