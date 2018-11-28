@@ -594,7 +594,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
-            <compilerArgument/>
+            <compilerArgument>-Xlint:none</compilerArgument>
             <showWarnings>false</showWarnings>
             <showDeprecation>false</showDeprecation>
           </configuration>
