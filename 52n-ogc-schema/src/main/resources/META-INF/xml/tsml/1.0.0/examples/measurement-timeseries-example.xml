@@ -8,7 +8,7 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <tsml:TimeseriesTVP xmlns:tsml="http://www.opengis.net/tsml/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/tsml/1.0 http://schemas.opengis.net/tsml/1.0/timeseriesML.xsd" gml:id="ts_id33">
-	<gml:description>This is an example showing a measure time series in TimeSeriesML. 
+	<gml:description>This is an example showing a measure time series in TimeSeriesML.
     The series uses the measure-specific value types. </gml:description>
 	<tsml:metadata>
 		<tsml:TimeseriesMetadata>

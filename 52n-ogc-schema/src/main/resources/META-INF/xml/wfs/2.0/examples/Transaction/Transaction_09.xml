@@ -72,7 +72,7 @@
          </roadType>
       </RoadL_1M>
    </wfs:Insert>
-   <!-- Update the designation of a particular range of segments 
+   <!-- Update the designation of a particular range of segments
         which are now being collapsed into a single segment. The
         The filter uses an XPath expression to reference the
         designation property -->

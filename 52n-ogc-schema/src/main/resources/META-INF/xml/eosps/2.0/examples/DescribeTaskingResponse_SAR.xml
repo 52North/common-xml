@@ -148,7 +148,7 @@
             </swe:DataRecord>
           </swe:field>
         </swe:DataRecord>
-      </swe:field>      
+      </swe:field>
     </swe:DataRecord>
   </taskingParameters>
-</DescribeTaskingResponse>   
+</DescribeTaskingResponse>

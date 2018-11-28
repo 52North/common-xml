@@ -16,7 +16,7 @@
    xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd urn:us:gov:ic:ism:v2 security.xsd">
    <!-- -->
    <swe:extension>
-      <ism:security ism:classification="U" ism:ownerProducer="FRA"/> 
+      <ism:security ism:classification="U" ism:ownerProducer="FRA"/>
    </swe:extension>
    <!-- -->
    <swe:elementType name="imageData">

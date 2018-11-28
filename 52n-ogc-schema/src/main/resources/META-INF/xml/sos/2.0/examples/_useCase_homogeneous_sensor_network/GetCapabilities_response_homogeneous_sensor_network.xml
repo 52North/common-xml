@@ -15,9 +15,9 @@
 		<wsa:RelatesTo>http://my.client.com/uid/msg-0010</wsa:RelatesTo>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<sos:Capabilities version="2.0.0">
-		  
+
 		  <ows:ServiceIdentification>
 			<ows:Title>My SOS</ows:Title>
 			<ows:Abstract>SOS serving air quality data measured at airbase stations</ows:Abstract>
@@ -40,8 +40,8 @@
 			<ows:Profile>http://www.opengis.net/spec/OMXML/2.0/conf/observation</ows:Profile>
 			<ows:Fees>NONE</ows:Fees>
 			<ows:AccessConstraints>NONE</ows:AccessConstraints>
-		  </ows:ServiceIdentification>  
-		  
+		  </ows:ServiceIdentification>
+
 		  <sos:extension>
 			<sos:InsertionCapabilities>
 			  <sos:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</sos:procedureDescriptionFormat>
@@ -49,8 +49,8 @@
 			   <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
 			  <sos:supportedEncoding>http://www.opengis.net/swe/2.0/TextEncoding</sos:supportedEncoding>
 			</sos:InsertionCapabilities>
-		  </sos:extension> 
-		
+		  </sos:extension>
+
 		  <!-- the filterCapabilities section lists the filters and operands which are supported in the observation, result and feature retrieval operations -->
 		  <sos:filterCapabilities>
 			<fes:Filter_Capabilities>
@@ -127,18 +127,18 @@
 				</fes:TemporalOperators>
 			  </fes:Temporal_Capabilities>
 			</fes:Filter_Capabilities>
-		  </sos:filterCapabilities> 
-		 
+		  </sos:filterCapabilities>
+
 		  <sos:contents>
 			<sos:Contents>
-			
+
 			  <swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</swes:procedureDescriptionFormat>
-			  
+
 			  <swes:observableProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[NH3]</swes:observableProperty>
 			  <swes:observableProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[CO]</swes:observableProperty>
 			  <swes:observableProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[H2S]</swes:observableProperty>
 			  <swes:observableProperty>http://giv-genesis.uni-muenster.de:8080/SOR/REST/phenomenon/OGC/Concentration[SO2]</swes:observableProperty>
-			  
+
 				<!-- ... -->
 				<!-- relatedFeature for discovery purposes. Not the sampling features!! sampling features are queried via GetFeatureOfInterest-->
 				<!-- The country within which the measurements were taken-->
@@ -173,7 +173,7 @@
 						<swes:target xlink:href="http://myServer.org/features/Moersbach"/>
 					</swes:FeatureRelationship>
 				</swes:relatedFeature>
-				  
+
 			  <swes:offering>
 				<sos:ObservationOffering>
 				  <swes:description>Offering of observations measured by a network of homogeneous air quality sensor stations in Germany / the Netherlands</swes:description>
@@ -194,10 +194,10 @@
 				  </sos:phenomenonTime>
 				</sos:ObservationOffering>
 			  </swes:offering>
-					
+
 			  <sos:responseFormat>http://www.opengis.net/om/2.0</sos:responseFormat>
 			  <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
-		
+
 			</sos:Contents>
 		  </sos:contents>
 		</sos:Capabilities>

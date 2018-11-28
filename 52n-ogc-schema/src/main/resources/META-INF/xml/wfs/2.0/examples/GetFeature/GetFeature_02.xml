@@ -11,7 +11,7 @@
 This example fetches a subset of properties of the feature
 type InWaterA_1M. The specific instance that is retrieved
 by the request is identified by the feature identifier
-"InWaterA_1M.1013". 
+"InWaterA_1M.1013".
 -->
 <wfs:GetFeature
    service="WFS"

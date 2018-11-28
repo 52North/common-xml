@@ -60,16 +60,16 @@
 			    </wml2:temporalExtent>
 			  </wml2:TimeseriesMetadata>
 			</wml2:metadata>
-		  
+
 		  <wml2:defaultPointMetadata>
 				<wml2:DefaultTVPCategoricalMetadata>
-					<wml2:quality 
+					<wml2:quality
 					  xlink:href="http://www.opengis.net/def/waterml/2.0/quality/good"
 						xlink:title="Good"/>
 					<wml2:codeSpace>http://www.example.com/terms/2.3</wml2:codeSpace>
 				</wml2:DefaultTVPCategoricalMetadata>
 		  </wml2:defaultPointMetadata>
-		  
+
 			<wml2:point>
 				<wml2:CategoricalTVP>
 					<wml2:time>2011-11-21T12:27:00+10:00</wml2:time>

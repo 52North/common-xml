@@ -28,7 +28,7 @@
 					</swe:Count>
 				</swe:field>
 			</swe:DataRecord>
-		</option> 
+		</option>
 		<productDeliveryOptions>
 			<mediaDelivery>
 				<packageMedium>DVD</packageMedium>
@@ -222,7 +222,7 @@
 					</swe:Category>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<sceneSelectionParameter>
 				<swe:DataRecord>
 					<swe:field name="sceneStartStopTime">

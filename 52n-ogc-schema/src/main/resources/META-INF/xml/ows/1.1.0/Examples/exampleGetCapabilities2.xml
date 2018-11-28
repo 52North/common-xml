@@ -7,9 +7,9 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<GetCapabilities xmlns="http://www.opengis.net/ows/1.1" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.opengis.net/ows/1.1 ../owsGetCapabilities.xsd" 
+<GetCapabilities xmlns="http://www.opengis.net/ows/1.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/ows/1.1 ../owsGetCapabilities.xsd"
 updateSequence="XYZ123">
 	<!-- Maximum example for WCS. Primary editor: Arliss Whiteside. Last updated 2006-03-16-->
 	<AcceptVersions>

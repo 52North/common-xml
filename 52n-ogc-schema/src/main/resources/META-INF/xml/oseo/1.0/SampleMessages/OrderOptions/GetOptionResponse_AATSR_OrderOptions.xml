@@ -47,7 +47,7 @@
 						</swe:constraint>
 					</swe:Category>
 				</swe:field>
-			</swe:DataRecord>	
+			</swe:DataRecord>
 			<grouping>Processing Option</grouping>
 		</option>
 		<productDeliveryOptions>
@@ -78,7 +78,7 @@
 						</swe:constraint>
 					</swe:Category>
 				</swe:field>
-			</swe:DataRecord>	
+			</swe:DataRecord>
 			<grouping>Processing Option</grouping>
 		</option>
 		<option>
@@ -95,7 +95,7 @@
 						</swe:constraint>
 					</swe:Category>
 				</swe:field>
-			</swe:DataRecord>	
+			</swe:DataRecord>
 			<grouping>Processing Option</grouping>
 		</option>
 		<productDeliveryOptions>

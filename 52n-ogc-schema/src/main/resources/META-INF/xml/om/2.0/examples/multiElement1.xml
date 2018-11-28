@@ -15,7 +15,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:gml="http://www.opengis.net/gml/3.2"
-	xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd 
+	xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
 	http://www.opengis.net/cv/0.2/gml32 http://bp.schemas.opengis.net/06-188r2/cv/0.2.2_gml32/cv.xsd">
 	<gml:description>Observation test instance - multi-element featureOfInterest </gml:description>
 	<gml:name>Multi-element 1</gml:name>

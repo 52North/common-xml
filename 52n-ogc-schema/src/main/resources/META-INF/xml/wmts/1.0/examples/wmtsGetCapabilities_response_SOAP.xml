@@ -8,22 +8,22 @@
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
 <!-- This is an example of a SOAP WMTS GetTile response -->
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope">
 	<soap:Body>
-		<Capabilities xmlns="http://www.opengis.net/wmts/1.0" 
-			xmlns:ows="http://www.opengis.net/ows/1.1" 
-			xmlns:xlink="http://www.w3.org/1999/xlink" 
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-			xmlns:gml="http://www.opengis.net/gml" 
-			xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd" 
+		<Capabilities xmlns="http://www.opengis.net/wmts/1.0"
+			xmlns:ows="http://www.opengis.net/ows/1.1"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:gml="http://www.opengis.net/gml"
+			xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd"
 			version="1.0.0">
 			<ows:ServiceIdentification>
 				<ows:Title>World example Web Map Tile Service</ows:Title>
-				<ows:Abstract>Example service that contrains some world layers 
-					in the urn:ogc:def:wkss:OGC:1.0:GlobalCRS84Pixel Well-known 
+				<ows:Abstract>Example service that contrains some world layers
+					in the urn:ogc:def:wkss:OGC:1.0:GlobalCRS84Pixel Well-known
 					scale set</ows:Abstract>
 				<ows:Keywords>
 					<ows:Keyword>World</ows:Keyword>
@@ -90,7 +90,7 @@
 				<Layer>
 					<ows:Title>etopo2</ows:Title>
 					<ows:Abstract>ETOPO2 - 2 minute Worldwide Bathymetry/Topography
-						Data taken from National Geophysical Data Center(NGDC) CD-ROM, ETOPO2 
+						Data taken from National Geophysical Data Center(NGDC) CD-ROM, ETOPO2
 						Global 2' Elevations, September 2001.
 						Author
 						Dr. Peter W. Sloss (Peter.W.Sloss@noaa.gov),
@@ -99,16 +99,16 @@
 						303-497-6119, fax 303-497-6513
 						Major Sources of Data :
 						  1. The seafloor data between latitudes 64— North and 72— South are
-						     from the work of Smith and Sandwell (1997). 
+						     from the work of Smith and Sandwell (1997).
 						  2. Seafloor data southward of 72— South are from the US Naval
 						     Oceanographic Office's (NAVOCEANO) Digital Bathymetric Data Base
 						     Variable Resolution (DBDBV), version 4.1, gridded at 5 minute
-						     spacing; 
+						     spacing;
 						  3. Land topography is from the GLOBE Project, an internationally
 						     designed, developed, and independently peer-reviewed global digital
 						     elevation model (DEM), at a latitude-longitude grid spacing of 30
-						     arc-seconds (30"). 
-     
+						     arc-seconds (30").
+
 						     The data are cell-centered, with an array size of 10800 columns x
 						     5400 rows; coverage is from 180— West to 179— 58' East and 90— North
 						     to 89— 58' South. A data record for the South Pole is not in these
@@ -135,12 +135,12 @@
 				</Layer>
 				<Layer>
 					<ows:Title>Administrative Boundaries</ows:Title>
-					<ows:Abstract>The sub Country Administrative Units 1998 GeoDataset represents 
-					a small-scale political map of the world. The data are generalized and were designed 
-					for display at scales to about 1:10,000,000. The data were generalized from ESRI's 
-					ArcWorld Supplement Map data. Country codes are from U.S. Federal Information 
-					Processing Standards (FIPS) version 10-4. World sub Country Administrative Units 
-					represent 2605 first level administrative units such as states and provinces with 
+					<ows:Abstract>The sub Country Administrative Units 1998 GeoDataset represents
+					a small-scale political map of the world. The data are generalized and were designed
+					for display at scales to about 1:10,000,000. The data were generalized from ESRI's
+					ArcWorld Supplement Map data. Country codes are from U.S. Federal Information
+					Processing Standards (FIPS) version 10-4. World sub Country Administrative Units
+					represent 2605 first level administrative units such as states and provinces with
 					14 descriptive fields.</ows:Abstract>
 					<ows:WGS84BoundingBox>
 						<ows:LowerCorner>-180 -90</ows:LowerCorner>

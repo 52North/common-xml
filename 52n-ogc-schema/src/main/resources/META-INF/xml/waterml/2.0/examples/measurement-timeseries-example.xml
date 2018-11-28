@@ -14,7 +14,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/waterml/2.0
   http://schemas.opengis.net/waterml/2.0/waterml2.xsd" gml:id="ts_id33">
-  <gml:description>This is an example showing a measure time series in waterml2.0. 
+  <gml:description>This is an example showing a measure time series in waterml2.0.
     The series uses the measure-specific metadata types. </gml:description>
   <wml2:metadata>
     <wml2:MeasurementTimeseriesMetadata>
@@ -27,24 +27,24 @@
       <wml2:cumulative>false</wml2:cumulative>
     </wml2:MeasurementTimeseriesMetadata>
   </wml2:metadata>
-  
+
   <wml2:defaultPointMetadata>
     <wml2:DefaultTVPMeasurementMetadata>
-      <wml2:quality xlink:href="http://www.opengis.net/def/waterml/2.0/quality/suspect" 
+      <wml2:quality xlink:href="http://www.opengis.net/def/waterml/2.0/quality/suspect"
         xlink:title="suspect"/>
       <wml2:uom code="m"/>
-      <wml2:interpolationType xlink:href="http://www.opengis.net/def/waterml/2.0/interpolationType/Continuous" 
+      <wml2:interpolationType xlink:href="http://www.opengis.net/def/waterml/2.0/interpolationType/Continuous"
         xlink:title="continuous"/>
     </wml2:DefaultTVPMeasurementMetadata>
   </wml2:defaultPointMetadata>
-  
+
   <wml2:point>
     <wml2:MeasurementTVP>
       <wml2:time>2011-11-16T00:00:00+11:00</wml2:time>
       <wml2:value>2.0</wml2:value>
       <wml2:metadata>
         <wml2:TVPMeasurementMetadata>
-          <wml2:quality xlink:href="http://www.opengis.net/def/waterml/2.0/quality/suspect" 
+          <wml2:quality xlink:href="http://www.opengis.net/def/waterml/2.0/quality/suspect"
             xlink:title="suspect"/>
           <wml2:interpolationType/>
           <wml2:accuracy>
@@ -58,7 +58,7 @@
       </wml2:metadata>
     </wml2:MeasurementTVP>
   </wml2:point>
-  
+
   <wml2:point>
     <wml2:MeasurementTVP>
       <wml2:time>2011-11-17T00:00:00+11:00</wml2:time>

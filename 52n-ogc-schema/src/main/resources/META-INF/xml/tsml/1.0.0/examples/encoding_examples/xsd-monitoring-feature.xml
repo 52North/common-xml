@@ -20,7 +20,7 @@
 	<tsml:relatedParty>
 		<gmd:CI_ResponsibleParty>
 			<gmd:organisationName>
-				<gco:CharacterString>Department of Primary Industries, Parks, 
+				<gco:CharacterString>Department of Primary Industries, Parks,
           Water and Environment (DPIPWE)</gco:CharacterString>
 			</gmd:organisationName>
 			<gmd:role>

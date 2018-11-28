@@ -15,9 +15,9 @@
 		<wsa:RelatesTo>http://my.client.com/uid/msg-0010</wsa:RelatesTo>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<sos:Capabilities version="2.0.0">
-		
+
 			<ows:ServiceIdentification>
 				<ows:Title>My SOS</ows:Title>
 				<ows:Abstract>SOS serving water related data measured sensors attached to mobile gliders</ows:Abstract>
@@ -41,7 +41,7 @@
 				<ows:Fees>NONE</ows:Fees>
 				<ows:AccessConstraints>NONE</ows:AccessConstraints>
 			</ows:ServiceIdentification>
-			
+
 			<sos:extension>
 				<sos:InsertionCapabilities>
 					<sos:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</sos:procedureDescriptionFormat>
@@ -50,8 +50,8 @@
 					<sos:supportedEncoding>http://www.opengis.net/swe/2.0/TextEncoding</sos:supportedEncoding>
 				</sos:InsertionCapabilities>
 			</sos:extension>
-			
-			
+
+
 			<!-- the filterCapabilities section lists the filters and operands which are supported in the observation, result and feature retrieval operations -->
 			<sos:filterCapabilities>
 				<fes:Filter_Capabilities>
@@ -129,8 +129,8 @@
 					</fes:Temporal_Capabilities>
 				</fes:Filter_Capabilities>
 			</sos:filterCapabilities>
-			
-			
+
+
 			<sos:contents>
 				<sos:Contents>
 					<swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</swes:procedureDescriptionFormat>

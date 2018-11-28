@@ -7,11 +7,11 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<feed xmlns="http://www.w3.org/2005/Atom" 
-	xmlns:dc="http://purl.org/dc/elements/1.1/" 
-	xmlns:georss="http://www.georss.org/georss" 
-	xmlns:gml="http://www.opengis.net/gml" 
-	xmlns:owc="http://www.opengis.net/owc/1.0" 
+<feed xmlns="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:owc="http://www.opengis.net/owc/1.0"
 	xml:lang="en">
 	<link rel="profile"
 		href="http://www.opengis.net/spec/owc-atom/1.0/req/core"
@@ -24,12 +24,12 @@
 	<updated>2012-02-03T12:00:30Z</updated>
 	<dc:publisher>interactive-instruments</dc:publisher>
 	<generator uri="https://svn.opengeospatial.org/ogc-projects/cite/scripts/owsc/1.0/trunk/utils/xslt/wms/1.3.0/wms2owc.xsl" version="1.0">
-        OGC Context CITE Testing XSLT (Extensible Stylesheet Language Transformations)   
+        OGC Context CITE Testing XSLT (Extensible Stylesheet Language Transformations)
       </generator>
 	<rights>
          Terradue Srl.
          Copyright (c) 2012. Some rights reserved.  This feed is
-         licensed under a Creative Commons Attribution 3.0 License. 
+         licensed under a Creative Commons Attribution 3.0 License.
       </rights>
 	<entry>
 		<id>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?gml:AbstractFeature/</id>
@@ -2435,7 +2435,7 @@
         <owc:theme>
 			<owc:id>SurfacesTheme</owc:id>
 			<owc:title>Surface Features</owc:title>
-			<owc:entryRef>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?tds:AircraftHangarGeosurface/</owc:entryRef>		
+			<owc:entryRef>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?tds:AircraftHangarGeosurface/</owc:entryRef>
 			<owc:entryRef>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?tds:ApronGeosurface/</owc:entryRef>
 			<owc:entryRef>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?tds:ControlTowerGeosurface/</owc:entryRef>
 			<owc:entryRef>http://services.interactive-instruments.de/xsprojects/ows9-tds/services/ltds/wfs?tds:LandAerodromeGeosurface/</owc:entryRef>

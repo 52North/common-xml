@@ -17,7 +17,7 @@
                         http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd'
     gml:id="C0042">
     <gml:boundedBy>
-        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4979" axisLabels="Lat Long h" uomLabels="deg deg m" srsDimension="3"> 
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4979" axisLabels="Lat Long h" uomLabels="deg deg m" srsDimension="3">
             <gml:lowerCorner>1 1 1</gml:lowerCorner>
             <gml:upperCorner>4 4 4</gml:upperCorner>
         </gml:Envelope>
@@ -48,7 +48,7 @@
     </gml:domainSet>
     <gml:rangeSet>
         <gml:QuantityList uom="urn:x-si:v1999:uom:degreesC">40 50 45 60</gml:QuantityList>
-    </gml:rangeSet>    
+    </gml:rangeSet>
     <gmlcov:rangeType>
         <swe:DataRecord>
             <swe:field name="Temperature">

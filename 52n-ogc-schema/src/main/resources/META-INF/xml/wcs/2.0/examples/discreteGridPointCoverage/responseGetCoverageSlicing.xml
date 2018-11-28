@@ -18,7 +18,7 @@
                         http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd'
     gml:id="C0043">
     <gml:boundedBy>
-        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2"> 
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2">
             <gml:lowerCorner>1 1</gml:lowerCorner>
             <gml:upperCorner>1 1</gml:upperCorner>
         </gml:Envelope>
@@ -38,7 +38,7 @@
         <gml:DataBlock>
             <gml:rangeParameters/>
             <gml:tupleList>
-                1 
+                1
             </gml:tupleList>
         </gml:DataBlock>
     </gml:rangeSet>

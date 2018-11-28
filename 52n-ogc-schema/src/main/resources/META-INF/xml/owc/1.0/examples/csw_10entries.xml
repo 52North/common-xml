@@ -7,13 +7,13 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<feed xmlns="http://www.w3.org/2005/Atom" 
-	xmlns:dc="http://purl.org/dc/elements/1.1/" 
-	xmlns:georss="http://www.georss.org/georss" 
-	xmlns:gml="http://www.opengis.net/gml" 
-	xmlns:owc="http://www.opengis.net/owc/1.0" 
+<feed xmlns="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:owc="http://www.opengis.net/owc/1.0"
 	xml:lang="en">
-										  
+
 	<link rel="profile"
 		href="http://www.opengis.net/spec/owc-atom/1.0/req/core"
 		title="This file is compliant with version 1.0 of OGC Context"/>
@@ -47,7 +47,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -63,7 +63,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -99,7 +99,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -115,7 +115,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -151,7 +151,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -167,7 +167,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -203,7 +203,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -219,7 +219,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -255,7 +255,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -271,7 +271,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -307,7 +307,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -323,7 +323,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -359,7 +359,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -375,7 +375,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -411,7 +411,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -427,7 +427,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -463,7 +463,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -479,7 +479,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>
@@ -515,7 +515,7 @@
 				<owc:request type="application/xml">
 					<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
 						xmlns:gmd="http://www.isotc211.org/2005/gmd/" xmlns:gml="http://www.opengis.net/gml"
-						xmlns:ogc="http://www.opengis.net/ogc" 
+						xmlns:ogc="http://www.opengis.net/ogc"
 						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRecords="10"
 						outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd"
 						resultType="results" service="CSW"
@@ -531,7 +531,7 @@
 								</ogc:Filter>
 							</csw:Constraint>
 						</csw:Query>
-					</csw:GetRecords>					
+					</csw:GetRecords>
 				</owc:request>
 			</owc:operation>
 		</owc:offering>

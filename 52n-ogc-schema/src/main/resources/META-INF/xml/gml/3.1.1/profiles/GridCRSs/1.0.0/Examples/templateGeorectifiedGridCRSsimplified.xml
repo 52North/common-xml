@@ -7,11 +7,11 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<DerivedCRS xmlns="http://www.opengis.net/gml" 
-xmlns:gml="http://www.opengis.net/gml" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.opengis.net/gml ../gmlGridCRSsProfile.xsd" 
+<DerivedCRS xmlns="http://www.opengis.net/gml"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/gml ../gmlGridCRSsProfile.xsd"
 gml:id="GeorectifiedImageXXXXCRS">
 	<!-- Specific georectified image or grid must be identified in this gml:id.  -->
 	<!-- Last updated 2005-11-15 -->

@@ -42,7 +42,7 @@
 				<swe:AllowedValues>
 					<swe:interval>0 250</swe:interval>
 				</swe:AllowedValues>
-			</swe:constraint>			
+			</swe:constraint>
 		</swe:Quantity>
 	</swe:field>
 	<!-- -->
@@ -54,7 +54,7 @@
 				<swe:AllowedValues>
 					<swe:interval>-180 +180</swe:interval>
 				</swe:AllowedValues>
-			</swe:constraint>			
+			</swe:constraint>
 		</swe:Quantity>
 	</swe:field>
 	<!-- -->
@@ -67,7 +67,7 @@
 					<swe:interval>20 50</swe:interval>
 				  <swe:interval>60 INF</swe:interval>
 				</swe:AllowedValues>
-			</swe:constraint>			
+			</swe:constraint>
 		</swe:Quantity>
 	</swe:field>
 	<!-- -->
@@ -81,7 +81,7 @@
 					<swe:value>1024</swe:value>
 				</swe:AllowedValues>
 			</swe:constraint>
-		</swe:Count>		
+		</swe:Count>
 	</swe:field>
 	<!-- -->
 	<swe:field name="time_field_with_constraint">

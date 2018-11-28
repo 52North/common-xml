@@ -1,47 +1,51 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>org.n52.sensorweb</groupId>
-	<artifactId>52n-common-xml</artifactId>
+    <artifactId>52n-common-xml</artifactId>
     <version>1.1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>52n-xml-gml-v301</artifactId>
   <packaging>jar</packaging>
   <name>OGC GML schema (spec. v3.0.1)</name>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<comments>A business-friendly OSS license</comments>
-		</license>
-	</licenses>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
   <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>xmlbeans-maven-plugin</artifactId>
-                <configuration>
-                    <sourceSchemas>
-                        <sourceSchema>gml/3.0.1/base/gml.xsd</sourceSchema>
-						<sourceSchema>gml/3.0.1/smil/smil20.xsd</sourceSchema>
-                    </sourceSchemas>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>xmlbeans</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.n52.sensorweb</groupId>
-            <artifactId>52n-ogc-schema</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.n52.sensorweb</groupId>
-            <artifactId>52n-xml-xlink-v110</artifactId>
-        </dependency>
-    </dependencies>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xmlbeans-maven-plugin</artifactId>
+        <configuration>
+          <sourceSchemas>
+            <sourceSchema>gml/3.0.1/base/gml.xsd</sourceSchema>
+            <sourceSchema>gml/3.0.1/smil/smil20.xsd</sourceSchema>
+          </sourceSchemas>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.xmlbeans</groupId>
+      <artifactId>xmlbeans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.n52.sensorweb</groupId>
+      <artifactId>52n-ogc-schema</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.n52.sensorweb</groupId>
+      <artifactId>52n-xml-xlink-v110</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>stax</groupId>
+      <artifactId>stax-api</artifactId>
+    </dependency>
+  </dependencies>
 </project>

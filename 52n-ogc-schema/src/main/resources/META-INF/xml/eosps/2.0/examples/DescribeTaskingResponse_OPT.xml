@@ -101,7 +101,7 @@
               <swe:field name="Occurences">
                 <swe:Count definition="http://www.opengis.net/def/property/OGC-EO/0/Occurences">
                   <swe:label>Number of Occurences</swe:label>
-                  <swe:description>Number of times the region should be fully covered</swe:description>                  
+                  <swe:description>Number of times the region should be fully covered</swe:description>
                 </swe:Count>
               </swe:field>
               <swe:field name="PeriodicityRange">
@@ -134,7 +134,7 @@
                     <swe:AllowedTokens>
                       <swe:value>SINGLE SWATH</swe:value>
                       <swe:value>MONOPASS</swe:value>
-                      <swe:value>MULTIPASS</swe:value>                      
+                      <swe:value>MULTIPASS</swe:value>
                     </swe:AllowedTokens>
                   </swe:constraint>
                   <swe:value>MULTIPASS</swe:value>

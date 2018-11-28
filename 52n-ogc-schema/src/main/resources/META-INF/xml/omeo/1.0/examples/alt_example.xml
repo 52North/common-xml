@@ -36,7 +36,7 @@
 			</eop:platform>
 			<eop:instrument>
 				<eop:Instrument>
-					<eop:shortName>DummyAltimeter</eop:shortName>					
+					<eop:shortName>DummyAltimeter</eop:shortName>
 				</eop:Instrument>
 			</eop:instrument>
 			<eop:sensor>
@@ -67,12 +67,12 @@
 					<eop:shortName>DummyAuxiliaryInstrument</eop:shortName>
 					<alt:instrumentType>MICROWAVE_RADIOMETER</alt:instrumentType>
 				</alt:AuxiliaryInstrument>
-			</alt:auxiliaryInstrument>					
+			</alt:auxiliaryInstrument>
 		</alt:EarthObservationEquipment>
 	</om:procedure>
 	<om:observedProperty xlink:href="#params1"/>
 	<om:featureOfInterest>
-		<alt:Footprint gml:id="alt_fp">		
+		<alt:Footprint gml:id="alt_fp">
 			<eop:multiExtentOf></eop:multiExtentOf>
 			<alt:nominalTrack>
 				<gml:MultiCurve gml:id="alt_fpcurve1">
@@ -133,7 +133,7 @@
 						</swe:Phenomenon>
 					</eop:phenomenon>
 				</eop:ParameterInformation>
-			</eop:parameter>			
+			</eop:parameter>
 		</eop:EarthObservationResult>
 	</om:result>
 	<eop:metaDataProperty>

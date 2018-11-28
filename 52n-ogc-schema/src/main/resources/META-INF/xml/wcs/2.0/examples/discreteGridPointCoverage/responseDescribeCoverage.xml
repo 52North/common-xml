@@ -17,10 +17,10 @@
                         http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsAll.xsd'>
     <wcs:CoverageDescription gml:id="CD0001">
         <gml:boundedBy>
-            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2"> 
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" uomLabels="deg deg" srsDimension="2">
                 <gml:lowerCorner>1 1</gml:lowerCorner>
                 <gml:upperCorner>5 3</gml:upperCorner>
-            </gml:Envelope>        
+            </gml:Envelope>
         </gml:boundedBy>
         <wcs:CoverageId>C0001</wcs:CoverageId>
         <gml:domainSet>
