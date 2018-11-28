@@ -590,6 +590,23 @@
     </extensions>
     <pluginManagement>
       <plugins>
+       <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <compilerArgument/>
+            <showWarnings>false</showWarnings>
+            <showDeprecation>false</showDeprecation>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <configuration>
+            <additionalparam>-Xdoclint:none</additionalparam>
+            <additionalOptions>-Xdoclint:none</additionalOptions>
+          </configuration>
+        </plugin>
         <plugin>
           <groupId>org.jasig.maven</groupId>
           <artifactId>maven-notice-plugin</artifactId>
