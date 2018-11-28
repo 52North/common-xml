@@ -50,6 +50,15 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <configuration>
+          <usedDependencies>
+            <usedDependency>org.n52.sensorweb:52n-xml-sos-v20</usedDependency>
+          </usedDependencies>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -64,6 +73,10 @@
     <dependency>
       <groupId>org.n52.sensorweb</groupId>
       <artifactId>52n-xml-swes-v20</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.n52.sensorweb</groupId>
+      <artifactId>52n-xml-sweCommon-v20</artifactId>
     </dependency>
     <dependency>
       <groupId>org.n52.sensorweb</groupId>

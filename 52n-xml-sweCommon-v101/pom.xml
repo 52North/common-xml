@@ -46,5 +46,9 @@
       <groupId>stax</groupId>
       <artifactId>stax-api</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.n52.sensorweb</groupId>
+      <artifactId>52n-xml-xlink-v110</artifactId>
+    </dependency>
   </dependencies>
 </project>

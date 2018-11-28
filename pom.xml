@@ -14,9 +14,9 @@
   <packaging>pom</packaging>
   <name>52North XML Schema Bindings</name>
   <description>
-        The 52n XML Bindings comprise the OGC schema models and
-        all 52n schema models needed across the 52n SWE framework.
-    </description>
+    The 52n XML Bindings comprise the OGC schema models and
+    all 52n schema models needed across the 52n SWE framework.
+  </description>
   <url>https://wiki.52north.org/Documentation/XMLBeansBindings</url>
   <issueManagement>
     <system>Github</system>
