@@ -152,7 +152,7 @@
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <xbeans.version>2.6.0</xbeans.version>
+    <xbeans.version>3.0.1</xbeans.version>
     <!-- disable spotbugs -->
     <spotbugs.skip>true</spotbugs.skip>
     <!-- disable checkstyle -->
