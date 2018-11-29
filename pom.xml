@@ -588,9 +588,43 @@
         <version>2.10</version>
       </extension>
     </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create-apidocs-directory</id>
+            <phase>prepare-package</phase>
+            <configuration>
+              <target xmlns:if="ant:if">
+                <property name="file" value="${project.build.directory}/apidocs/package-list"/>
+                <condition property="createEmptyApidocsDirectory">
+                  <and>
+                    <equals arg1="${project.packaging}" arg2="jar"/>
+                    <not>
+                      <available file="${file}"/>
+                    </not>
+                  </and>
+                </condition>
+                <touch if:set="createEmptyApidocsDirectory" mkdirs="true" file="${file}"/>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
     <pluginManagement>
       <plugins>
-       <plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.8</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
