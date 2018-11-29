@@ -1,4 +1,5 @@
 language: java
 jdk:
-  - openjdk7
-script: mvn -B -V clean install
+  - openjdk8
+install: true
+script: mvn -U -B -V clean install

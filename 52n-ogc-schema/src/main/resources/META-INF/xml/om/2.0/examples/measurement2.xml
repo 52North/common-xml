@@ -33,9 +33,9 @@
 	</om:parameter>
 	<om:observedProperty
 		xlink:href="http://sweet.jpl.nasa.gov/2.0/phys.owl#Mass"/>
-	<om:featureOfInterest 
+	<om:featureOfInterest
 		xlink:href="http://wfs.example.org?request=getFeature&amp;featureid=fruit37f "/>
-	<om:result 
+	<om:result
 		xsi:type="gml:MeasureType"
 		uom="kg">0.28</om:result>
 </om:OM_Observation>

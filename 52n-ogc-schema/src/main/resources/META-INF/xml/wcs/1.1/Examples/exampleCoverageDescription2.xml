@@ -7,12 +7,12 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<CoverageDescriptions xmlns="http://www.opengis.net/wcs/1.1" 
-xmlns:ows="http://www.opengis.net/ows/1.1" 
+<CoverageDescriptions xmlns="http://www.opengis.net/wcs/1.1"
+xmlns:ows="http://www.opengis.net/ows/1.1"
 xmlns:gml="http://www.opengis.net/gml"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsDescribeCoverage.xsd 
-http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">	
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsDescribeCoverage.xsd
+http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">
     <CoverageDescription>
 		<ows:Title>Coverage File: SPVIEW_530_274_0_020809_5_1_J_3.TIF</ows:Title>
 		<ows:Abstract>530_274_0_020809_5_1_J_3 Image, SAN FRANCISCO UNITED STATES, Cnes 1986-2002, Distribution Spot Image</ows:Abstract>
@@ -39,7 +39,7 @@ http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">
 			</SpatialDomain>
             <TemporalDomain>
                 <gml:timePosition>2002-08-09T19:08:46Z</gml:timePosition>
-            </TemporalDomain>			
+            </TemporalDomain>
 		</Domain>
 		<Range>
 			<Field>
@@ -61,7 +61,7 @@ http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">
 				        <Key>band3</Key>
 				        <Key>band4</Key>
 					</AvailableKeys>
-				</Axis>				
+				</Axis>
 			</Field>
 		</Range>
 		<SupportedCRS>urn:ogc:def:crs:EPSG::4326</SupportedCRS>
@@ -70,7 +70,7 @@ http://www.opengis.net/ows/1.1 ../../../ows/1.1.0/owsAll.xsd">
         <SupportedFormat>image/ECW</SupportedFormat>
         <SupportedFormat>image/DTED</SupportedFormat>
         <SupportedFormat>image/JPEG2000</SupportedFormat>
-		<SupportedFormat>image/NITF</SupportedFormat> 
+		<SupportedFormat>image/NITF</SupportedFormat>
 	</CoverageDescription>
 </CoverageDescriptions>
 

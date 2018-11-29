@@ -16,7 +16,7 @@ http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns:xsi="http://www.w3.org/2001/XM
 		<wsa:RelatesTo>http://my.client.com/uid/msg-0010</wsa:RelatesTo>
 	</soap12:Header>
 	<soap12:Body>
-<sos:GetObservationResponse 
+<sos:GetObservationResponse
   xmlns="http://www.opengis.net/sos/2.0">
 
 	<observationData>
@@ -44,7 +44,7 @@ http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns:xsi="http://www.w3.org/2001/XM
 			<om:result xsi:type="gml:MeasureType" uom="%">5.2</om:result>
 		</om:OM_Observation>
 	</observationData>
-	
+
 	<observationData>
 		<om:OM_Observation gml:id="o2">
 			<om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
@@ -70,9 +70,9 @@ http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns:xsi="http://www.w3.org/2001/XM
 			<om:result xsi:type="gml:MeasureType" uom="%">6.3</om:result>
 		</om:OM_Observation>
 	</observationData>
-	
+
 	<!-- ... -->
-	
+
 </sos:GetObservationResponse>
 
 </soap12:Body>

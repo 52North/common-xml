@@ -18,13 +18,13 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 		<wsa:MessageID>http://my.client.com/uid/msg-0010</wsa:MessageID>
 	</soap12:Header>
 	<soap12:Body>
-	
+
 		<GetObservation service="SOS" version="2.0.0">
-		
+
 			<observedProperty>http://marinemetadata.org/cf#sea_water_salinity</observedProperty>
-			
+
 			<procedure>http://myServer.org/sensors/glider1</procedure>
-			
+
 			<temporalFilter>
 				<fes:After>
 					<fes:ValueReference>phenomenonTime</fes:ValueReference>
@@ -34,7 +34,7 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 					</gml:TimePeriod>
 				</fes:After>
 			</temporalFilter>
-			
+
 			<spatialFilter>
 				<fes:BBOX>
 					<fes:ValueReference>om:featureOfInterest/sams:SF_SpatialSamplingFeature/sams:shape</fes:ValueReference>
@@ -44,8 +44,8 @@ http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd" xmlns
 					</gml:Envelope>
 				</fes:BBOX>
 			</spatialFilter>
-			
+
 		</GetObservation>
-		
+
 	</soap12:Body>
 </soap12:Envelope>

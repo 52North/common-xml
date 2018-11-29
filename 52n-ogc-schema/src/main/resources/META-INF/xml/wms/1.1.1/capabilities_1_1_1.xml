@@ -158,11 +158,11 @@ server. -->
     </AuthorityURL>
     <Layer>
       <!-- This parent layer has a Name and can therefore be requested from a Map Server, yielding a map of all subsidiary layers. -->
-      <Name>ROADS_RIVERS</Name> 
+      <Name>ROADS_RIVERS</Name>
       <Title>Roads and Rivers</Title>
       <!-- See the spec to learn how some characteristics are inherited by
            subsidiary layers. -->
-      <SRS>EPSG:26986</SRS> <!-- An additional SRS for this layer --> 
+      <SRS>EPSG:26986</SRS> <!-- An additional SRS for this layer -->
       <LatLonBoundingBox minx="-71.63" miny="41.75" maxx="-70.78" maxy="42.90"/>
       <!-- The optional resx and resy attributes below indicate the X and Y spatial
            resolution in the units of that SRS. -->
@@ -214,7 +214,7 @@ server. -->
       </Style>
       <ScaleHint min="4000" max="35000"></ScaleHint>
       <Layer queryable="1">
-	<Name>ROADS_1M</Name> 
+	<Name>ROADS_1M</Name>
 	<Title>Roads at 1:1M scale</Title>
 	<Abstract>Roads at a scale of 1 to 1 million.</Abstract>
 	<KeywordList>
@@ -269,15 +269,15 @@ server. -->
       <Dimension name="time" units="ISO8601" />
       <Extent name="time" default="2000-08-22">1999-01-01/2000-08-22/P1D</Extent>
       <Layer>
-	<Name>Clouds</Name> 
+	<Name>Clouds</Name>
 	<Title>Forecast cloud cover</Title>
       </Layer>
       <Layer>
-	<Name>Temperature</Name> 
+	<Name>Temperature</Name>
 	<Title>Forecast temperature</Title>
       </Layer>
       <Layer>
-	<Name>Pressure</Name> 
+	<Name>Pressure</Name>
 	<Title>Forecast barometric pressure</Title>
         <!-- Pressure is available at several elevations.
          EPSG:5030 is WGS 84 ellipsoid, units in metres.

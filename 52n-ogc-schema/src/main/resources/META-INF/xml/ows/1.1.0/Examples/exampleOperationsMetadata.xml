@@ -7,9 +7,9 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<OperationsMetadata xmlns="http://www.opengis.net/ows/1.1" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<OperationsMetadata xmlns="http://www.opengis.net/ows/1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/ows/1.1 ../owsOperationsMetadata.xsd">
 	<!-- Partial example for WMS. Primary editor: Arliss Whiteside. Last updated 2006-03-16 -->
 	<Operation name="GetCapabilities">

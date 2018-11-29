@@ -7,10 +7,10 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<GetCoverage xmlns="http://www.opengis.net/wcs/1.1" 
-xmlns:ows="http://www.opengis.net/ows/1.1" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsGetCoverage.xsd" 
+<GetCoverage xmlns="http://www.opengis.net/wcs/1.1"
+xmlns:ows="http://www.opengis.net/ows/1.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/wcs/1.1 ../wcsGetCoverage.xsd"
 service="WCS" version="1.1.2">
 	<ows:Identifier>Cov123</ows:Identifier>
 	<DomainSubset>

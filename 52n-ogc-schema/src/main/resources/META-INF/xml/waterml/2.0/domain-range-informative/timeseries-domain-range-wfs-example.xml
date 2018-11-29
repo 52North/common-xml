@@ -12,21 +12,21 @@
   xmlns:wml2="http://www.opengis.net/waterml/2.0"
   xmlns:wml2dr="http://www.opengis.net/waterml-dr/2.0"
   xmlns:swe="http://www.opengis.net/swe/2.0"
-  xmlns:om="http://www.opengis.net/om/2.0" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" 
+  xmlns:om="http://www.opengis.net/om/2.0" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
   numberMatched="unknown" numberReturned="1" timeStamp="2012-02-10T07:29:22.648Z"
-  xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd 
-  http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/coverage.xsd 
+  xsi:schemaLocation="http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+  http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/coverage.xsd
   http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
   http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
   http://www.opengis.net/waterml/2.0 http://schemas.opengis.net/waterml/2.0/waterml2.xsd
   http://www.opengis.net/waterml-dr/2.0 timeseries-domain-range.xsd">
 
   <!-- A handcrafted domain-range encoding using the WaterML2 DR informative schema. Adapted from example output from WFS for ASRDC -->
-  
+
   <wfs:member>
     <om:OM_Observation gml:id="slake.surfacereservoir.9.observation.67">
-     <!-- Possible to use the WaterML2 metaadta type to add metadata record for the Observation if needed. E.g. sampled medium etc, 
-       ISO 19115 information -->  
+     <!-- Possible to use the WaterML2 metaadta type to add metadata record for the Observation if needed. E.g. sampled medium etc,
+       ISO 19115 information -->
       <om:phenomenonTime>
         <gml:TimePeriod gml:id="phenomenonTime.slake.surfacereservoir.9.observation.67">
           <gml:beginPosition>1900-01-01T00:00:00</gml:beginPosition>
@@ -34,8 +34,8 @@
         </gml:TimePeriod>
       </om:phenomenonTime>
       <om:resultTime xlink:href="'#phenomenonTime.slake.surfacereservoir.9.observation.67"/>
-      
-      <!-- If we have more process information here, we can use the wml2 process type --> 
+
+      <!-- If we have more process information here, we can use the wml2 process type -->
       <om:procedure xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="Water Monitornig Device"/>
       <om:observedProperty xlink:href="http://vocabs.auscope.org/classifier/bom/slake/0.1/observedproperty/storagevolume" xlink:title="Storage Volume"/>
       <om:featureOfInterest xlink:href="http://www.bom.gov.au/feature/slakesurfacereservoir/bom/slake.surfacereservoir.feature.9"

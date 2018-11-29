@@ -13,7 +13,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../../wps.xsd">
-	
+
 	<ows:Title>Planar Buffer operation for GML features</ows:Title>
 	<ows:Abstract>Create a buffer around a GML feature. Accepts any valid GML feature and computes the joint buffer.</ows:Abstract>
 	<ows:Identifier>http://some.host/profileregistry/implementation/Planar-GML-Buffer</ows:Identifier>
@@ -58,5 +58,5 @@
 			<wps:Format mimeType="text/xml" encoding="UTF-8" schema="http://schemas.opengis.net/gml/3.2.1/feature.xsd" default="true"/>
 		</wps:ComplexData>
 	</wps:Output>
-	
+
 </wps:Process>

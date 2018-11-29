@@ -141,7 +141,7 @@
       <swes:producerEndpoint xmlns:wsa="http://www.w3.org/2005/08/addressing">
         <wsa:EndpointReference>
           <wsa:Address>http://ws.spotimage.com/axis2/services/SPS_v2.0.4</wsa:Address>
-        </wsa:EndpointReference>        
+        </wsa:EndpointReference>
       </swes:producerEndpoint>
       <swes:supportedDialects>
         <swes:FilterDialectMetadata>
@@ -171,7 +171,7 @@
             <eo:SegmentValidated wstop:topic="true"/>
             <eo:SegmentCancelled wstop:topic="true"/>
             <eo:SegmentFailed wstop:topic="true"/>
-          </eo:EOEvent>          
+          </eo:EOEvent>
         </wstop:TopicSet>
       </swes:servedTopics>
     </swes:NotificationProducerMetadata>
@@ -180,7 +180,7 @@
   <sps:contents>
     <sps:SPSContents>
       <swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0</swes:procedureDescriptionFormat>
-      <swes:observableProperty>http://sweet.jpl.nasa.gov/2.0/physRadiation.owl#Radiance</swes:observableProperty>      
+      <swes:observableProperty>http://sweet.jpl.nasa.gov/2.0/physRadiation.owl#Radiance</swes:observableProperty>
       <!-- -->
       <swes:offering>
         <sps:SensorOffering>
@@ -216,7 +216,7 @@
                 </gml:exterior>
               </gml:Polygon>
             </sps:byPolygon>
-          </sps:observableArea>          
+          </sps:observableArea>
         </sps:SensorOffering>
       </swes:offering>
       <!-- -->
@@ -235,7 +235,7 @@
                 </gml:exterior>
               </gml:Polygon>
             </sps:byPolygon>
-          </sps:observableArea>          
+          </sps:observableArea>
         </sps:SensorOffering>
       </swes:offering>
       <!-- -->
@@ -254,7 +254,7 @@
                 </gml:exterior>
               </gml:Polygon>
             </sps:byPolygon>
-          </sps:observableArea>          
+          </sps:observableArea>
         </sps:SensorOffering>
       </swes:offering>
       <!-- -->

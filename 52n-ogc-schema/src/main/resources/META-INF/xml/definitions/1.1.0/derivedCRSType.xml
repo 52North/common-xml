@@ -7,11 +7,11 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<Dictionary xmlns="http://www.opengis.net/gml" 
-xmlns:gml="http://www.opengis.net/gml" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.opengis.net/gml ../../gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd" 
+<Dictionary xmlns="http://www.opengis.net/gml"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/gml ../../gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd"
 gml:id="DerivedCRStypeDictionary">
 	<!-- Primary editor: Arliss Whiteside. Last updated 2006-02-20 -->
 	<name>Derived CRS type standard values</name>

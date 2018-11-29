@@ -17,7 +17,7 @@
    xmlns:gml="http://www.opengis.net/gml/3.2"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.opengis.net/wfs/2.0
-                       http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+                       http://schemas.opengis.net/wfs/2.0/wfs.xsd
                        http://www.someserver.com/myns
                        ./DescribeFeatureType_Example01_Response.xsd">
    <wfs:member>

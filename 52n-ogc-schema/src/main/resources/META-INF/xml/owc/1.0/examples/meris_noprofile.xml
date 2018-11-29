@@ -7,7 +7,7 @@
     and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
     If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
 -->
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" 
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml"
 	xmlns:owc="http://www.opengis.net/owc/1.0" xml:lang="en">
   <title>GeoServer Web Map Service</title>
   <id>http://ows.genesi-dec.eu/geoserver/385d7d71-650a-414b-b8c7-739e2c0b5e76/wms?SERVICE=WMS&amp;/</id>
@@ -15,12 +15,12 @@
   <updated>2012-10-12T19:11:19Z</updated>
   <dc:publisher>ESA</dc:publisher>
   <generator uri="https://github.com/Terradue/trax/" version="1.0">
-        OGC Context CITE Testing XSLT (Extensible Stylesheet Language Transformations)   
+        OGC Context CITE Testing XSLT (Extensible Stylesheet Language Transformations)
       </generator>
   <rights>
          Terradue Srl.
          Copyright (c) 2012. Some rights reserved.  This feed is
-         licensed under a Creative Commons Attribution 3.0 License. 
+         licensed under a Creative Commons Attribution 3.0 License.
       </rights>
   <georss:where>
     <gml:Polygon>
@@ -70,7 +70,7 @@
     <content type="html">
         &lt;br/&gt;
 	&lt;img border='1' align='right' height='100'src='http://ows.genesi-dec.eu/geoserver/385d7d71-650a-414b-b8c7-739e2c0b5e76/wms?SERVICE=WMS&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS=EPSG:4326&amp;BBOX=-2,45,8,55&amp;WIDTH=100&amp;HEIGHT=100&amp;LAYERS=385d7d71-650a-414b-b8c7-739e2c0b5e76:MER_RR__2PRLRA20120406_102429_000026213113_00238_52838_0211.N1.tif&amp;STYLES=raster&amp;FORMAT=image/png&amp;BGCOLOR=0xffffff&amp;TRANSPARENT=TRUE&amp;EXCEPTIONS=application/vnd.ogc.se_xml'/&gt;
-	
+
 	&lt;br/&gt;
 	This resource is available from a OGC WMS Service (version 1.1.1) and it contains the following access points:
 	&lt;ul&gt;
@@ -78,7 +78,7 @@
 	&lt;a href='http://ows.genesi-dec.eu/geoserver/385d7d71-650a-414b-b8c7-739e2c0b5e76/wms?SERVICE=WMS&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;BBOX=-2,45,8,55SRS=EPSG:4326&amp;WIDTH=500&amp;HEIGHT=500&amp;LAYERS=385d7d71-650a-414b-b8c7-739e2c0b5e76:MER_RR__2PRLRA20120406_102429_000026213113_00238_52838_0211.N1.tif&amp;FORMAT=image/png&amp;BGCOLOR=0xffffff&amp;TRANSPARENT=TRUE&amp;EXCEPTIONS=application/vnd.ogc.se_xml'&gt;
 	GetMap &lt;/a&gt; request in image/png (atom:link[@rel="enclosure"])
 	&lt;/li&gt;
-	
+
 	&lt;li&gt;
 	&lt;a href='http://ows.genesi-dec.eu/geoserver/385d7d71-650a-414b-b8c7-739e2c0b5e76/wms?SERVICE=WMS&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetCapabilities'&gt;
 	GetCapabilities &lt;/a&gt; request (atom:link[@rel="via"])

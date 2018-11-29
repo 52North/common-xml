@@ -25,7 +25,7 @@ http://www.opengis.net/sps/2.0 http://schemas.opengis.net/sps/2.0/sps.xsd" xmlns
                     </sps:SPSMetadata>
                   </ows:Metadata>
                   <ows:RequestMessage>
-                    <soap12:Envelope>                     
+                    <soap12:Envelope>
                       <soap12:Body>
                         <sos:GetObservation service="SOS" version="2.0.0">
                           <sos:observedProperty>http://www.opengis.net/def/propertyType/x-radiance</sos:observedProperty>

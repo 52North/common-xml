@@ -19,7 +19,7 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.opengis.net/wfs/2.0
                        http://schemas.opengis.net/wfs/2.0/wfs.xsd
-                       http://www.opengis.net/gml/3.2 
+                       http://www.opengis.net/gml/3.2
                        http://schemas.opengis.net/gml/3.2.1/gml.xsd">
    <wfs:Query typeNames="Town">
       <wfs:PropertyName>gml:name</wfs:PropertyName>

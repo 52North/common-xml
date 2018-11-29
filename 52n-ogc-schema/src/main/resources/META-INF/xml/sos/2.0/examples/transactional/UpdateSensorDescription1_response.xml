@@ -19,10 +19,10 @@ http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd" xm
 	</soap12:Header>
 	<soap12:Body>
 <swes:UpdateSensorDescriptionResponse>
-	
+
 	<!--identifier of the sensor which has been assigned to the sensor by the SOS instance-->
 	<swes:updatedProcedure>http://www.my_namespace.org/sensors/Water_Gage_2</swes:updatedProcedure>
-	
+
 </swes:UpdateSensorDescriptionResponse>
 	</soap12:Body>
 </soap12:Envelope>
