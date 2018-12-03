@@ -3,5 +3,3 @@ jdk:
 - openjdk8
 install: true
 script: mvn -U -B -V clean install
-after_success:
-- curl -Ls https://git.io/deploy-maven-snapshot | bash
