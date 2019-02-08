@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 rel. 2 sp1 (x64) (http://www.altova.com) by Joel Lim (spacebel SA) -->
+<!--
+    OGC LICENSE HEADER
+
+    The official OGC XML schemas can be accessed under http://schemas.opengis.net.
+    Please consider the schema copyright notices: http://www.opengeospatial.org/ogc/document
+    and the OGC Copyright Notice and Disclaimers: http://www.opengeospatial.org/ogc/legal
+    If there are any questions left there is also a copyright FAQ: http://www.opengeospatial.org/ogc/legalfaq
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:wps="http://www.opengis.net/wps/2.0" targetNamespace="http://www.opengis.net/wps/2.0" elementFormDefault="qualified" version="2.0.0" xml:lang="en">
+	<annotation>
+		<documentation>
+			WPS is an OGC Standard.
+			Copyright (c) 2015 Open Geospatial Consortium.
+			To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
+		</documentation>
+	</annotation>
+	<!-- all-components document include (OGC 06-135r11 s#14) -->
+	<include schemaLocation="wps.xsd"/>
+	<!-- === IMPORTS === -->
+	<import namespace="http://www.opengis.net/ows/2.0" schemaLocation="http://schemas.opengis.net/ows/2.0/owsAll.xsd"/>
+	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+	<!-- === INCLUDES === -->
+	<!-- =========================================================== -->
+	<!-- DeployProcess request elements and types -->
+	<!-- =========================================================== -->
+	<complexType name="ExecutionUnitType">
+		<choice>
+			<element ref="wps:Reference"/>
+			<element name="Unit" type="anyType">
+				<annotation>
+					<documentation>Identifies the ExecutionUnit being encapsulated in the DeployProcess request. If the provided document is a binary file, it is assumed that it uses base64 encoding.</documentation>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="DeploymentProfileType">
+		<sequence/>
+	</complexType>
+	<element name="DeployProcess">
+		<annotation>
+			<documentation>WPS DescribeProcess operation request. </documentation>
+		</annotation>
+		<complexType>
+			<complexContent>
+				<extension base="wps:RequestBaseType">
+					<sequence>
+						<element name="ProcessDescription" type="wps:ProcessDescriptionChoiceType" minOccurs="0">
+							<annotation>
+								<documentation>Full description of process, including all input and output parameters. This may be generated from the ExecutionUnit. The document provides the informaiton intended to the WPS client.</documentation>
+							</annotation>
+						</element>
+						<element name="ExecutionUnit" maxOccurs="unbounded">
+							<annotation>
+								<documentation>Concrete executable unit of the process also called 'Application Package". It may contains libraries, configuration files, binaries, etc.</documentation>
+							</annotation>
+							<complexType>
+								<complexContent>
+									<extension base="wps:ExecutionUnitType"/>
+								</complexContent>
+							</complexType>
+						</element>
+						<element name="DeploymentProfileName" type="normalizedString" minOccurs="0">
+							<annotation>
+								<documentation>Name of the process profile deployment. By default, the default WPS implementation process profile is expected.</documentation>
+							</annotation>
+						</element>
+					</sequence>
+					<attribute ref="xml:lang" use="optional">
+						<annotation>
+							<documentation>RFC 4646 language code of the human-readable text (e.g. "en-CA") in the process description.</documentation>
+						</annotation>
+					</attribute>
+					<attribute name="immediateDeployment" type="boolean" default="true">
+						<annotation>
+							<documentation>Deploy the ExecutionUnit on the backend only on the first execution of the process.</documentation>
+						</annotation>
+					</attribute>
+				</extension>
+			</complexContent>
+		</complexType>
+	</element>
+	<!-- =========================================================== -->
+	<!-- DeployProcess response elements and types -->
+	<!-- =========================================================== -->
+	<element name="DeploymentResult">
+		<annotation>
+			<documentation>DeployProcess result.</documentation>
+		</annotation>
+		<complexType>
+			<complexContent>
+				<extension base="wps:DeploymentResultType"/>
+			</complexContent>
+		</complexType>
+	</element>
+	<complexType name="DeploymentResultType">
+		<sequence>
+			<element ref="ows:Identifier"/>
+			<choice>
+				<element name="ProcessSummary" type="wps:ProcessSummaryType" minOccurs="0">
+					<annotation>
+						<documentation>Summary of the deployment process, if relevant.</documentation>
+					</annotation>
+				</element>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="ProcessDescriptionChoiceType">
+		<choice>
+			<element ref="wps:Reference"/>
+			<element ref="wps:ProcessOffering">
+				<annotation>
+					<documentation>Identifies process description as being encapsulated in the DeployProcess request.</documentation>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+</schema>
