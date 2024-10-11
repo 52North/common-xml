@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This project is no longer maintained and will not receive any further updates. If you plan to continue using it, please be aware that future security issues will not be addressed.
+
 # common-xml
 
 A set of commonly used OGC schemas compiled to XMLBeans bindings and provided as Maven dependencies by 52°North. The 52°North common-xml project organizes some of these standards to be built as Java bindings to ease programming against all those standards. Once compiled standardized XML documents can be created, parsed and validated directly as Java objects.
